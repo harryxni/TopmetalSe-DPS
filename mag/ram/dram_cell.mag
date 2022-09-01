@@ -1,0 +1,70 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1660883971
+<< nmos >>
+rect 20 -70 50 130
+rect 250 -70 280 130
+<< ndiff >>
+rect -40 110 20 130
+rect -40 -50 -30 110
+rect 4 -50 20 110
+rect -40 -70 20 -50
+rect 50 110 120 130
+rect 50 -50 70 110
+rect 110 -50 120 110
+rect 50 -70 120 -50
+rect 180 110 250 130
+rect 180 -50 190 110
+rect 230 -50 250 110
+rect 180 -70 250 -50
+rect 280 110 340 130
+rect 280 -50 296 110
+rect 330 -50 340 110
+rect 280 -70 340 -50
+<< ndiffc >>
+rect -30 -50 4 110
+rect 70 -50 110 110
+rect 190 -50 230 110
+rect 296 -50 330 110
+<< poly >>
+rect 238 207 292 223
+rect 238 173 248 207
+rect 282 173 292 207
+rect 20 130 50 160
+rect 238 157 292 173
+rect 250 130 280 157
+rect 20 -100 50 -70
+rect 250 -100 280 -70
+<< polycont >>
+rect 248 173 282 207
+<< locali >>
+rect 70 207 300 210
+rect 70 173 248 207
+rect 282 173 300 207
+rect 70 170 300 173
+rect 70 130 110 170
+rect -40 110 4 130
+rect -40 -50 -30 110
+rect -40 -70 4 -50
+rect 66 110 110 130
+rect 66 -50 70 110
+rect 66 -70 110 -50
+rect 190 110 234 130
+rect 230 -50 234 110
+rect 190 -70 234 -50
+rect 296 110 340 130
+rect 330 -50 340 110
+rect 296 -70 340 -50
+rect 190 -80 230 -70
+<< labels >>
+rlabel poly 33 154 33 154 1 WWL
+port 1 n
+rlabel locali -37 119 -37 119 3 WBL
+port 2 e
+rlabel locali 322 -60 322 -60 1 RWL
+port 3 n
+rlabel locali 216 -74 216 -74 1 RBL
+port 4 n
+rlabel locali 132 186 132 186 1 storage
+<< end >>

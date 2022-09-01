@@ -1,0 +1,30 @@
+v {xschem version=3.0.0 file_version=1.2 }
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -130 -30 -130 30 {}
+L 4 -50 -30 -50 30 {}
+L 4 -150 -20 -130 -20 {}
+L 4 -50 -20 -30 -20 {}
+L 4 -50 0 -30 0 {}
+L 4 -150 0 -130 0 {}
+L 4 -150 20 -130 20 {}
+L 4 -130 -30 -50 -30 {}
+L 4 -130 30 -50 30 {}
+B 5 -152.5 -22.5 -147.5 -17.5 {name=WWL dir=in }
+B 5 -32.5 -22.5 -27.5 -17.5 {name=RBL dir=out }
+B 5 -32.5 -2.5 -27.5 2.5 {name=storage dir=out }
+B 5 -152.5 -2.5 -147.5 2.5 {name=WBL dir=in }
+B 5 -152.5 17.5 -147.5 22.5 {name=RWL dir=in }
+T {@symname} -106 44 0 0 0.3 0.3 {}
+T {@name} -45 -42 0 0 0.2 0.2 {}
+T {WWL} -125 -24 0 0 0.2 0.2 {}
+T {RBL} -55 -24 0 1 0.2 0.2 {}
+T {storage} -55 -4 0 1 0.2 0.2 {}
+T {WBL} -125 -4 0 0 0.2 0.2 {}
+T {RWL} -125 16 0 0 0.2 0.2 {}

@@ -1,0 +1,31 @@
+* SPICE3 file created from /home/hni/topmetal_dps/magic/ram/8bit_dram.ext - technology: sky130A
+
+.subckt dram_cell WWL WBL RWL RBL VSUBS
+X0 RWL storage RBL VSUBS sky130_fd_pr__nfet_01v8 ad=3e+11p pd=2.6e+06u as=3.5e+11p ps=2.7e+06u w=1e+06u l=150000u
+X1 storage WWL WBL VSUBS sky130_fd_pr__nfet_01v8 ad=3.5e+11p pd=2.7e+06u as=3e+11p ps=2.6e+06u w=1e+06u l=150000u
+.ends
+
+.subckt dram_array BIT_TOP READ_TOP READ_BOT WWL dram_cell_1/WWL RWL VSUBS dram_cell_1/RWL
+Xdram_cell_0 dram_cell_1/WWL dram_cell_0/WBL dram_cell_1/RWL dram_cell_0/RBL VSUBS
++ dram_cell
+Xdram_cell_1 dram_cell_1/WWL dram_cell_1/WBL dram_cell_1/RWL dram_cell_1/RBL VSUBS
++ dram_cell
+.ends
+
+.subckt x4bit_dram dram_array_1/RWL dram_array_0/READ_TOP dram_array_0/READ_BOT dram_array_1/WWL
++ dram_array_0/BIT_TOP VSUBS
+Xdram_array_0 dram_array_0/BIT_TOP dram_array_0/READ_TOP dram_array_0/READ_BOT dram_array_0/WWL
++ dram_array_1/dram_cell_1/WWL dram_array_0/RWL VSUBS dram_array_1/dram_cell_1/RWL
++ dram_array
+Xdram_array_1 dram_array_1/BIT_TOP dram_array_1/READ_TOP dram_array_1/READ_BOT dram_array_1/WWL
++ dram_array_1/dram_cell_1/WWL dram_array_1/RWL VSUBS dram_array_1/dram_cell_1/RWL
++ dram_array
+.ends
+
+.subckt x/home/hni/topmetal_dps/magic/ram/8bit_dram BIT0_OUT BIT4_OUT TEST
+X4bit_dram_1 4bit_dram_1/dram_array_1/RWL 4bit_dram_1/dram_array_0/READ_TOP 4bit_dram_1/dram_array_0/READ_BOT
++ 4bit_dram_1/dram_array_1/WWL 4bit_dram_1/dram_array_0/BIT_TOP VSUBS x4bit_dram
+X4bit_dram_0 4bit_dram_1/dram_array_1/RWL BIT0_OUT BIT4_OUT 4bit_dram_1/dram_array_1/WWL
++ TEST VSUBS x4bit_dram
+.ends
+

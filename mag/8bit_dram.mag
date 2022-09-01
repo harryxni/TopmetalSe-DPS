@@ -1,0 +1,16 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1662015318
+<< locali >>
+rect 790 290 830 498
+rect 1660 290 1700 498
+use 4bit_dram  4bit_dram_0
+timestamp 1661897893
+transform 1 0 -10 0 1 -110
+box -60 90 885 890
+use 4bit_dram  4bit_dram_1
+timestamp 1661897893
+transform 1 0 860 0 1 -110
+box -60 90 885 890
+<< end >>

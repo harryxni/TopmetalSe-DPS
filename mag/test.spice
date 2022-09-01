@@ -1,0 +1,11 @@
+* SPICE3 file created from test.ext - technology: sky130A
+
+.subckt dram_cell WWL WBL RWL RBL VSUBS
+X0 RWL storage RBL VSUBS sky130_fd_pr__nfet_01v8 ad=3e+11p pd=2.6e+06u as=3.5e+11p ps=2.7e+06u w=1e+06u l=150000u
+X1 storage WWL WBL VSUBS sky130_fd_pr__nfet_01v8 ad=3.5e+11p pd=2.7e+06u as=3e+11p ps=2.6e+06u w=1e+06u l=150000u
+.ends
+
+.subckt test WWL
+Xdram_cell_0 WWL dram_cell_0/WBL dram_cell_0/RWL dram_cell_0/RBL VSUBS dram_cell
+.ends
+

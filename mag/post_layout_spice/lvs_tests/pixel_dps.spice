@@ -1,0 +1,176 @@
+** sch_path: /home/hni/topmetal_dps/xschem/pixel_dps.sch
+**.subckt pixel_dps V_RAMP VCC OUT[7],OUT[6],OUT[5],OUT[4],OUT[3],OUT[2],OUT[1],OUT[0] READ VREF
+*+ PIX_IN CSA_VREF VBIAS NB1 NB2 GRAY[7],GRAY[6],GRAY[5],GRAY[4],GRAY[3],GRAY[2],GRAY[1],GRAY[0] BIAS1 BIAS2
+*+ pix_out SF_IB ROW_SEL
+*.ipin V_RAMP
+*.ipin VCC
+*.opin OUT[7],OUT[6],OUT[5],OUT[4],OUT[3],OUT[2],OUT[1],OUT[0]
+*.ipin READ
+*.ipin VREF
+*.ipin PIX_IN
+*.ipin CSA_VREF
+*.ipin VBIAS
+*.ipin NB1
+*.ipin NB2
+*.ipin GRAY[7],GRAY[6],GRAY[5],GRAY[4],GRAY[3],GRAY[2],GRAY[1],GRAY[0]
+*.ipin BIAS1
+*.ipin BIAS2
+*.opin pix_out
+*.ipin SF_IB
+*.ipin ROW_SEL
+x3 VCC GND AMP_OUT VBIAS VREF PIX_IN NB2 NB1 CSA_VREF csa
+x1 VCC AMP_OUT V_RAMP BIAS1 BIAS2 READ GRAY[7] GRAY[6] GRAY[5] GRAY[4] GRAY[3] GRAY[2] GRAY[1]
++ GRAY[0] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2] OUT[1] OUT[0] 8bit_adc
+XM2 net2 ROW_SEL pix_out GND sky130_fd_pr__nfet_01v8_lvt L=1 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 GND AMP_OUT net1 VDD sky130_fd_pr__pfet_01v8_lvt L=1 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM5 net1 SF_IB VDD VDD sky130_fd_pr__pfet_01v8_lvt L=1 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM7 VDD net1 net2 GND sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+**.ends
+
+* expanding   symbol:  /home/hni/TopMetalSe-OpenMPW6/xschem/csa.sym # of pins=9
+** sym_path: /home/hni/TopMetalSe-OpenMPW6/xschem/csa.sym
+** sch_path: /home/hni/TopMetalSe-OpenMPW6/xschem/csa.sch
+.subckt csa  VDD GND AMP_OUT VBIAS VREF AMP_IN NB2 NB1 CSA_VREF
+*.ipin VREF
+*.ipin AMP_IN
+*.ipin NB1
+*.ipin CSA_VREF
+*.ipin VBIAS
+*.opin AMP_OUT
+*.ipin NB2
+*.ipin VDD
+*.ipin GND
+XM2 VDD net4 AMP_OUT GND sky130_fd_pr__nfet_01v8_lvt L=1 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM8 net3 net3 net5 VDD sky130_fd_pr__pfet_01v8_lvt L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM10 net6 net5 VDD VDD sky130_fd_pr__pfet_01v8_lvt L=1 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM11 net5 net5 VDD VDD sky130_fd_pr__pfet_01v8_lvt L=1 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM15 AMP_OUT NB2 GND GND sky130_fd_pr__nfet_01v8_lvt L=1.2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM16 net2 NB1 GND GND sky130_fd_pr__nfet_01v8_lvt L=1 W=1.2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XC3 AMP_IN AMP_OUT sky130_fd_pr__cap_mim_m3_1 W=2 L=2 MF=1 m=1
+XM4 net1 VREF net2 GND sky130_fd_pr__nfet_01v8_lvt L=0.15 W=7 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM7 AMP_IN CSA_VREF AMP_OUT VDD sky130_fd_pr__pfet_01v8_lvt L=7.95 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM5 net4 net3 net6 VDD sky130_fd_pr__pfet_01v8_lvt L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM1 net3 VBIAS net1 GND sky130_fd_pr__nfet_01v8_lvt L=0.8 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 net7 AMP_IN net2 GND sky130_fd_pr__nfet_01v8_lvt L=0.15 W=7 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM6 net4 VBIAS net7 GND sky130_fd_pr__nfet_01v8_lvt L=0.8 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  adc/8bit_adc.sym # of pins=8
+** sym_path: /home/hni/topmetal_dps/xschem/adc/8bit_adc.sym
+** sch_path: /home/hni/topmetal_dps/xschem/adc/8bit_adc.sch
+.subckt 8bit_adc  VCC V_IN V_RAMP BIAS1 BIAS2 READ GRAY_IN[7] GRAY_IN[6] GRAY_IN[5] GRAY_IN[4]
++ GRAY_IN[3] GRAY_IN[2] GRAY_IN[1] GRAY_IN[0] OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2] OUT[1] OUT[0]
+*.ipin VCC
+*.ipin READ
+*.ipin GRAY_IN[7],GRAY_IN[6],GRAY_IN[5],GRAY_IN[4],GRAY_IN[3],GRAY_IN[2],GRAY_IN[1],GRAY_IN[0]
+*.ipin V_RAMP
+*.ipin V_IN
+*.ipin BIAS1
+*.ipin BIAS2
+*.opin OUT[7],OUT[6],OUT[5],OUT[4],OUT[3],OUT[2],OUT[1],OUT[0]
+XM2 GN V_IN SN GND sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM7 net1 V_RAMP SN GND sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM8 net1 GN VCC VDD sky130_fd_pr__pfet_01v8_lvt L=1 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM9 GN GN VCC VDD sky130_fd_pr__pfet_01v8_lvt L=1 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM10 net2 net1 VCC VDD sky130_fd_pr__pfet_01v8_lvt L=0.42 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM13 ENABLE_D net2 VCC VDD sky130_fd_pr__pfet_01v8 L=0.2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM14 ENABLE_D net2 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.save  v(enable_d)
+XM1 SN BIAS1 GND GND sky130_fd_pr__nfet_01v8 L=1 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM5 net2 BIAS2 GND GND sky130_fd_pr__nfet_01v8_lvt L=1 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+x39 OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2] OUT[1] OUT[0] ENABLE_D GRAY_IN[7] GRAY_IN[6]
++ GRAY_IN[5] GRAY_IN[4] GRAY_IN[3] GRAY_IN[2] GRAY_IN[1] GRAY_IN[0] READ dram_8
+.ends
+
+
+* expanding   symbol:  digital_prims/dram_8.sym # of pins=4
+** sym_path: /home/hni/topmetal_dps/xschem/digital_prims/dram_8.sym
+** sch_path: /home/hni/topmetal_dps/xschem/digital_prims/dram_8.sch
+.subckt dram_8  OUT[7] OUT[6] OUT[5] OUT[4] OUT[3] OUT[2] OUT[1] OUT[0] WRITE IN[7] IN[6] IN[5]
++ IN[4] IN[3] IN[2] IN[1] IN[0] READ
+*.opin OUT[7],OUT[6],OUT[5],OUT[4],OUT[3],OUT[2],OUT[1],OUT[0]
+*.ipin WRITE
+*.ipin IN[7],IN[6],IN[5],IN[4],IN[3],IN[2],IN[1],IN[0]
+*.ipin READ
+x5 WRITE OUT[7] net8 IN[7] READ dram
+x6 WRITE OUT[6] net7 IN[6] READ dram
+x7 WRITE OUT[5] net6 IN[5] READ dram
+x25 WRITE OUT[4] net5 IN[4] READ dram
+x26 WRITE OUT[3] net4 IN[3] READ dram
+x27 WRITE OUT[2] net3 IN[2] READ dram
+x33 WRITE OUT[1] net2 IN[0] READ dram
+x34 WRITE OUT[0] net1 IN[1] READ dram
+.ends
+
+
+* expanding   symbol:  digital_prims/dram.sym # of pins=5
+** sym_path: /home/hni/topmetal_dps/xschem/digital_prims/dram.sym
+** sch_path: /home/hni/topmetal_dps/xschem/digital_prims/dram.sch
+.subckt dram  WWL RBL storage WBL RWL
+*.opin RBL
+*.ipin RWL
+*.ipin WBL
+*.ipin WWL
+*.opin storage
+XM3 RWL storage RBL GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM1 WBL WWL storage GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.GLOBAL GND
+.GLOBAL VDD
+.end

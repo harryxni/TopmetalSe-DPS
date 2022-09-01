@@ -1,0 +1,104 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1661898952
+<< nwell >>
+rect -100 2890 2810 3240
+<< metal1 >>
+rect -110 2930 40 3130
+rect -20 -640 30 -440
+<< metal2 >>
+rect 280 3290 320 3340
+rect 620 3290 660 3340
+rect 960 3290 1000 3340
+rect 1300 3290 1340 3340
+rect 1640 3290 1680 3340
+rect 1980 3290 2020 3340
+rect 2320 3290 2360 3340
+rect 2660 3290 2700 3340
+<< metal3 >>
+rect -15 0 385 70
+rect -30 -310 340 -250
+<< metal4 >>
+rect 170 -750 230 -690
+rect 510 -750 570 -690
+rect 850 -750 910 -690
+rect 1190 -750 1250 -690
+rect 1530 -750 1590 -690
+rect 1870 -750 1930 -690
+rect 2210 -750 2270 -690
+rect 2550 -750 2610 -690
+use sens_amp  sens_amp_0
+timestamp 1661898952
+transform 1 0 -590 0 1 2350
+box 530 -3100 1000 977
+use sens_amp  sens_amp_1
+timestamp 1661898952
+transform 1 0 -250 0 1 2350
+box 530 -3100 1000 977
+use sens_amp  sens_amp_2
+timestamp 1661898952
+transform 1 0 90 0 1 2350
+box 530 -3100 1000 977
+use sens_amp  sens_amp_3
+timestamp 1661898952
+transform 1 0 430 0 1 2350
+box 530 -3100 1000 977
+use sens_amp  sens_amp_4
+timestamp 1661898952
+transform 1 0 770 0 1 2350
+box 530 -3100 1000 977
+use sens_amp  sens_amp_5
+timestamp 1661898952
+transform 1 0 1110 0 1 2350
+box 530 -3100 1000 977
+use sens_amp  sens_amp_6
+timestamp 1661898952
+transform 1 0 1450 0 1 2350
+box 530 -3100 1000 977
+use sens_amp  sens_amp_7
+timestamp 1661898952
+transform 1 0 1790 0 1 2350
+box 530 -3100 1000 977
+<< labels >>
+rlabel metal2 2320 3290 2360 3340 1 INx1x
+port 1 n
+rlabel metal2 2660 3290 2700 3340 1 INx0x
+port 2 n
+rlabel metal2 1980 3290 2020 3340 1 INx2x
+port 3 n
+rlabel metal2 1640 3290 1680 3340 1 INx3x
+port 4 n
+rlabel metal2 1300 3290 1340 3340 1 INx4x
+port 5 n
+rlabel metal2 960 3290 1000 3340 1 INx5x
+port 6 n
+rlabel metal2 620 3290 660 3340 1 INx6x
+port 7 n
+rlabel metal2 280 3290 320 3340 1 INx7x
+port 8 n
+rlabel metal4 170 -750 230 -690 1 OUTx7x
+port 9 n
+rlabel metal4 510 -750 570 -690 1 OUTx6x
+port 10 n
+rlabel metal4 850 -750 910 -690 1 OUTx5x
+port 11 n
+rlabel metal4 1190 -750 1250 -690 1 OUTx4x
+port 12 n
+rlabel metal4 1530 -750 1590 -690 1 OUTx3x
+port 13 n
+rlabel metal4 1870 -750 1930 -690 1 OUTx2x
+port 14 n
+rlabel metal4 2210 -750 2270 -690 1 OUTx1x
+port 15 n
+rlabel metal4 2550 -750 2610 -690 1 OUTx0x
+port 16 n
+rlabel metal3 -30 -280 -30 -280 1 SA_IREF
+port 17 n
+rlabel metal3 -10 30 -10 30 1 VREF
+port 18 n
+rlabel metal1 -10 -520 -10 -520 1 GND
+port 19 n
+rlabel metal1 -110 2930 -100 3130 3 VDD
+port 20 e
+<< end >>

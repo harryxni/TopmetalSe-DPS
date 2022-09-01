@@ -1,0 +1,15 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1661897893
+<< locali >>
+rect 370 440 410 550
+use dram_array  dram_array_0
+timestamp 1661897893
+transform 1 0 30 0 1 520
+box -90 -430 420 370
+use dram_array  dram_array_1
+timestamp 1661897893
+transform 1 0 465 0 1 520
+box -90 -430 420 370
+<< end >>

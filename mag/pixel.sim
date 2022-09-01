@@ -1,0 +1,202 @@
+| units: 500000 tech: sky130A format: MIT
+x 8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/storage OUTx4x READ GND l=30 w=200 x=1288 y=-2142 sky130_fd_pr__nfet_01v8
+x 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL GRAYx4x 8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/storage GND l=30 w=200 x=1518 y=-2142 sky130_fd_pr__nfet_01v8
+x 8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/storage OUTx5x READ GND l=30 w=200 x=1288 y=-2029 sky130_fd_pr__nfet_01v8
+x 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL GRAYx5x 8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/storage GND l=30 w=200 x=1518 y=-2029 sky130_fd_pr__nfet_01v8
+x 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/storage OUTx6x READ GND l=30 w=200 x=853 y=-2142 sky130_fd_pr__nfet_01v8
+x 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL GRAYx6x 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/storage GND l=30 w=200 x=1083 y=-2142 sky130_fd_pr__nfet_01v8
+x 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/storage OUTx7x 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/RWL GND l=30 w=200 x=853 y=-2029 sky130_fd_pr__nfet_01v8
+x 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL GRAYx7x 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/storage GND l=30 w=200 x=1083 y=-2029 sky130_fd_pr__nfet_01v8
+x 8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/storage OUTx0x READ GND l=30 w=200 x=2158 y=-2142 sky130_fd_pr__nfet_01v8
+x 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL GRAYx0x 8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/storage GND l=30 w=200 x=2388 y=-2142 sky130_fd_pr__nfet_01v8
+x 8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/storage OUTx1x READ GND l=30 w=200 x=2158 y=-2029 sky130_fd_pr__nfet_01v8
+x 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL GRAYx1x 8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/storage GND l=30 w=200 x=2388 y=-2029 sky130_fd_pr__nfet_01v8
+x 8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/storage OUTx2x READ GND l=30 w=200 x=1723 y=-2142 sky130_fd_pr__nfet_01v8
+x 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL GRAYx2x 8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/storage GND l=30 w=200 x=1953 y=-2142 sky130_fd_pr__nfet_01v8
+x 8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/storage OUTx3x 8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/RWL GND l=30 w=200 x=1723 y=-2029 sky130_fd_pr__nfet_01v8
+x 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL GRAYx3x 8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/storage GND l=30 w=200 x=1953 y=-2029 sky130_fd_pr__nfet_01v8
+x ROW_SEL PIX_OUT a_2200_n380# GND l=200 w=400 x=2200 y=-579 sky130_fd_pr__nfet_01v8_lvt
+x a_1000_n1450# a_1000_n1450# DVDD DVDD l=200 w=200 x=1070 y=-1059 sky130_fd_pr__pfet_01v8_lvt
+x a_1870_n1400# GND 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL GND l=30 w=200 x=2230 y=-1449 sky130_fd_pr__nfet_01v8
+x NB1 a_n30_n2640# GND GND l=200 w=240 x=40 y=-2639 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS a_n140_n780# a_n140_n550# GND l=160 w=200 x=-139 y=-709 sky130_fd_pr__nfet_01v8_lvt
+x V_RAMP a_1100_n1450# a_1720_n1450# GND l=30 w=200 x=1690 y=-1449 sky130_fd_pr__nfet_01v8_lvt
+x a_1720_n1450# DVDD a_1870_n1400# DVDD l=90 w=200 x=1930 y=-1059 sky130_fd_pr__pfet_01v8_lvt
+x AMP_OUT a_1000_n1450# a_1100_n1450# GND l=30 w=200 x=1070 y=-1449 sky130_fd_pr__nfet_01v8_lvt
+x AMP_OUT GND a_2287_n292# VDD l=200 w=200 x=2130 y=-19 sky130_fd_pr__pfet_01v8_lvt
+x a_1870_n1400# DVDD 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL DVDD l=40 w=200 x=2220 y=-1109 sky130_fd_pr__pfet_01v8
+x NB2 a_300_n1210# AMP_OUT GND l=240 w=200 x=300 y=-1129 sky130_fd_pr__nfet_01v8_lvt
+x BIAS1 GND a_1100_n1450# GND l=200 w=90 x=1330 y=-1619 sky130_fd_pr__nfet_01v8
+x a_n140_n550# a_n140_n550# a_350_10# VDD l=400 w=200 x=-49 y=10 sky130_fd_pr__pfet_01v8_lvt
+x SF_IB a_2287_n292# VDD VDD l=200 w=200 x=2430 y=-19 sky130_fd_pr__pfet_01v8_lvt
+x PIX_IN AMP_OUT l=400 w=400 x=130 y=-1739 sky130_fd_pr__cap_mim_m3_1
+x VREF a_n140_n780# a_n30_n2640# GND l=30 w=1400 x=20 y=-2249 sky130_fd_pr__nfet_01v8_lvt
+x a_350_10# a_350_10# VDD VDD l=400 w=200 x=420 y=10 sky130_fd_pr__pfet_01v8_lvt
+x a_350_10# VDD a_1460_10# VDD l=400 w=200 x=1060 y=10 sky130_fd_pr__pfet_01v8_lvt
+x CSA_VREF PIX_IN AMP_OUT VDD l=1600 w=84 x=120 y=-319 sky130_fd_pr__pfet_01v8_lvt
+x BIAS2 GND a_1870_n1400# GND l=200 w=200 x=1870 y=-1599 sky130_fd_pr__nfet_01v8_lvt
+x a_n140_n550# a_1460_10# a_120_n550# VDD l=400 w=200 x=1530 y=10 sky130_fd_pr__pfet_01v8_lvt
+x VBIAS a_120_n780# a_120_n550# GND l=160 w=200 x=120 y=-709 sky130_fd_pr__nfet_01v8_lvt
+x PIX_IN a_n30_n2640# a_120_n780# GND l=30 w=1400 x=130 y=-2249 sky130_fd_pr__nfet_01v8_lvt
+x a_1000_n1450# DVDD a_1720_n1450# DVDD l=200 w=200 x=1520 y=-1059 sky130_fd_pr__pfet_01v8_lvt
+x a_120_n550# AMP_OUT VDD GND l=200 w=200 x=490 y=-709 sky130_fd_pr__nfet_01v8_lvt
+x a_2287_n292# a_2200_n380# VDD GND l=30 w=200 x=2390 y=-279 sky130_fd_pr__nfet_01v8_lvt
+C PIX_IN gring 3.00
+C gring GND 2.90
+C NB1 GND 2.07
+R NB1 384
+R BIAS2 154
+R BIAS1 93
+R V_RAMP 597
+R NB2 209
+R VREF 2588
+R PIX_OUT 558
+R ROW_SEL 186
+R VBIAS 429
+R PIX_IN 2878
+R CSA_VREF 620
+R SF_IB 136
+C DVDD GND 3.42
+R DVDD 7382
+C VDD GND 6.42
+R VDD 9869
+R a_1100_n1450# 1658
+R a_300_n1210# 356
+R a_1870_n1400# 2261
+R a_1720_n1450# 1349
+R a_1000_n1450# 1641
+R a_n30_n2640# 3155
+R a_120_n780# 4074
+R a_n140_n780# 4074
+R a_2200_n380# 898
+R a_2287_n292# 1050
+C AMP_OUT GND 2.79
+R AMP_OUT 2793
+R a_120_n550# 1874
+R a_1460_10# 563
+R a_350_10# 1192
+R a_n140_n550# 2088
+R GRAYx3x 462
+= GRAYx3x m4_1874_n1740#
+= GRAYx3x 8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/WBL
+= GRAYx3x 8bit_dram_0/4bit_dram_0/dram_array_1/li_0_n280#
+= GRAYx3x 8bit_dram_0/4bit_dram_0/dram_array_1/li_0_n160#
+R 8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/RWL 458
+R OUTx3x 421
+= OUTx3x m2_1809_n1725#
+= OUTx3x 8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/RBL
+= OUTx3x 8bit_dram_0/4bit_dram_0/dram_array_1/li_228_n102#
+R 8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/storage 995
+R OUTx2x 414
+= OUTx2x m4_1684_n1740#
+= OUTx2x 8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/RBL
+= OUTx2x 8bit_dram_0/4bit_dram_0/dram_array_1/li_230_20#
+R GRAYx2x 496
+= GRAYx2x m2_1974_n1740#
+= GRAYx2x 8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/WBL
+= GRAYx2x 8bit_dram_0/4bit_dram_0/dram_array_1/li_0_210#
+R 8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/storage 995
+R GRAYx1x 462
+= GRAYx1x m4_2309_n1740#
+= GRAYx1x 8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/WBL
+= GRAYx1x 8bit_dram_0/4bit_dram_0/dram_array_0/li_0_n280#
+= GRAYx1x 8bit_dram_0/4bit_dram_0/dram_array_0/li_0_n160#
+C 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL GND 2.53
+R 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL 5657
+= 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL a_2260_n1450#
+= 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/WWL
+= 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL 8bit_dram_0/4bit_dram_1/dram_array_1/a_7_n377#
+= 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL 8bit_dram_0/4bit_dram_1/dram_array_1/a_60_n65#
+= 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL 8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/WWL
+= 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL 8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/WWL
+= 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL 8bit_dram_0/4bit_dram_1/dram_array_0/a_7_n377#
+= 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL 8bit_dram_0/4bit_dram_1/dram_array_0/a_60_n65#
+= 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL 8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/WWL
+= 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL 8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/WWL
+= 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL 8bit_dram_0/4bit_dram_0/dram_array_1/a_7_n377#
+= 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL 8bit_dram_0/4bit_dram_0/dram_array_1/a_60_n65#
+= 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL 8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/WWL
+= 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL 8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/WWL
+= 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL 8bit_dram_0/4bit_dram_0/dram_array_0/a_7_n377#
+= 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL 8bit_dram_0/4bit_dram_0/dram_array_0/a_60_n65#
+R OUTx1x 421
+= OUTx1x m2_2205_n1375#
+= OUTx1x 8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/RBL
+= OUTx1x 8bit_dram_0/4bit_dram_0/dram_array_0/li_228_n102#
+R 8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/storage 995
+R READ 4333
+= READ 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/RWL
+= READ 8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/RWL
+= READ 8bit_dram_0/4bit_dram_1/dram_array_1/li_348_163#
+= READ 8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/RWL
+= READ 8bit_dram_0/4bit_dram_1/li_370_440#
+= READ 8bit_dram_0/4bit_dram_1/dram_array_0/li_348_163#
+= READ 8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/RWL
+= READ 8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/RWL
+= READ 8bit_dram_0/4bit_dram_0/dram_array_1/li_348_163#
+= READ 8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/RWL
+= READ 8bit_dram_0/4bit_dram_0/li_370_440#
+= READ 8bit_dram_0/4bit_dram_0/dram_array_0/li_348_163#
+R OUTx0x 414
+= OUTx0x m4_2119_n1740#
+= OUTx0x 8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/RBL
+= OUTx0x 8bit_dram_0/4bit_dram_0/dram_array_0/li_230_20#
+R GRAYx0x 496
+= GRAYx0x m2_2409_n1700#
+= GRAYx0x 8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/WBL
+= GRAYx0x 8bit_dram_0/4bit_dram_0/dram_array_0/li_0_210#
+R 8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/storage 995
+R GRAYx7x 462
+= GRAYx7x m4_1004_n1740#
+= GRAYx7x 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WBL
+= GRAYx7x 8bit_dram_0/4bit_dram_1/dram_array_1/li_0_n280#
+= GRAYx7x 8bit_dram_0/4bit_dram_1/dram_array_1/li_0_n160#
+R 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/RWL 458
+R OUTx7x 421
+= OUTx7x m2_939_n1735#
+= OUTx7x 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/RBL
+= OUTx7x 8bit_dram_0/4bit_dram_1/dram_array_1/li_228_n102#
+R 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/storage 995
+R GND 588
+= GND 8bit_dram_0/VSUBS
+= GND 8bit_dram_0/4bit_dram_0/VSUBS
+= GND 8bit_dram_0/4bit_dram_0/dram_array_0/VSUBS
+= GND 8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/VSUBS
+= GND 8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/VSUBS
+= GND 8bit_dram_0/4bit_dram_0/dram_array_1/VSUBS
+= GND 8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/VSUBS
+= GND 8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/VSUBS
+= GND 8bit_dram_0/4bit_dram_1/VSUBS
+= GND 8bit_dram_0/4bit_dram_1/dram_array_0/VSUBS
+= GND 8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/VSUBS
+= GND 8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/VSUBS
+= GND 8bit_dram_0/4bit_dram_1/dram_array_1/VSUBS
+= GND 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/VSUBS
+= GND 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/VSUBS
+R OUTx6x 414
+= OUTx6x 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/RBL
+= OUTx6x 8bit_dram_0/4bit_dram_1/dram_array_1/li_230_20#
+R GRAYx6x 496
+= GRAYx6x m2_1104_n1730#
+= GRAYx6x 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/WBL
+= GRAYx6x 8bit_dram_0/4bit_dram_1/dram_array_1/li_0_210#
+R 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/storage 995
+R GRAYx5x 462
+= GRAYx5x m4_1439_n1740#
+= GRAYx5x 8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/WBL
+= GRAYx5x 8bit_dram_0/4bit_dram_1/dram_array_0/li_0_n280#
+= GRAYx5x 8bit_dram_0/4bit_dram_1/dram_array_0/li_0_n160#
+R OUTx5x 421
+= OUTx5x m2_1374_n1735#
+= OUTx5x 8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/RBL
+= OUTx5x 8bit_dram_0/4bit_dram_1/dram_array_0/li_228_n102#
+R 8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/storage 995
+R OUTx4x 414
+= OUTx4x m4_1249_n1740#
+= OUTx4x 8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/RBL
+= OUTx4x 8bit_dram_0/4bit_dram_1/dram_array_0/li_230_20#
+R GRAYx4x 496
+= GRAYx4x m2_1539_n1730#
+= GRAYx4x 8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/WBL
+= GRAYx4x 8bit_dram_0/4bit_dram_1/dram_array_0/li_0_210#
+R 8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/storage 995

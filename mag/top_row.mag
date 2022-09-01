@@ -1,0 +1,32 @@
+magic
+tech sky130A
+timestamp 1662063950
+use top_pixel  top_pixel_0 ~/topmetal_dps/magic
+timestamp 1662063950
+transform 1 0 5 0 1 0
+box -5 0 1780 2190
+use top_pixel  top_pixel_1
+timestamp 1662063950
+transform 1 0 1505 0 1 0
+box -5 0 1780 2190
+use top_pixel  top_pixel_2
+timestamp 1662063950
+transform 1 0 3005 0 1 0
+box -5 0 1780 2190
+use top_pixel  top_pixel_3
+timestamp 1662063950
+transform 1 0 4505 0 1 0
+box -5 0 1780 2190
+use top_pixel  top_pixel_4
+timestamp 1662063950
+transform 1 0 6005 0 1 0
+box -5 0 1780 2190
+use top_pixel  top_pixel_5
+timestamp 1662063950
+transform 1 0 7505 0 1 0
+box -5 0 1780 2190
+use top_pixel  top_pixel_6
+timestamp 1662063950
+transform 1 0 9005 0 1 0
+box -5 0 1780 2190
+<< end >>

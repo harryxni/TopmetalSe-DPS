@@ -1,0 +1,107 @@
+timestamp 1661897893
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use dram_array dram_array_1 1 0 465 0 1 520
+use dram_array dram_array_0 1 0 30 0 1 520
+node "li_370_440#" 35 65.1189 370 440 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4400 300 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "dram_array_0/dram_cell_0/WBL" "dram_array_1/dram_cell_1/WWL" 2.05275
+cap "dram_array_0/dram_cell_1/storage" "dram_array_1/dram_cell_0/RWL" 0.169062
+cap "dram_array_1/dram_cell_0/RWL" "dram_array_1/dram_cell_1/storage" 0.574382
+cap "dram_array_0/dram_cell_0/WBL" "dram_array_0/dram_cell_1/RBL" -0.288709
+cap "dram_array_1/dram_cell_0/WBL" "dram_array_0/dram_cell_1/WBL" 5.85725
+cap "dram_array_1/dram_cell_1/WWL" "dram_array_1/dram_cell_0/WBL" 14.2463
+cap "dram_array_0/dram_cell_1/RBL" "dram_array_1/dram_cell_0/WBL" 105.291
+cap "dram_array_1/dram_cell_1/WBL" "dram_array_0/dram_cell_1/WBL" 49.6344
+cap "dram_array_0/dram_cell_1/storage" "dram_array_1/dram_cell_1/RWL" 0.398074
+cap "dram_array_1/dram_cell_1/WWL" "dram_array_1/dram_cell_1/WBL" -2.17295
+cap "dram_array_1/dram_cell_0/RWL" "dram_array_0/dram_cell_0/RBL" 1.83428
+cap "dram_array_0/dram_cell_1/RBL" "dram_array_1/dram_cell_1/WBL" 12.8853
+cap "dram_array_1/dram_cell_0/storage" "dram_array_0/dram_cell_0/RBL" 3.3242
+cap "dram_array_0/dram_cell_0/RBL" "dram_array_1/dram_cell_1/RWL" 0.655938
+cap "dram_array_1/dram_cell_0/RWL" "dram_array_1/dram_cell_0/storage" 0.134364
+cap "dram_array_1/dram_cell_0/RWL" "dram_array_1/dram_cell_1/RWL" 0.275028
+cap "dram_array_1/dram_cell_1/RBL" "dram_array_0/dram_cell_1/storage" 2.04282
+cap "dram_array_1/dram_cell_1/RBL" "dram_array_1/dram_cell_1/storage" -0.346486
+cap "dram_array_0/dram_cell_0/storage" "dram_array_0/dram_cell_0/RBL" -0.54178
+cap "dram_array_0/dram_cell_0/storage" "dram_array_1/dram_cell_0/RWL" 1.64149
+cap "dram_array_1/dram_cell_0/RBL" "dram_array_0/dram_cell_0/WBL" 4.39456
+cap "dram_array_1/dram_cell_1/RBL" "dram_array_0/dram_cell_0/RBL" 4.40018
+cap "dram_array_1/dram_cell_1/RBL" "dram_array_1/dram_cell_0/RWL" 4.36063
+cap "dram_array_0/dram_cell_0/storage" "dram_array_1/dram_cell_0/storage" 4.43108
+cap "dram_array_0/dram_cell_1/storage" "dram_array_0/dram_cell_1/WBL" -2.90893
+cap "dram_array_1/dram_cell_1/storage" "dram_array_0/dram_cell_1/WBL" 4.30267
+cap "dram_array_1/dram_cell_0/RBL" "dram_array_1/dram_cell_0/WBL" -2.76947
+cap "dram_array_0/dram_cell_1/storage" "dram_array_1/dram_cell_1/WWL" 20.8003
+cap "dram_array_1/dram_cell_1/WWL" "dram_array_1/dram_cell_1/storage" 1.61755
+cap "dram_array_1/dram_cell_1/RBL" "dram_array_1/dram_cell_0/storage" -0.064733
+cap "dram_array_0/dram_cell_1/storage" "dram_array_0/dram_cell_1/RBL" -1.80078
+cap "dram_array_0/dram_cell_1/RBL" "dram_array_1/dram_cell_1/storage" 2.44728
+cap "dram_array_1/dram_cell_0/RBL" "dram_array_1/dram_cell_1/WBL" -1.26119
+cap "dram_array_0/dram_cell_0/WBL" "dram_array_1/dram_cell_0/WBL" 9.58369
+cap "dram_array_0/dram_cell_0/RBL" "dram_array_0/dram_cell_1/WBL" -1.52827
+cap "dram_array_0/dram_cell_0/WBL" "dram_array_1/dram_cell_1/WBL" 4.43232
+cap "dram_array_1/dram_cell_1/WWL" "dram_array_0/dram_cell_0/RBL" 2.13617
+cap "dram_array_1/dram_cell_0/RWL" "dram_array_0/dram_cell_1/WBL" -1.73019
+cap "dram_array_0/dram_cell_1/RBL" "dram_array_0/dram_cell_0/RBL" -6.01537
+cap "dram_array_1/dram_cell_0/RWL" "dram_array_1/dram_cell_1/WWL" -3.04272
+cap "dram_array_1/dram_cell_1/WBL" "dram_array_1/dram_cell_0/WBL" -12.1528
+cap "dram_array_1/dram_cell_0/storage" "dram_array_0/dram_cell_1/WBL" 1.0391
+cap "dram_array_1/dram_cell_0/RWL" "dram_array_0/dram_cell_1/RBL" 1.30431
+cap "dram_array_1/dram_cell_1/RBL" "dram_array_0/dram_cell_0/storage" 1.24343
+cap "dram_array_1/dram_cell_0/storage" "dram_array_1/dram_cell_1/WWL" 0.12309
+cap "dram_array_1/dram_cell_1/RWL" "dram_array_0/dram_cell_1/WBL" 2.43987
+cap "dram_array_1/dram_cell_0/storage" "dram_array_0/dram_cell_1/RBL" 1.60638
+cap "dram_array_1/dram_cell_1/WWL" "dram_array_1/dram_cell_1/RWL" 0.0720466
+cap "dram_array_0/dram_cell_1/RBL" "dram_array_1/dram_cell_1/RWL" 1.34162
+cap "dram_array_0/dram_cell_0/storage" "dram_array_1/dram_cell_1/WWL" 6.04535
+cap "dram_array_0/dram_cell_1/storage" "dram_array_1/dram_cell_0/RBL" 1.02207
+cap "dram_array_0/dram_cell_0/storage" "dram_array_0/dram_cell_1/RBL" -2.2365
+cap "dram_array_1/dram_cell_1/RBL" "dram_array_0/dram_cell_1/WBL" 6.1395
+cap "dram_array_1/dram_cell_1/RBL" "dram_array_1/dram_cell_1/WWL" 1.87903
+cap "dram_array_0/dram_cell_0/WBL" "dram_array_1/dram_cell_1/storage" 0.959037
+cap "dram_array_1/dram_cell_1/RBL" "dram_array_0/dram_cell_1/RBL" 8.34164
+cap "dram_array_1/dram_cell_0/RBL" "dram_array_0/dram_cell_0/RBL" 36.727
+cap "dram_array_0/dram_cell_1/storage" "dram_array_1/dram_cell_0/WBL" 1.7619
+cap "dram_array_1/dram_cell_1/storage" "dram_array_1/dram_cell_0/WBL" -0.0978192
+cap "dram_array_1/dram_cell_0/RWL" "dram_array_1/dram_cell_0/RBL" 5.45433
+cap "dram_array_0/dram_cell_1/storage" "dram_array_1/dram_cell_1/WBL" 5.12237
+cap "dram_array_0/dram_cell_0/WBL" "dram_array_0/dram_cell_0/RBL" -0.192665
+cap "dram_array_1/dram_cell_1/WWL" "dram_array_0/dram_cell_1/WBL" 2.69535
+cap "dram_array_1/dram_cell_0/storage" "dram_array_1/dram_cell_0/RBL" -1.38838
+cap "dram_array_1/dram_cell_1/WBL" "dram_array_1/dram_cell_1/storage" -0.03435
+cap "dram_array_1/dram_cell_0/RWL" "dram_array_0/dram_cell_0/WBL" 2.82049
+cap "dram_array_0/dram_cell_1/RBL" "dram_array_0/dram_cell_1/WBL" -5.81861
+cap "dram_array_1/dram_cell_0/WBL" "dram_array_0/dram_cell_0/RBL" 19.1192
+cap "dram_array_0/dram_cell_1/RBL" "dram_array_1/dram_cell_1/WWL" 1.52612
+cap "dram_array_1/dram_cell_0/storage" "dram_array_0/dram_cell_0/WBL" 2.85272
+cap "dram_array_1/dram_cell_0/RWL" "dram_array_1/dram_cell_0/WBL" 146.349
+cap "dram_array_0/dram_cell_0/WBL" "dram_array_1/dram_cell_1/RWL" 0.32658
+cap "dram_array_1/dram_cell_1/WBL" "dram_array_0/dram_cell_0/RBL" 251.289
+cap "dram_array_1/dram_cell_0/storage" "dram_array_1/dram_cell_0/WBL" -0.466436
+cap "dram_array_1/dram_cell_0/RWL" "dram_array_1/dram_cell_1/WBL" 104.044
+cap "dram_array_0/dram_cell_0/storage" "dram_array_1/dram_cell_0/RBL" 2.79708
+cap "dram_array_1/dram_cell_0/storage" "dram_array_1/dram_cell_1/WBL" -0.0726454
+cap "dram_array_1/dram_cell_1/RBL" "dram_array_1/dram_cell_0/RBL" -1.1744
+cap "dram_array_0/dram_cell_0/storage" "dram_array_0/dram_cell_0/WBL" -2.2775
+cap "dram_array_0/dram_cell_0/storage" "dram_array_1/dram_cell_0/WBL" 19.6136
+cap "dram_array_1/dram_cell_1/RBL" "dram_array_0/dram_cell_0/WBL" 1.56447
+cap "dram_array_0/dram_cell_1/storage" "dram_array_1/dram_cell_1/storage" 3.90423
+cap "dram_array_0/dram_cell_0/storage" "dram_array_1/dram_cell_1/WBL" 1.57205
+cap "dram_array_1/dram_cell_1/RBL" "dram_array_1/dram_cell_0/WBL" -0.314485
+cap "dram_array_1/dram_cell_0/RBL" "dram_array_0/dram_cell_1/WBL" 3.58506
+cap "dram_array_1/dram_cell_0/RBL" "dram_array_1/dram_cell_1/WWL" 1.70879
+cap "dram_array_1/dram_cell_1/RBL" "dram_array_1/dram_cell_1/WBL" -0.485841
+cap "dram_array_1/dram_cell_0/RBL" "dram_array_0/dram_cell_1/RBL" 3.7962
+cap "dram_array_0/dram_cell_0/WBL" "dram_array_0/dram_cell_1/WBL" -0.198239
+cap "dram_array_0/dram_cell_1/storage" "dram_array_0/dram_cell_0/RBL" -0.172232
+cap "dram_array_1/dram_cell_1/storage" "dram_array_0/dram_cell_0/RBL" 1.52803
+merge "dram_array_0/VSUBS" "dram_array_1/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dram_array_1/VSUBS" "VSUBS"
+merge "dram_array_0/dram_cell_1/RWL" "dram_array_1/dram_cell_0/RWL" -178.346 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -160 0 0 0 0 -2700 -210 0 0 0 0 0 0
+merge "dram_array_1/dram_cell_0/RWL" "dram_array_0/dram_cell_0/RWL"
+merge "dram_array_0/dram_cell_0/RWL" "li_370_440#"
+merge "dram_array_0/dram_cell_1/WWL" "dram_array_1/dram_cell_1/WWL" -158.95 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4500 -270 0 0 0 0 0 0

@@ -1,0 +1,28 @@
+* SPICE3 file created from 8bit_dram.ext - technology: sky130A
+
+.subckt dram_cell WWL WBL RWL RBL VSUBS
+X0 RWL storage RBL VSUBS sky130_fd_pr__nfet_01v8 ad=3e+11p pd=2.6e+06u as=3.5e+11p ps=2.7e+06u w=1e+06u l=150000u
+X1 storage WWL WBL VSUBS sky130_fd_pr__nfet_01v8 ad=3.5e+11p pd=2.7e+06u as=3e+11p ps=2.6e+06u w=1e+06u l=150000u
+.ends
+
+.subckt dram_array dram_cell_1/WWL dram_cell_1/RWL VSUBS dram_cell_0/RWL
+Xdram_cell_0 dram_cell_1/WWL dram_cell_0/WBL dram_cell_0/RWL dram_cell_0/RBL VSUBS
++ dram_cell
+Xdram_cell_1 dram_cell_1/WWL dram_cell_1/WBL dram_cell_1/RWL dram_cell_1/RBL VSUBS
++ dram_cell
+.ends
+
+.subckt x4bit_dram dram_array_1/dram_cell_0/RWL dram_array_1/dram_cell_1/WWL VSUBS
+Xdram_array_0 dram_array_1/dram_cell_1/WWL dram_array_1/dram_cell_0/RWL VSUBS dram_array_1/dram_cell_0/RWL
++ dram_array
+Xdram_array_1 dram_array_1/dram_cell_1/WWL dram_array_1/dram_cell_1/RWL VSUBS dram_array_1/dram_cell_0/RWL
++ dram_array
+.ends
+
+.subckt x8bit_dram
+X4bit_dram_1 4bit_dram_1/dram_array_1/dram_cell_0/RWL 4bit_dram_1/dram_array_1/dram_cell_1/WWL
++ VSUBS x4bit_dram
+X4bit_dram_0 4bit_dram_1/dram_array_1/dram_cell_0/RWL 4bit_dram_1/dram_array_1/dram_cell_1/WWL
++ VSUBS x4bit_dram
+.ends
+

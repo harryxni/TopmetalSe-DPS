@@ -1,0 +1,50 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1661550438
+use 4bit_dram  4bit_dram_0
+timestamp 1661296583
+transform 1 0 -10 0 1 -110
+box -60 90 885 890
+use 4bit_dram  4bit_dram_1
+timestamp 1661296583
+transform 1 0 860 0 1 -110
+box -60 90 885 890
+<< labels >>
+rlabel space 320 760 320 760 1 OUTx0x
+port 2 n
+rlabel space 210 760 210 760 1 OUTx1x
+port 4 n
+rlabel space 640 760 640 760 1 OUTx3x
+port 7 n
+rlabel space 750 760 750 760 1 OUTx2x
+port 8 n
+rlabel space 1080 760 1080 760 1 OUTx5x
+port 11 n
+rlabel space 1190 760 1190 760 1 OUTx4x
+port 12 n
+rlabel space 1520 760 1520 760 1 OUTx7x
+port 15 n
+rlabel space 1620 760 1620 760 1 OUTx6x
+port 16 n
+rlabel space -60 60 -60 60 1 WWL
+port 17 n
+rlabel space -30 590 -30 590 1 RWL
+port 18 n
+rlabel space 40 760 40 760 1 GRAY_INx0x
+port 19 n
+rlabel space 130 760 130 760 1 GRAY_INx1x
+port 20 n
+rlabel space 470 760 470 760 1 GRAY_INx2x
+port 21 n
+rlabel space 550 760 550 760 1 GRAY_INx3x
+port 22 n
+rlabel space 910 760 910 760 1 GRAY_INx4x
+port 23 n
+rlabel space 1000 760 1000 760 1 GRAY_INx5x
+port 24 n
+rlabel space 1340 760 1340 760 1 GRAY_INx6x
+port 25 n
+rlabel space 1430 760 1430 760 1 GRAY_INx7x
+port 26 n
+<< end >>

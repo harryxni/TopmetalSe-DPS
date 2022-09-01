@@ -1,0 +1,89 @@
+* SPICE3 file created from pixel.ext - technology: sky130A
+
+.subckt dram_cell storage WWL WBL RWL RBL VSUBS
+X0 RWL storage RBL VSUBS sky130_fd_pr__nfet_01v8 ad=3e+11p pd=2.6e+06u as=3.5e+11p ps=2.7e+06u w=1e+06u l=150000u
+X1 storage WWL WBL VSUBS sky130_fd_pr__nfet_01v8 ad=3.5e+11p pd=2.7e+06u as=3e+11p ps=2.6e+06u w=1e+06u l=150000u
+.ends
+
+.subckt dram_array dram_cell_1/WWL dram_cell_1/RWL dram_cell_0/WBL dram_cell_1/WBL
++ dram_cell_1/RBL dram_cell_0/RBL VSUBS dram_cell_0/RWL
+Xdram_cell_0 dram_cell_0/storage dram_cell_1/WWL dram_cell_0/WBL dram_cell_0/RWL dram_cell_0/RBL
++ VSUBS dram_cell
+Xdram_cell_1 dram_cell_1/storage dram_cell_1/WWL dram_cell_1/WBL dram_cell_1/RWL dram_cell_1/RBL
++ VSUBS dram_cell
+.ends
+
+.subckt x4bit_dram dram_array_1/dram_cell_0/RWL dram_array_1/dram_cell_0/WBL dram_array_1/dram_cell_0/RBL
++ dram_array_0/dram_cell_0/RBL dram_array_0/dram_cell_1/WBL dram_array_1/dram_cell_1/WBL
++ dram_array_0/dram_cell_1/RBL dram_array_1/dram_cell_1/RBL dram_array_0/dram_cell_0/WBL
++ dram_array_1/dram_cell_1/WWL VSUBS
+Xdram_array_0 dram_array_1/dram_cell_1/WWL dram_array_1/dram_cell_0/RWL dram_array_0/dram_cell_0/WBL
++ dram_array_0/dram_cell_1/WBL dram_array_0/dram_cell_1/RBL dram_array_0/dram_cell_0/RBL
++ VSUBS dram_array_1/dram_cell_0/RWL dram_array
+Xdram_array_1 dram_array_1/dram_cell_1/WWL dram_array_1/dram_cell_1/RWL dram_array_1/dram_cell_0/WBL
++ dram_array_1/dram_cell_1/WBL dram_array_1/dram_cell_1/RBL dram_array_1/dram_cell_0/RBL
++ VSUBS dram_array_1/dram_cell_0/RWL dram_array
+.ends
+
+.subckt x8bit_dram 4bit_dram_0/dram_array_1/dram_cell_0/WBL 4bit_dram_1/dram_array_0/dram_cell_0/RBL
++ 4bit_dram_0/dram_array_1/dram_cell_0/RBL 4bit_dram_1/dram_array_1/dram_cell_0/RBL
++ 4bit_dram_0/dram_array_1/dram_cell_1/WBL 4bit_dram_1/dram_array_0/dram_cell_0/WBL
++ 4bit_dram_0/dram_array_0/dram_cell_0/RBL 4bit_dram_0/dram_array_0/dram_cell_1/WBL
++ 4bit_dram_1/dram_array_1/dram_cell_1/RBL 4bit_dram_1/dram_array_0/dram_cell_1/WBL
++ 4bit_dram_0/dram_array_1/dram_cell_1/RBL 4bit_dram_1/dram_array_1/dram_cell_0/RWL
++ 4bit_dram_1/dram_array_1/dram_cell_1/WBL 4bit_dram_1/dram_array_1/dram_cell_1/WWL
++ 4bit_dram_1/dram_array_0/dram_cell_1/RBL 4bit_dram_0/dram_array_0/dram_cell_1/RBL
++ 4bit_dram_1/dram_array_1/dram_cell_0/WBL VSUBS 4bit_dram_0/dram_array_0/dram_cell_0/WBL
+X4bit_dram_1 4bit_dram_1/dram_array_1/dram_cell_0/RWL 4bit_dram_1/dram_array_1/dram_cell_0/WBL
++ 4bit_dram_1/dram_array_1/dram_cell_0/RBL 4bit_dram_1/dram_array_0/dram_cell_0/RBL
++ 4bit_dram_1/dram_array_0/dram_cell_1/WBL 4bit_dram_1/dram_array_1/dram_cell_1/WBL
++ 4bit_dram_1/dram_array_0/dram_cell_1/RBL 4bit_dram_1/dram_array_1/dram_cell_1/RBL
++ 4bit_dram_1/dram_array_0/dram_cell_0/WBL 4bit_dram_1/dram_array_1/dram_cell_1/WWL
++ VSUBS x4bit_dram
+X4bit_dram_0 4bit_dram_1/dram_array_1/dram_cell_0/RWL 4bit_dram_0/dram_array_1/dram_cell_0/WBL
++ 4bit_dram_0/dram_array_1/dram_cell_0/RBL 4bit_dram_0/dram_array_0/dram_cell_0/RBL
++ 4bit_dram_0/dram_array_0/dram_cell_1/WBL 4bit_dram_0/dram_array_1/dram_cell_1/WBL
++ 4bit_dram_0/dram_array_0/dram_cell_1/RBL 4bit_dram_0/dram_array_1/dram_cell_1/RBL
++ 4bit_dram_0/dram_array_0/dram_cell_0/WBL 4bit_dram_1/dram_array_1/dram_cell_1/WWL
++ VSUBS x4bit_dram
+.ends
+
+.subckt pixel AMP_OUT gring VREF PIX_OUT ROW_SEL CSA_VREF SF_IB NB1 PIX_IN READ BIAS2
++ BIAS1 V_RAMP GRAYx0x OUTx1x OUTx0x OUTx3x OUTx2x OUTx5x OUTx4x GRAYx6x GRAYx7x OUTx6x
++ OUTx7x GRAYx5x GRAYx4x GRAYx3x GRAYx2x GRAYx1x VBIAS NB2 DVDD VDD GND
+X8bit_dram_0 GRAYx2x OUTx4x OUTx2x OUTx6x GRAYx3x GRAYx4x OUTx0x GRAYx1x OUTx7x GRAYx5x
++ OUTx3x READ GRAYx7x 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL OUTx5x
++ OUTx1x GRAYx6x GND GRAYx0x x8bit_dram
+X0 a_2200_n380# ROW_SEL PIX_OUT GND sky130_fd_pr__nfet_01v8_lvt ad=6.5e+11p pd=5e+06u as=1e+12p ps=5e+06u w=2e+06u l=1e+06u
+X1 DVDD a_1000_n1450# a_1000_n1450# DVDD sky130_fd_pr__pfet_01v8_lvt ad=1.45e+12p pd=1.09e+07u as=3.5e+11p ps=2.7e+06u w=1e+06u l=1e+06u
+X2 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL a_1870_n1400# GND GND sky130_fd_pr__nfet_01v8 ad=4e+11p pd=2.8e+06u as=8.70025e+11p ps=7.105e+06u w=1e+06u l=150000u
+X3 GND NB1 a_n30_n2640# GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=3.22e+12p ps=1.79e+07u w=1.2e+06u l=1e+06u
+X4 a_n140_n550# VBIAS a_n140_n780# GND sky130_fd_pr__nfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=2.1525e+12p ps=1.76e+07u w=1e+06u l=800000u
+X5 a_1720_n1450# V_RAMP a_1100_n1450# GND sky130_fd_pr__nfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=8.8e+11p ps=7.1e+06u w=1e+06u l=150000u
+X6 a_1870_n1400# a_1720_n1450# DVDD DVDD sky130_fd_pr__pfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=0p ps=0u w=1e+06u l=450000u
+X7 a_1100_n1450# AMP_OUT a_1000_n1450# GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=3.5e+11p ps=2.7e+06u w=1e+06u l=150000u
+X8 a_2287_n292# AMP_OUT GND VDD sky130_fd_pr__pfet_01v8_lvt ad=5e+11p pd=3e+06u as=3.50025e+11p ps=2.705e+06u w=1e+06u l=1e+06u
+X9 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL a_1870_n1400# DVDD DVDD sky130_fd_pr__pfet_01v8 ad=3.5e+11p pd=2.7e+06u as=0p ps=0u w=1e+06u l=200000u
+X10 AMP_OUT NB2 GND GND sky130_fd_pr__nfet_01v8_lvt ad=6.975e+11p pd=5.7e+06u as=0p ps=0u w=1e+06u l=1.2e+06u
+X11 a_1100_n1450# BIAS1 GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=450000u l=1e+06u
+X12 a_350_10# a_n140_n550# a_n140_n550# VDD sky130_fd_pr__pfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=3.5e+11p ps=2.7e+06u w=1e+06u l=2e+06u
+X13 VDD SF_IB a_2287_n292# VDD sky130_fd_pr__pfet_01v8_lvt ad=1.05e+12p pd=8.1e+06u as=0p ps=0u w=1e+06u l=1e+06u
+X14 PIX_IN AMP_OUT sky130_fd_pr__cap_mim_m3_1 l=2e+06u w=2e+06u
+X15 a_n30_n2640# VREF a_n140_n780# GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=7e+06u l=150000u
+X16 VDD a_350_10# a_350_10# VDD sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X17 a_1460_10# a_350_10# VDD VDD sky130_fd_pr__pfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=0p ps=0u w=1e+06u l=2e+06u
+X18 AMP_OUT CSA_VREF PIX_IN VDD sky130_fd_pr__pfet_01v8_lvt ad=2.94e+11p pd=2.24e+06u as=2.73e+11p ps=2.14e+06u w=420000u l=8e+06u
+X19 a_1870_n1400# BIAS2 GND GND sky130_fd_pr__nfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=0p ps=0u w=1e+06u l=1e+06u
+X20 a_120_n550# a_n140_n550# a_1460_10# VDD sky130_fd_pr__pfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=0p ps=0u w=1e+06u l=2e+06u
+X21 a_120_n550# VBIAS a_120_n780# GND sky130_fd_pr__nfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=2.1525e+12p ps=1.76e+07u w=1e+06u l=800000u
+X22 a_120_n780# PIX_IN a_n30_n2640# GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=7e+06u l=150000u
+X23 a_1720_n1450# a_1000_n1450# DVDD DVDD sky130_fd_pr__pfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=0p ps=0u w=1e+06u l=1e+06u
+X24 VDD a_120_n550# AMP_OUT GND sky130_fd_pr__nfet_01v8_lvt ad=1.185e+12p pd=8.4e+06u as=0p ps=0u w=1e+06u l=1e+06u
+X25 VDD a_2287_n292# a_2200_n380# GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+C0 gring PIX_IN 3.01fF
+C1 gring GND 2.85fF
+C2 DVDD GND 2.69fF
+C3 VDD GND 6.29fF
+C4 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL GND 2.35fF
+.ends
+

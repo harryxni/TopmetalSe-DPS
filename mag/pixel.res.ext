@@ -1,0 +1,428 @@
+scale 1000 1 500000
+rnode "gring" 0 5900 2700 -1680 0
+rnode "BIAS2.t0" 0 0 1970 -1500 0
+rnode "BIAS2" 0 0 3022 -1382 0
+resist "BIAS2" "BIAS2.t0" 27.1688
+rnode "CSA_VREF.t0" 0 0 920 -278 0
+rnode "CSA_VREF" 0 0 3020 -180 0
+resist "CSA_VREF" "CSA_VREF.t0" 200.846
+rnode "VREF.t0" 0 0 35 -1550 0
+rnode "VREF" 0 0 -130 260 0
+resist "VREF" "VREF.t0" 1349.28
+rnode "PIX_IN.t2" 0 20.332 145 -1550 0
+rnode "PIX_IN.t0" 0 3.15026 120 -278 0
+rnode "PIX_IN.t1" 0 338.148 433 -1534 0
+rnode "PIX_IN.n0" 0 2437.96 530 -1920 0
+rnode "PIX_IN" 0 200.413 352 -1964 0
+resist "PIX_IN" "PIX_IN.n0" 0.002
+resist "PIX_IN.n0" "PIX_IN.t1" 0.514887
+resist "PIX_IN.t1" "PIX_IN.t0" 183.572
+resist "PIX_IN.n0" "PIX_IN.t2" 1353.58
+rnode "SF_IB.t0" 0 -0 2530 80 0
+rnode "SF_IB" 0 0 3040 20 0
+resist "SF_IB" "SF_IB.t0" 27.1618
+rnode "BIAS1.t0" 0 0 1375 -1520 0
+rnode "BIAS1" 0 0 3027 -1112 0
+resist "BIAS1" "BIAS1.t0" 17.4321
+rnode "NB2.t0" 0 0 400 -1010 0
+rnode "NB2" 0 0 270 520 0
+resist "NB2" "NB2.t0" 119.32
+rnode "VDD.t11" 0 21.366 590 -510 0
+rnode "VDD.t4" 0 954.177 150 110 0
+rnode "VDD.t8" 0 627.963 620 110 0
+rnode "VDD.t5" 0 260.972 920 -278 0
+rnode "VDD.t1" 0 373.664 2530 80 0
+rnode "VDD.t0" 0 338.465 2230 80 0
+rnode "VDD.t3" 0 763.991 1730 110 0
+rnode "VDD.t6" 0 644.274 1260 110 0
+rnode "VDD.t7" 0 17.275 1060 110 0
+rnode "VDD.t9" 0 17.275 820 110 0
+rnode "VDD.n0" 0 483.068 940 210 0
+rnode "VDD.t2" 0 9.8856 2630 80 0
+rnode "VDD.t10" 0 56.638 2490 -250 0
+rnode "VDD.n1" 0 75.1767 2670 80 0
+rnode "VDD.n2" 0 1082.96 940 235 0
+rnode "VDD.n3" 0 493.04 540 60 0
+rnode "VDD" 0 199.806 -170 240 0
+resist "VDD.n3" "VDD.n2" 0.238
+resist "VDD" "VDD.n3" 0.422
+resist "VDD.n2" "VDD.n0" 3.2
+resist "VDD.n0" "VDD.t5" 28.787
+resist "VDD.n3" "VDD.t11" 28.853
+resist "VDD.n1" "VDD.t2" 39.4005
+resist "VDD.n0" "VDD.t9" 44.5205
+resist "VDD.n0" "VDD.t7" 44.5205
+resist "VDD.n2" "VDD.n1" 49.029
+resist "VDD.n1" "VDD.t10" 149.631
+resist "VDD.t5" "VDD.t8" 431.818
+resist "VDD.n0" "VDD.t6" 460.606
+resist "VDD.t8" "VDD.t4" 676.515
+resist "VDD.t6" "VDD.t3" 676.515
+resist "VDD.t0" "VDD.t1" 791.666
+resist "VDD.t3" "VDD.t0" 995.015
+rnode "AMP_OUT.t2" 0 1963.61 590 -735 0
+rnode "AMP_OUT.t1" 0 11.3253 1720 -278 0
+rnode "AMP_OUT.t0" 0 20.0748 400 -890 0
+rnode "AMP_OUT.t3" 0 16.41 590 -710 0
+rnode "AMP_OUT.t4" 0 72.9914 1085 -1350 0
+rnode "AMP_OUT.n0" 0 141.753 650 -755 0
+rnode "AMP_OUT.n1" 0 283.199 1785 -272 0
+rnode "AMP_OUT" 0 280.639 2150 -70 0
+resist "AMP_OUT.n0" "AMP_OUT.t2" 20.4159
+resist "AMP_OUT.t2" "AMP_OUT.t3" 23.583
+resist "AMP_OUT.t2" "AMP_OUT.t0" 85.3814
+resist "AMP_OUT" "AMP_OUT.n1" 124.529
+resist "AMP_OUT.n1" "AMP_OUT.t1" 152.441
+resist "AMP_OUT.t2" "AMP_OUT.t4" 402.397
+resist "AMP_OUT.n1" "AMP_OUT.n0" 474.3
+rnode "V_RAMP.t0" 0 0 1705 -1350 0
+rnode "V_RAMP" 0 0 2999 -929 0
+resist "V_RAMP" "V_RAMP.t0" 342.683
+rnode "VBIAS.t1" 0 0 220 -630 0
+rnode "VBIAS.t0" 0 0 -40 -630 0
+rnode "VBIAS" 0 0 20 510 0
+resist "VBIAS.t0" "VBIAS.t1" 78.325
+resist "VBIAS" "VBIAS.t0" 386.178
+rnode "NB1.t0" 0 512.033 140 -2520 0
+rnode "NB1" 0 1557.97 3060 -2560 0
+resist "NB1" "NB1.t0" 434.375
+rnode "DVDD.t2" 0 514.48 1170 -960 0
+rnode "DVDD.t4" 0 439.287 2240 -1010 0
+rnode "DVDD.t6" 0 490.735 1975 -960 0
+rnode "DVDD.t0" 0 455.117 1620 -960 0
+rnode "DVDD.t1" 0 25.1756 1520 -960 0
+rnode "DVDD.t3" 0 26.4649 1270 -960 0
+rnode "DVDD.n0" 0 661.944 1400 -860 0
+rnode "DVDD.t7" 0 48.7956 1930 -960 0
+rnode "DVDD.t5" 0 97.5932 2220 -1010 0
+rnode "DVDD.n1" 0 177.301 1885 -810 0
+rnode "DVDD.n2" 0 303.776 1700 -775 0
+rnode "DVDD" 0 179.33 3020 -800 0
+resist "DVDD" "DVDD.n2" 1.694
+resist "DVDD.n2" "DVDD.n1" 33.828
+resist "DVDD.n0" "DVDD.t1" 37.1535
+resist "DVDD.n0" "DVDD.t3" 45.1605
+resist "DVDD.n2" "DVDD.n0" 50.637
+resist "DVDD.n1" "DVDD.t7" 77.8005
+resist "DVDD.n1" "DVDD.t5" 148.094
+resist "DVDD.n0" "DVDD.t0" 486.046
+resist "DVDD.n0" "DVDD.t2" 508.139
+resist "DVDD.t6" "DVDD.t4" 585.465
+resist "DVDD.t0" "DVDD.t6" 784.302
+rnode "PIX_OUT.t0" 0 0 2400 -580 0
+rnode "PIX_OUT" 0 0 2730 510 0
+resist "PIX_OUT" "PIX_OUT.t0" 59.823
+rnode "ROW_SEL.t0" 0 -0 2400 -480 0
+rnode "ROW_SEL" 0 0 3020 -480 0
+resist "ROW_SEL" "ROW_SEL.t0" 92.9894
+rnode "GRAYx3x" 0 0 1903 -2922 0
+rnode "8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/WBL" 0 -0 2011 -1841 0
+resist "8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/WBL" "GRAYx3x" 37.9903
+rnode "OUTx3x.n0" 0 -0 1785 -2009 0
+rnode "OUTx3x" 0 -0 1821 -2906 0
+rnode "OUTx3x.n1" 0 0 1790 -2025 0
+rnode "OUTx3x.n2" 0 -0 1768 -2009 0
+rnode "OUTx3x.n3" 0 -0 1769 -2004 0
+rnode "OUTx3x.n4" 0 -0 1784 -2019 0
+rnode "OUTx3x.n5" 0 -0 1784 -2019 0
+rnode "8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/RBL" 0 -0 1758 -2034 0
+resist "OUTx3x.n3" "OUTx3x.n2" 0.000697161
+resist "OUTx3x.n3" "OUTx3x.n0" 0.031
+resist "OUTx3x.n2" "OUTx3x.n1" 0.940497
+resist "OUTx3x.n5" "OUTx3x.n4" 1.79298
+resist "OUTx3x.n5" "OUTx3x.n3" 2.99056
+resist "OUTx3x.n1" "OUTx3x" 3.585
+resist "8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/RBL" "OUTx3x.n5" 9.00177
+rnode "GRAYx2x" 0 0 1989 -2907 0
+rnode "8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/WBL" 0 -0 2011 -2329 0
+resist "8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/WBL" "GRAYx2x" 23.9516
+rnode "OUTx2x.n0" 0 -0 1731 -2145 0
+rnode "OUTx2x.n1" 0 -0 1744 -2167 0
+rnode "OUTx2x" 0 -0 1716 -2898 0
+rnode "OUTx2x.n2" 0 -0 1714 -2148 0
+rnode "OUTx2x.n3" 0 0 1714 -2148 0
+rnode "OUTx2x.n4" 0 -0 1714 -2146 0
+rnode "OUTx2x.n5" 0 -0 1731 -2145 0
+rnode "OUTx2x.n6" 0 -0 1752 -2161 0
+rnode "OUTx2x.n7" 0 -0 1735 -2161 0
+rnode "OUTx2x.n8" 0 -0 1744 -2124 0
+rnode "OUTx2x.n9" 0 -0 1740 -2146 0
+rnode "OUTx2x.n10" 0 -0 1740 -2146 0
+rnode "8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/RBL" 0 -0 1758 -2136 0
+resist "OUTx2x.n3" "OUTx2x.n2" 0.000575871
+resist "OUTx2x.n4" "OUTx2x.n3" 0.001
+resist "OUTx2x.n5" "OUTx2x.n4" 0.001
+resist "OUTx2x.n8" "OUTx2x.n6" 0.0104389
+resist "OUTx2x.n5" "OUTx2x.n0" 0.0167229
+resist "OUTx2x.n8" "OUTx2x.n7" 0.017
+resist "OUTx2x.n4" "OUTx2x.n1" 0.033
+resist "OUTx2x.n10" "OUTx2x.n9" 0.370598
+resist "OUTx2x.n2" "OUTx2x" 0.586034
+resist "OUTx2x.n6" "OUTx2x.n5" 1.50888
+resist "8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/RBL" "OUTx2x.n10" 2.4338
+resist "OUTx2x.n10" "OUTx2x.n8" 2.98249
+rnode "GRAYx1x" 0 0 2341 -2908 0
+rnode "8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/WBL" 0 -0 2446 -1841 0
+resist "8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/WBL" "GRAYx1x" 37.9793
+rnode "OUTx1x.n0" 0 0 2220 -2009 0
+rnode "OUTx1x" 0 0 2256 -2915 0
+rnode "OUTx1x.n1" 0 0 2225 -2025 0
+rnode "OUTx1x.n2" 0 0 2203 -2009 0
+rnode "OUTx1x.n3" 0 0 2204 -2004 0
+rnode "OUTx1x.n4" 0 0 2219 -2019 0
+rnode "OUTx1x.n5" 0 0 2219 -2019 0
+rnode "8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/RBL" 0 0 2193 -2034 0
+resist "OUTx1x.n3" "OUTx1x.n2" 0.000697161
+resist "OUTx1x.n3" "OUTx1x.n0" 0.031
+resist "OUTx1x.n2" "OUTx1x.n1" 0.940497
+resist "OUTx1x.n5" "OUTx1x.n4" 1.79298
+resist "OUTx1x.n5" "OUTx1x.n3" 2.99056
+resist "OUTx1x.n1" "OUTx1x" 3.622
+resist "8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/RBL" "OUTx1x.n5" 9.00177
+rnode "GRAYx0x" 0 0 2431 -2902 0
+rnode "8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/WBL" 0 0 2446 -2329 0
+resist "8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/WBL" "GRAYx0x" 23.9356
+rnode "OUTx0x.n0" 0 -0 2166 -2145 0
+rnode "OUTx0x.n1" 0 -0 2179 -2167 0
+rnode "OUTx0x" 0 -0 2135 -2917 0
+rnode "OUTx0x.n2" 0 -0 2149 -2148 0
+rnode "OUTx0x.n3" 0 0 2149 -2148 0
+rnode "OUTx0x.n4" 0 -0 2149 -2146 0
+rnode "OUTx0x.n5" 0 -0 2166 -2145 0
+rnode "OUTx0x.n6" 0 -0 2187 -2161 0
+rnode "OUTx0x.n7" 0 -0 2170 -2161 0
+rnode "OUTx0x.n8" 0 -0 2179 -2124 0
+rnode "OUTx0x.n9" 0 -0 2175 -2146 0
+rnode "OUTx0x.n10" 0 -0 2175 -2146 0
+rnode "8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/RBL" 0 -0 2193 -2136 0
+resist "OUTx0x.n3" "OUTx0x.n2" 0.000575871
+resist "OUTx0x.n4" "OUTx0x.n3" 0.001
+resist "OUTx0x.n5" "OUTx0x.n4" 0.001
+resist "OUTx0x.n8" "OUTx0x.n6" 0.0104389
+resist "OUTx0x.n5" "OUTx0x.n0" 0.0167229
+resist "OUTx0x.n8" "OUTx0x.n7" 0.017
+resist "OUTx0x.n4" "OUTx0x.n1" 0.033
+resist "OUTx0x.n10" "OUTx0x.n9" 0.370598
+resist "OUTx0x.n2" "OUTx0x" 0.601034
+resist "OUTx0x.n6" "OUTx0x.n5" 1.50888
+resist "8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/RBL" "OUTx0x.n10" 2.4338
+resist "OUTx0x.n10" "OUTx0x.n8" 2.98249
+rnode "GRAYx7x" 0 0 1031 -2900 0
+rnode "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WBL" 0 -0 1141 -1841 0
+resist "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WBL" "GRAYx7x" 37.9733
+rnode "OUTx7x.n0" 0 0 915 -2009 0
+rnode "OUTx7x" 0 0 959 -2895 0
+rnode "OUTx7x.n1" 0 0 920 -2025 0
+rnode "OUTx7x.n2" 0 0 898 -2009 0
+rnode "OUTx7x.n3" 0 0 899 -2004 0
+rnode "OUTx7x.n4" 0 0 914 -2019 0
+rnode "OUTx7x.n5" 0 0 914 -2019 0
+rnode "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/RBL" 0 0 888 -2034 0
+resist "OUTx7x.n3" "OUTx7x.n2" 0.000697161
+resist "OUTx7x.n3" "OUTx7x.n0" 0.031
+resist "OUTx7x.n2" "OUTx7x.n1" 0.940497
+resist "OUTx7x.n5" "OUTx7x.n4" 1.79298
+resist "OUTx7x.n5" "OUTx7x.n3" 2.99056
+resist "OUTx7x.n1" "OUTx7x" 3.539
+resist "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/RBL" "OUTx7x.n5" 9.00177
+rnode "GRAYx6x" 0 0 1119 -2906 0
+rnode "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/WBL" 0 0 1141 -2329 0
+resist "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/WBL" "GRAYx6x" 23.9486
+rnode "OUTx6x.n0" 0 -0 861 -2145 0
+rnode "OUTx6x.n1" 0 -0 874 -2167 0
+rnode "OUTx6x" 0 -0 841 -2921 0
+rnode "OUTx6x.n2" 0 -0 844 -2148 0
+rnode "OUTx6x.n3" 0 0 844 -2148 0
+rnode "OUTx6x.n4" 0 -0 844 -2146 0
+rnode "OUTx6x.n5" 0 -0 861 -2145 0
+rnode "OUTx6x.n6" 0 -0 882 -2161 0
+rnode "OUTx6x.n7" 0 -0 865 -2161 0
+rnode "OUTx6x.n8" 0 -0 874 -2124 0
+rnode "OUTx6x.n9" 0 -0 870 -2146 0
+rnode "OUTx6x.n10" 0 -0 870 -2146 0
+rnode "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/RBL" 0 -0 888 -2136 0
+resist "OUTx6x.n3" "OUTx6x.n2" 0.000575871
+resist "OUTx6x.n4" "OUTx6x.n3" 0.001
+resist "OUTx6x.n5" "OUTx6x.n4" 0.001
+resist "OUTx6x.n8" "OUTx6x.n6" 0.0104389
+resist "OUTx6x.n5" "OUTx6x.n0" 0.0167229
+resist "OUTx6x.n8" "OUTx6x.n7" 0.017
+resist "OUTx6x.n4" "OUTx6x.n1" 0.033
+resist "OUTx6x.n10" "OUTx6x.n9" 0.370598
+resist "OUTx6x.n2" "OUTx6x" 0.604034
+resist "OUTx6x.n6" "OUTx6x.n5" 1.50888
+resist "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/RBL" "OUTx6x.n10" 2.4338
+resist "OUTx6x.n10" "OUTx6x.n8" 2.98249
+rnode "GRAYx5x" 0 0 1470 -2911 0
+rnode "8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/WBL" 0 -0 1576 -1841 0
+resist "8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/WBL" "GRAYx5x" 37.9813
+rnode "OUTx5x.n0" 0 -0 1350 -2009 0
+rnode "OUTx5x" 0 -0 1388 -2908 0
+rnode "OUTx5x.n1" 0 0 1355 -2025 0
+rnode "OUTx5x.n2" 0 -0 1333 -2009 0
+rnode "OUTx5x.n3" 0 -0 1334 -2004 0
+rnode "OUTx5x.n4" 0 -0 1349 -2019 0
+rnode "OUTx5x.n5" 0 -0 1349 -2019 0
+rnode "8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/RBL" 0 -0 1323 -2034 0
+resist "OUTx5x.n3" "OUTx5x.n2" 0.000697161
+resist "OUTx5x.n3" "OUTx5x.n0" 0.031
+resist "OUTx5x.n2" "OUTx5x.n1" 0.940497
+resist "OUTx5x.n5" "OUTx5x.n4" 1.79298
+resist "OUTx5x.n5" "OUTx5x.n3" 2.99056
+resist "OUTx5x.n1" "OUTx5x" 3.593
+resist "8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/RBL" "OUTx5x.n5" 9.00177
+rnode "GRAYx4x" 0 0 1553 -2891 0
+rnode "8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/WBL" 0 -0 1576 -2329 0
+resist "8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/WBL" "GRAYx4x" 23.9016
+rnode "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.n0" 0 562.82 2310 -1220 0
+rnode "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.n1" 0 1262.27 1714 -1760 0
+rnode "8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/WWL" 0 13.347 1506 -2364 0
+rnode "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t2" 0 42.5928 1504 -2240 0
+rnode "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t3" 0 42.5928 1504 -1930 0
+rnode "8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/WWL" 0 26.377 1506 -1806 0
+rnode "8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/WWL" 0 13.347 1941 -2364 0
+rnode "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t8" 0 42.5928 1939 -2240 0
+rnode "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t9" 0 42.5928 1939 -1930 0
+rnode "8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/WWL" 0 26.377 1941 -1806 0
+rnode "8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/WWL" 0 13.347 2376 -2364 0
+rnode "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t6" 0 42.5928 2374 -2240 0
+rnode "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t7" 0 42.5928 2374 -1930 0
+rnode "8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/WWL" 0 26.377 2376 -1806 0
+rnode "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t1" 0 103.8 2260 -1010 0
+rnode "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t0" 0 100.386 2260 -1350 0
+rnode "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/WWL" 0 13.347 1071 -2364 0
+rnode "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t4" 0 42.5928 1069 -2240 0
+rnode "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t5" 0 42.5928 1069 -1930 0
+rnode "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL" 0 27.4575 1071 -1806 0
+resist "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.n1" "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.n0" 1.42703
+resist "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.n0" "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t0" 54.733
+resist "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.n1" "8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/WWL" 62.4367
+resist "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.n1" "8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/WWL" 62.4367
+resist "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.n1" "8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/WWL" 62.4367
+resist "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL" "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.n1" 62.7656
+resist "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.n0" "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t1" 84.2005
+resist "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL" "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t5" 199.226
+resist "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t4" "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/WWL" 199.226
+resist "8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/WWL" "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t3" 199.226
+resist "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t2" "8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/WWL" 199.226
+resist "8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/WWL" "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t9" 199.226
+resist "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t8" "8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/WWL" 199.226
+resist "8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/WWL" "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t7" 199.226
+resist "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t6" "8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/WWL" 199.226
+resist "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t5" "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t4" 498.065
+resist "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t3" "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t2" 498.065
+resist "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t9" "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t8" 498.065
+resist "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t7" "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t6" 498.065
+rnode "GND.t4" 0 0 2230 -1350 0
+rnode "GND.t2" 0 0 1375 -1620 0
+rnode "GND.n0" 0 0 1390 -1660 0
+rnode "GND.t1" 0 0 1970 -1600 0
+rnode "GND.n1" 0 0 1980 -1660 0
+rnode "GND.n2" 0 0 2180 -1660 0
+rnode "GND.t3" 0 0 240 -2520 0
+rnode "GND.t0" 0 0 2130 80 0
+rnode "GND.n3" 0 0 630 -2085 0
+rnode "GND.n4" 0 0 630 -2085 0
+rnode "GND.n5" 0 0 2595 -2620 0
+rnode "GND" 0 0 2630 -2620 0
+resist "GND" "GND.n5" 0.02
+resist "GND.n4" "GND.n3" 0.2959
+resist "GND.n2" "GND.n1" 0.356308
+resist "GND.n1" "GND.n0" 1.05219
+resist "GND.n5" "GND.n4" 1.16658
+resist "GND.n5" "GND.n2" 1.33349
+resist "GND.n1" "GND.t1" 24.5481
+resist "GND.n4" "GND.t3" 34.2921
+resist "GND.n0" "GND.t2" 53.333
+resist "GND.n2" "GND.t4" 90.133
+resist "GND.n3" "GND.t0" 99.283
+rnode "READ" 0 0 3022 -2286 0
+rnode "8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/RWL" 0 0 2087 -2020 0
+rnode "8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/RWL" 0 0 2087 -2150 0
+rnode "READ.n0" 0 0 2084 -2290 0
+rnode "8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/RWL" 0 0 1652 -2150 0
+rnode "READ.n1" 0 0 1649 -2290 0
+rnode "READ.n2" 0 0 1242 -2290 0
+rnode "8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/RWL" 0 0 1217 -2020 0
+rnode "8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/RWL" 0 0 1217 -2150 0
+rnode "READ.n3" 0 0 1214 -2290 0
+rnode "READ.n4" 0 0 1214 -2312 0
+rnode "READ.n5" 0 0 1214 -2290 0
+rnode "READ.n6" 0 0 1214 -2269 0
+rnode "READ.n7" 0 0 1214 -2290 0
+rnode "READ.n8" 0 0 1186 -2290 0
+rnode "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/RWL" 0 0 782 -2150 0
+resist "READ.n7" "READ.n6" 0.000999853
+resist "READ.n6" "READ.n5" 0.000999853
+resist "READ.n5" "READ.n4" 0.00782749
+resist "READ.n8" "READ.n7" 0.018
+resist "READ.n7" "READ.n2" 0.018
+resist "READ.n2" "READ.n1" 0.310905
+resist "READ.n1" "READ.n0" 0.328811
+resist "READ.n0" "READ" 0.728905
+resist "READ.n4" "READ.n3" 0.842797
+resist "READ.n3" "8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/RWL" 40.4473
+resist "8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/RWL" "8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/RWL" 41.018
+resist "8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/RWL" "8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/RWL" 41.018
+resist "READ.n1" "8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/RWL" 41.1638
+resist "READ.n0" "8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/RWL" 41.1638
+resist "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/RWL" "READ.n8" 41.4747
+rnode "OUTx4x.n0" 0 -0 1296 -2145 0
+rnode "OUTx4x.n1" 0 -0 1309 -2167 0
+rnode "OUTx4x" 0 -0 1283 -2898 0
+rnode "OUTx4x.n2" 0 -0 1279 -2148 0
+rnode "OUTx4x.n3" 0 0 1279 -2148 0
+rnode "OUTx4x.n4" 0 -0 1279 -2146 0
+rnode "OUTx4x.n5" 0 -0 1296 -2145 0
+rnode "OUTx4x.n6" 0 -0 1317 -2161 0
+rnode "OUTx4x.n7" 0 -0 1300 -2161 0
+rnode "OUTx4x.n8" 0 -0 1309 -2124 0
+rnode "OUTx4x.n9" 0 -0 1305 -2146 0
+rnode "OUTx4x.n10" 0 -0 1305 -2146 0
+rnode "8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/RBL" 0 -0 1323 -2136 0
+resist "OUTx4x.n3" "OUTx4x.n2" 0.000575871
+resist "OUTx4x.n4" "OUTx4x.n3" 0.001
+resist "OUTx4x.n5" "OUTx4x.n4" 0.001
+resist "OUTx4x.n8" "OUTx4x.n6" 0.0104389
+resist "OUTx4x.n5" "OUTx4x.n0" 0.0167229
+resist "OUTx4x.n8" "OUTx4x.n7" 0.017
+resist "OUTx4x.n4" "OUTx4x.n1" 0.033
+resist "OUTx4x.n10" "OUTx4x.n9" 0.370598
+resist "OUTx4x.n2" "OUTx4x" 0.586034
+resist "OUTx4x.n6" "OUTx4x.n5" 1.50888
+resist "8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/RBL" "OUTx4x.n10" 2.4338
+resist "OUTx4x.n10" "OUTx4x.n8" 2.98249
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2390 -280 2391 -279  "GND" "a_2287_n292#" 60 0 "a_2200_n380#" 200 0 "VDD.t10" 200 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 490 -710 491 -709  "GND" "a_120_n550#" 400 0 "AMP_OUT.t3" 200 0 "VDD.t11" 200 0
+device msubckt sky130_fd_pr__pfet_01v8_lvt 1520 -1060 1521 -1059  "DVDD.t0" "a_1000_n1450#" 400 0 "DVDD.t1" 200 0 "a_1720_n1450#" 200 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 130 -2250 131 -2249  "GND" "PIX_IN.t2" 60 0 "a_n30_n2640#" 1400 0 "a_120_n780#" 1400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 120 -710 121 -709  "GND" "VBIAS.t1" 320 0 "a_120_n780#" 200 0 "a_120_n550#" 200 0
+device msubckt sky130_fd_pr__pfet_01v8_lvt 1530 10 1531 11  "VDD.t3" "a_n140_n550#" 800 0 "a_1460_10#" 200 0 "a_120_n550#" 200 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1870 -1600 1871 -1599  "GND" "BIAS2.t0" 400 0 "GND.t1" 200 0 "a_1870_n1400#" 200 0
+device msubckt sky130_fd_pr__pfet_01v8_lvt 120 -320 121 -319  "VDD.t5" "CSA_VREF.t0" 3200 0 "PIX_IN.t0" 84 0 "AMP_OUT.t1" 84 0
+device msubckt sky130_fd_pr__pfet_01v8_lvt 1060 10 1061 11  "VDD.t6" "a_350_10#" 800 0 "VDD.t7" 200 0 "a_1460_10#" 200 0
+device msubckt sky130_fd_pr__pfet_01v8_lvt 420 10 421 11  "VDD.t8" "a_350_10#" 800 0 "a_350_10#" 200 0 "VDD.t9" 200 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 20 -2250 21 -2249  "GND" "VREF.t0" 60 0 "a_n140_n780#" 1400 0 "a_n30_n2640#" 1400 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 130 -1740 131 -1739  "None" "PIX_IN.t1" 4332 0 "AMP_OUT.t2" -1843 0
+device msubckt sky130_fd_pr__pfet_01v8_lvt 2430 -20 2431 -19  "VDD.t1" "SF_IB.t0" 400 0 "a_2287_n292#" 200 0 "VDD.t2" 200 0
+device msubckt sky130_fd_pr__pfet_01v8_lvt -50 10 -49 11  "VDD.t4" "a_n140_n550#" 800 0 "a_n140_n550#" 200 0 "a_350_10#" 200 0
+device msubckt sky130_fd_pr__nfet_01v8 1330 -1620 1331 -1619  "GND" "BIAS1.t0" 400 0 "GND.t2" 90 0 "a_1100_n1450#" 90 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 300 -1130 301 -1129  "GND" "NB2.t0" 480 0 "a_300_n1210#" 200 0 "AMP_OUT.t0" 200 0
+device msubckt sky130_fd_pr__pfet_01v8 2220 -1110 2221 -1109  "DVDD.t4" "a_1870_n1400#" 80 0 "DVDD.t5" 200 0 "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t1" 200 0
+device msubckt sky130_fd_pr__pfet_01v8_lvt 2130 -20 2131 -19  "VDD.t0" "AMP_OUT" 400 0 "GND.t0" 200 0 "a_2287_n292#" 200 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1070 -1450 1071 -1449  "GND" "AMP_OUT.t4" 60 0 "a_1000_n1450#" 200 0 "a_1100_n1450#" 200 0
+device msubckt sky130_fd_pr__pfet_01v8_lvt 1930 -1060 1931 -1059  "DVDD.t6" "a_1720_n1450#" 180 0 "DVDD.t7" 200 0 "a_1870_n1400#" 200 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1690 -1450 1691 -1449  "GND" "V_RAMP.t0" 60 0 "a_1100_n1450#" 200 0 "a_1720_n1450#" 200 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -140 -710 -139 -709  "GND" "VBIAS.t0" 320 0 "a_n140_n780#" 200 0 "a_n140_n550#" 200 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 40 -2640 41 -2639  "GND" "NB1.t0" 400 0 "a_n30_n2640#" 240 0 "GND.t3" 240 0
+device msubckt sky130_fd_pr__nfet_01v8 2230 -1450 2231 -1449  "GND" "a_1870_n1400#" 60 0 "GND.t4" 200 0 "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t0" 200 0
+device msubckt sky130_fd_pr__pfet_01v8_lvt 1070 -1060 1071 -1059  "DVDD.t2" "a_1000_n1450#" 400 0 "a_1000_n1450#" 200 0 "DVDD.t3" 200 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2200 -580 2201 -579  "GND" "ROW_SEL.t0" 400 0 "PIX_OUT.t0" 400 0 "a_2200_n380#" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1924 -2030 1925 -2029  "GND" "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t9" 60 0 "GRAYx3x" 200 0 "8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/storage" 200 0
+device msubckt sky130_fd_pr__nfet_01v8 1924 -2340 1925 -2339  "GND" "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t8" 60 0 "GRAYx2x" 200 0 "8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/storage" 200 0
+device msubckt sky130_fd_pr__nfet_01v8 2359 -2030 2360 -2029  "GND" "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t7" 60 0 "GRAYx1x" 200 0 "8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/storage" 200 0
+device msubckt sky130_fd_pr__nfet_01v8 2359 -2340 2360 -2339  "GND" "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t6" 60 0 "GRAYx0x" 200 0 "8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/storage" 200 0
+device msubckt sky130_fd_pr__nfet_01v8 1054 -2030 1055 -2029  "GND" "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t5" 60 0 "GRAYx7x" 200 0 "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/storage" 200 0
+device msubckt sky130_fd_pr__nfet_01v8 1054 -2340 1055 -2339  "GND" "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t4" 60 0 "GRAYx6x" 200 0 "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/storage" 200 0
+device msubckt sky130_fd_pr__nfet_01v8 1489 -2030 1490 -2029  "GND" "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t3" 60 0 "GRAYx5x" 200 0 "8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/storage" 200 0
+device msubckt sky130_fd_pr__nfet_01v8 1489 -2340 1490 -2339  "GND" "8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL.t2" 60 0 "GRAYx4x" 200 0 "8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/storage" 200 0

@@ -1,0 +1,833 @@
+| units: 500000 tech: sky130A format: MIT
+x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/storage pixel_2/OUTx4x pixel_1/READ VSUBS l=30 w=200 x=4858 y=968 sky130_fd_pr__nfet_01v8
+x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/GRAYx4x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/storage VSUBS l=30 w=200 x=5088 y=968 sky130_fd_pr__nfet_01v8
+x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/storage pixel_2/OUTx5x pixel_1/READ VSUBS l=30 w=200 x=4858 y=1081 sky130_fd_pr__nfet_01v8
+x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/GRAYx5x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/storage VSUBS l=30 w=200 x=5088 y=1081 sky130_fd_pr__nfet_01v8
+x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/storage pixel_2/OUTx6x pixel_1/READ VSUBS l=30 w=200 x=4423 y=968 sky130_fd_pr__nfet_01v8
+x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/GRAYx6x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/storage VSUBS l=30 w=200 x=4653 y=968 sky130_fd_pr__nfet_01v8
+x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/storage pixel_2/OUTx7x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/RWL VSUBS l=30 w=200 x=4423 y=1081 sky130_fd_pr__nfet_01v8
+x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/GRAYx7x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/storage VSUBS l=30 w=200 x=4653 y=1081 sky130_fd_pr__nfet_01v8
+x pixel_0/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/storage pixel_2/OUTx0x pixel_1/READ VSUBS l=30 w=200 x=5728 y=968 sky130_fd_pr__nfet_01v8
+x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/GRAYx0x pixel_0/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/storage VSUBS l=30 w=200 x=5958 y=968 sky130_fd_pr__nfet_01v8
+x pixel_0/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/storage pixel_2/OUTx1x pixel_1/READ VSUBS l=30 w=200 x=5728 y=1081 sky130_fd_pr__nfet_01v8
+x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/GRAYx1x pixel_0/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/storage VSUBS l=30 w=200 x=5958 y=1081 sky130_fd_pr__nfet_01v8
+x pixel_0/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/storage pixel_2/OUTx2x pixel_1/READ VSUBS l=30 w=200 x=5293 y=968 sky130_fd_pr__nfet_01v8
+x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/GRAYx2x pixel_0/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/storage VSUBS l=30 w=200 x=5523 y=968 sky130_fd_pr__nfet_01v8
+x pixel_0/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/storage pixel_2/OUTx3x pixel_0/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/RWL VSUBS l=30 w=200 x=5293 y=1081 sky130_fd_pr__nfet_01v8
+x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/GRAYx3x pixel_0/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/storage VSUBS l=30 w=200 x=5523 y=1081 sky130_fd_pr__nfet_01v8
+x pixel_1/ROW_SEL pixel_2/PIX_OUT pixel_0/a_2200_n380# VSUBS l=200 w=400 x=5770 y=2531 sky130_fd_pr__nfet_01v8_lvt
+x pixel_0/a_1000_n1450# pixel_0/a_1000_n1450# pixel_1/DVDD pixel_1/DVDD l=200 w=200 x=4640 y=2051 sky130_fd_pr__pfet_01v8_lvt
+x pixel_0/a_1870_n1400# VSUBS pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL VSUBS l=30 w=200 x=5800 y=1661 sky130_fd_pr__nfet_01v8
+x pixel_1/NB1 pixel_0/a_n30_n2640# VSUBS VSUBS l=200 w=240 x=3610 y=471 sky130_fd_pr__nfet_01v8_lvt
+x pixel_2/VBIAS pixel_0/a_n140_n780# pixel_0/a_n140_n550# VSUBS l=160 w=200 x=3431 y=2401 sky130_fd_pr__nfet_01v8_lvt
+x pixel_1/V_RAMP pixel_0/a_1100_n1450# pixel_0/a_1720_n1450# VSUBS l=30 w=200 x=5260 y=1661 sky130_fd_pr__nfet_01v8_lvt
+x pixel_0/a_1720_n1450# pixel_1/DVDD pixel_0/a_1870_n1400# pixel_1/DVDD l=90 w=200 x=5500 y=2051 sky130_fd_pr__pfet_01v8_lvt
+x pixel_0/AMP_OUT pixel_0/a_1000_n1450# pixel_0/a_1100_n1450# VSUBS l=30 w=200 x=4640 y=1661 sky130_fd_pr__nfet_01v8_lvt
+x pixel_0/AMP_OUT VSUBS pixel_0/a_2287_n292# pixel_1/VDD l=200 w=200 x=5700 y=3091 sky130_fd_pr__pfet_01v8_lvt
+x pixel_0/a_1870_n1400# pixel_1/DVDD pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_1/DVDD l=40 w=200 x=5790 y=2001 sky130_fd_pr__pfet_01v8
+x pixel_2/NB2 pixel_0/a_300_n1210# pixel_0/AMP_OUT VSUBS l=240 w=200 x=3870 y=1981 sky130_fd_pr__nfet_01v8_lvt
+x pixel_1/BIAS1 VSUBS pixel_0/a_1100_n1450# VSUBS l=200 w=90 x=4900 y=1491 sky130_fd_pr__nfet_01v8
+x pixel_0/a_n140_n550# pixel_0/a_n140_n550# pixel_0/a_350_10# pixel_1/VDD l=400 w=200 x=3521 y=3120 sky130_fd_pr__pfet_01v8_lvt
+x pixel_1/SF_IB pixel_0/a_2287_n292# pixel_1/VDD pixel_1/VDD l=200 w=200 x=6000 y=3091 sky130_fd_pr__pfet_01v8_lvt
+x pixel_0/PIX_IN pixel_0/AMP_OUT l=400 w=400 x=3700 y=1371 sky130_fd_pr__cap_mim_m3_1
+x pixel_2/VREF pixel_0/a_n140_n780# pixel_0/a_n30_n2640# VSUBS l=30 w=1400 x=3590 y=861 sky130_fd_pr__nfet_01v8_lvt
+x pixel_0/a_350_10# pixel_0/a_350_10# pixel_1/VDD pixel_1/VDD l=400 w=200 x=3990 y=3120 sky130_fd_pr__pfet_01v8_lvt
+x pixel_0/a_350_10# pixel_1/VDD pixel_0/a_1460_10# pixel_1/VDD l=400 w=200 x=4630 y=3120 sky130_fd_pr__pfet_01v8_lvt
+x pixel_1/CSA_VREF pixel_0/PIX_IN pixel_0/AMP_OUT pixel_1/VDD l=1600 w=84 x=3690 y=2791 sky130_fd_pr__pfet_01v8_lvt
+x pixel_1/BIAS2 VSUBS pixel_0/a_1870_n1400# VSUBS l=200 w=200 x=5440 y=1511 sky130_fd_pr__nfet_01v8_lvt
+x pixel_0/a_n140_n550# pixel_0/a_1460_10# pixel_0/a_120_n550# pixel_1/VDD l=400 w=200 x=5100 y=3120 sky130_fd_pr__pfet_01v8_lvt
+x pixel_2/VBIAS pixel_0/a_120_n780# pixel_0/a_120_n550# VSUBS l=160 w=200 x=3690 y=2401 sky130_fd_pr__nfet_01v8_lvt
+x pixel_0/PIX_IN pixel_0/a_n30_n2640# pixel_0/a_120_n780# VSUBS l=30 w=1400 x=3700 y=861 sky130_fd_pr__nfet_01v8_lvt
+x pixel_0/a_1000_n1450# pixel_1/DVDD pixel_0/a_1720_n1450# pixel_1/DVDD l=200 w=200 x=5090 y=2051 sky130_fd_pr__pfet_01v8_lvt
+x pixel_0/a_120_n550# pixel_0/AMP_OUT pixel_1/VDD VSUBS l=200 w=200 x=4060 y=2401 sky130_fd_pr__nfet_01v8_lvt
+x pixel_0/a_2287_n292# pixel_0/a_2200_n380# pixel_1/VDD VSUBS l=30 w=200 x=5960 y=2831 sky130_fd_pr__nfet_01v8_lvt
+x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/storage pixel_3/OUTx4x pixel_1/READ VSUBS l=30 w=200 x=7858 y=968 sky130_fd_pr__nfet_01v8
+x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/GRAYx4x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/storage VSUBS l=30 w=200 x=8088 y=968 sky130_fd_pr__nfet_01v8
+x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/storage pixel_3/OUTx5x pixel_1/READ VSUBS l=30 w=200 x=7858 y=1081 sky130_fd_pr__nfet_01v8
+x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/GRAYx5x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/storage VSUBS l=30 w=200 x=8088 y=1081 sky130_fd_pr__nfet_01v8
+x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/storage pixel_3/OUTx6x pixel_1/READ VSUBS l=30 w=200 x=7423 y=968 sky130_fd_pr__nfet_01v8
+x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/GRAYx6x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/storage VSUBS l=30 w=200 x=7653 y=968 sky130_fd_pr__nfet_01v8
+x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/storage pixel_3/OUTx7x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/RWL VSUBS l=30 w=200 x=7423 y=1081 sky130_fd_pr__nfet_01v8
+x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/GRAYx7x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/storage VSUBS l=30 w=200 x=7653 y=1081 sky130_fd_pr__nfet_01v8
+x pixel_1/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/storage pixel_3/OUTx0x pixel_1/READ VSUBS l=30 w=200 x=8728 y=968 sky130_fd_pr__nfet_01v8
+x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/GRAYx0x pixel_1/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/storage VSUBS l=30 w=200 x=8958 y=968 sky130_fd_pr__nfet_01v8
+x pixel_1/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/storage pixel_3/OUTx1x pixel_1/READ VSUBS l=30 w=200 x=8728 y=1081 sky130_fd_pr__nfet_01v8
+x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/GRAYx1x pixel_1/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/storage VSUBS l=30 w=200 x=8958 y=1081 sky130_fd_pr__nfet_01v8
+x pixel_1/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/storage pixel_3/OUTx2x pixel_1/READ VSUBS l=30 w=200 x=8293 y=968 sky130_fd_pr__nfet_01v8
+x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/GRAYx2x pixel_1/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/storage VSUBS l=30 w=200 x=8523 y=968 sky130_fd_pr__nfet_01v8
+x pixel_1/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/storage pixel_3/OUTx3x pixel_1/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/RWL VSUBS l=30 w=200 x=8293 y=1081 sky130_fd_pr__nfet_01v8
+x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/GRAYx3x pixel_1/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/storage VSUBS l=30 w=200 x=8523 y=1081 sky130_fd_pr__nfet_01v8
+x pixel_1/ROW_SEL pixel_3/PIX_OUT pixel_1/a_2200_n380# VSUBS l=200 w=400 x=8770 y=2531 sky130_fd_pr__nfet_01v8_lvt
+x pixel_1/a_1000_n1450# pixel_1/a_1000_n1450# pixel_1/DVDD pixel_1/DVDD l=200 w=200 x=7640 y=2051 sky130_fd_pr__pfet_01v8_lvt
+x pixel_1/a_1870_n1400# VSUBS pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL VSUBS l=30 w=200 x=8800 y=1661 sky130_fd_pr__nfet_01v8
+x pixel_1/NB1 pixel_1/a_n30_n2640# VSUBS VSUBS l=200 w=240 x=6610 y=471 sky130_fd_pr__nfet_01v8_lvt
+x pixel_3/VBIAS pixel_1/a_n140_n780# pixel_1/a_n140_n550# VSUBS l=160 w=200 x=6431 y=2401 sky130_fd_pr__nfet_01v8_lvt
+x pixel_1/V_RAMP pixel_1/a_1100_n1450# pixel_1/a_1720_n1450# VSUBS l=30 w=200 x=8260 y=1661 sky130_fd_pr__nfet_01v8_lvt
+x pixel_1/a_1720_n1450# pixel_1/DVDD pixel_1/a_1870_n1400# pixel_1/DVDD l=90 w=200 x=8500 y=2051 sky130_fd_pr__pfet_01v8_lvt
+x pixel_1/AMP_OUT pixel_1/a_1000_n1450# pixel_1/a_1100_n1450# VSUBS l=30 w=200 x=7640 y=1661 sky130_fd_pr__nfet_01v8_lvt
+x pixel_1/AMP_OUT VSUBS pixel_1/a_2287_n292# pixel_1/VDD l=200 w=200 x=8700 y=3091 sky130_fd_pr__pfet_01v8_lvt
+x pixel_1/a_1870_n1400# pixel_1/DVDD pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_1/DVDD l=40 w=200 x=8790 y=2001 sky130_fd_pr__pfet_01v8
+x pixel_3/NB2 pixel_1/a_300_n1210# pixel_1/AMP_OUT VSUBS l=240 w=200 x=6870 y=1981 sky130_fd_pr__nfet_01v8_lvt
+x pixel_1/BIAS1 VSUBS pixel_1/a_1100_n1450# VSUBS l=200 w=90 x=7900 y=1491 sky130_fd_pr__nfet_01v8
+x pixel_1/a_n140_n550# pixel_1/a_n140_n550# pixel_1/a_350_10# pixel_1/VDD l=400 w=200 x=6521 y=3120 sky130_fd_pr__pfet_01v8_lvt
+x pixel_1/SF_IB pixel_1/a_2287_n292# pixel_1/VDD pixel_1/VDD l=200 w=200 x=9000 y=3091 sky130_fd_pr__pfet_01v8_lvt
+x pixel_1/PIX_IN pixel_1/AMP_OUT l=400 w=400 x=6700 y=1371 sky130_fd_pr__cap_mim_m3_1
+x pixel_3/VREF pixel_1/a_n140_n780# pixel_1/a_n30_n2640# VSUBS l=30 w=1400 x=6590 y=861 sky130_fd_pr__nfet_01v8_lvt
+x pixel_1/a_350_10# pixel_1/a_350_10# pixel_1/VDD pixel_1/VDD l=400 w=200 x=6990 y=3120 sky130_fd_pr__pfet_01v8_lvt
+x pixel_1/a_350_10# pixel_1/VDD pixel_1/a_1460_10# pixel_1/VDD l=400 w=200 x=7630 y=3120 sky130_fd_pr__pfet_01v8_lvt
+x pixel_1/CSA_VREF pixel_1/PIX_IN pixel_1/AMP_OUT pixel_1/VDD l=1600 w=84 x=6690 y=2791 sky130_fd_pr__pfet_01v8_lvt
+x pixel_1/BIAS2 VSUBS pixel_1/a_1870_n1400# VSUBS l=200 w=200 x=8440 y=1511 sky130_fd_pr__nfet_01v8_lvt
+x pixel_1/a_n140_n550# pixel_1/a_1460_10# pixel_1/a_120_n550# pixel_1/VDD l=400 w=200 x=8100 y=3120 sky130_fd_pr__pfet_01v8_lvt
+x pixel_3/VBIAS pixel_1/a_120_n780# pixel_1/a_120_n550# VSUBS l=160 w=200 x=6690 y=2401 sky130_fd_pr__nfet_01v8_lvt
+x pixel_1/PIX_IN pixel_1/a_n30_n2640# pixel_1/a_120_n780# VSUBS l=30 w=1400 x=6700 y=861 sky130_fd_pr__nfet_01v8_lvt
+x pixel_1/a_1000_n1450# pixel_1/DVDD pixel_1/a_1720_n1450# pixel_1/DVDD l=200 w=200 x=8090 y=2051 sky130_fd_pr__pfet_01v8_lvt
+x pixel_1/a_120_n550# pixel_1/AMP_OUT pixel_1/VDD VSUBS l=200 w=200 x=7060 y=2401 sky130_fd_pr__nfet_01v8_lvt
+x pixel_1/a_2287_n292# pixel_1/a_2200_n380# pixel_1/VDD VSUBS l=30 w=200 x=8960 y=2831 sky130_fd_pr__nfet_01v8_lvt
+x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/storage pixel_2/OUTx4x pixel_3/READ VSUBS l=30 w=200 x=4858 y=-2032 sky130_fd_pr__nfet_01v8
+x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/GRAYx4x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/storage VSUBS l=30 w=200 x=5088 y=-2032 sky130_fd_pr__nfet_01v8
+x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/storage pixel_2/OUTx5x pixel_3/READ VSUBS l=30 w=200 x=4858 y=-1919 sky130_fd_pr__nfet_01v8
+x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/GRAYx5x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/storage VSUBS l=30 w=200 x=5088 y=-1919 sky130_fd_pr__nfet_01v8
+x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/storage pixel_2/OUTx6x pixel_3/READ VSUBS l=30 w=200 x=4423 y=-2032 sky130_fd_pr__nfet_01v8
+x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/GRAYx6x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/storage VSUBS l=30 w=200 x=4653 y=-2032 sky130_fd_pr__nfet_01v8
+x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/storage pixel_2/OUTx7x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/RWL VSUBS l=30 w=200 x=4423 y=-1919 sky130_fd_pr__nfet_01v8
+x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/GRAYx7x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/storage VSUBS l=30 w=200 x=4653 y=-1919 sky130_fd_pr__nfet_01v8
+x pixel_2/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/storage pixel_2/OUTx0x pixel_3/READ VSUBS l=30 w=200 x=5728 y=-2032 sky130_fd_pr__nfet_01v8
+x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/GRAYx0x pixel_2/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/storage VSUBS l=30 w=200 x=5958 y=-2032 sky130_fd_pr__nfet_01v8
+x pixel_2/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/storage pixel_2/OUTx1x pixel_3/READ VSUBS l=30 w=200 x=5728 y=-1919 sky130_fd_pr__nfet_01v8
+x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/GRAYx1x pixel_2/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/storage VSUBS l=30 w=200 x=5958 y=-1919 sky130_fd_pr__nfet_01v8
+x pixel_2/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/storage pixel_2/OUTx2x pixel_3/READ VSUBS l=30 w=200 x=5293 y=-2032 sky130_fd_pr__nfet_01v8
+x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/GRAYx2x pixel_2/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/storage VSUBS l=30 w=200 x=5523 y=-2032 sky130_fd_pr__nfet_01v8
+x pixel_2/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/storage pixel_2/OUTx3x pixel_2/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/RWL VSUBS l=30 w=200 x=5293 y=-1919 sky130_fd_pr__nfet_01v8
+x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/GRAYx3x pixel_2/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/storage VSUBS l=30 w=200 x=5523 y=-1919 sky130_fd_pr__nfet_01v8
+x pixel_3/ROW_SEL pixel_2/PIX_OUT pixel_2/a_2200_n380# VSUBS l=200 w=400 x=5770 y=-469 sky130_fd_pr__nfet_01v8_lvt
+x pixel_2/a_1000_n1450# pixel_2/a_1000_n1450# pixel_3/DVDD pixel_3/DVDD l=200 w=200 x=4640 y=-949 sky130_fd_pr__pfet_01v8_lvt
+x pixel_2/a_1870_n1400# VSUBS pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL VSUBS l=30 w=200 x=5800 y=-1339 sky130_fd_pr__nfet_01v8
+x pixel_3/NB1 pixel_2/a_n30_n2640# VSUBS VSUBS l=200 w=240 x=3610 y=-2529 sky130_fd_pr__nfet_01v8_lvt
+x pixel_2/VBIAS pixel_2/a_n140_n780# pixel_2/a_n140_n550# VSUBS l=160 w=200 x=3431 y=-599 sky130_fd_pr__nfet_01v8_lvt
+x pixel_3/V_RAMP pixel_2/a_1100_n1450# pixel_2/a_1720_n1450# VSUBS l=30 w=200 x=5260 y=-1339 sky130_fd_pr__nfet_01v8_lvt
+x pixel_2/a_1720_n1450# pixel_3/DVDD pixel_2/a_1870_n1400# pixel_3/DVDD l=90 w=200 x=5500 y=-949 sky130_fd_pr__pfet_01v8_lvt
+x pixel_2/AMP_OUT pixel_2/a_1000_n1450# pixel_2/a_1100_n1450# VSUBS l=30 w=200 x=4640 y=-1339 sky130_fd_pr__nfet_01v8_lvt
+x pixel_2/AMP_OUT VSUBS pixel_2/a_2287_n292# pixel_3/VDD l=200 w=200 x=5700 y=91 sky130_fd_pr__pfet_01v8_lvt
+x pixel_2/a_1870_n1400# pixel_3/DVDD pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/DVDD l=40 w=200 x=5790 y=-999 sky130_fd_pr__pfet_01v8
+x pixel_2/NB2 pixel_2/a_300_n1210# pixel_2/AMP_OUT VSUBS l=240 w=200 x=3870 y=-1019 sky130_fd_pr__nfet_01v8_lvt
+x pixel_3/BIAS1 VSUBS pixel_2/a_1100_n1450# VSUBS l=200 w=90 x=4900 y=-1509 sky130_fd_pr__nfet_01v8
+x pixel_2/a_n140_n550# pixel_2/a_n140_n550# pixel_2/a_350_10# pixel_3/VDD l=400 w=200 x=3521 y=120 sky130_fd_pr__pfet_01v8_lvt
+x pixel_3/SF_IB pixel_2/a_2287_n292# pixel_3/VDD pixel_3/VDD l=200 w=200 x=6000 y=91 sky130_fd_pr__pfet_01v8_lvt
+x pixel_2/PIX_IN pixel_2/AMP_OUT l=400 w=400 x=3700 y=-1629 sky130_fd_pr__cap_mim_m3_1
+x pixel_2/VREF pixel_2/a_n140_n780# pixel_2/a_n30_n2640# VSUBS l=30 w=1400 x=3590 y=-2139 sky130_fd_pr__nfet_01v8_lvt
+x pixel_2/a_350_10# pixel_2/a_350_10# pixel_3/VDD pixel_3/VDD l=400 w=200 x=3990 y=120 sky130_fd_pr__pfet_01v8_lvt
+x pixel_2/a_350_10# pixel_3/VDD pixel_2/a_1460_10# pixel_3/VDD l=400 w=200 x=4630 y=120 sky130_fd_pr__pfet_01v8_lvt
+x pixel_3/CSA_VREF pixel_2/PIX_IN pixel_2/AMP_OUT pixel_3/VDD l=1600 w=84 x=3690 y=-209 sky130_fd_pr__pfet_01v8_lvt
+x pixel_3/BIAS2 VSUBS pixel_2/a_1870_n1400# VSUBS l=200 w=200 x=5440 y=-1489 sky130_fd_pr__nfet_01v8_lvt
+x pixel_2/a_n140_n550# pixel_2/a_1460_10# pixel_2/a_120_n550# pixel_3/VDD l=400 w=200 x=5100 y=120 sky130_fd_pr__pfet_01v8_lvt
+x pixel_2/VBIAS pixel_2/a_120_n780# pixel_2/a_120_n550# VSUBS l=160 w=200 x=3690 y=-599 sky130_fd_pr__nfet_01v8_lvt
+x pixel_2/PIX_IN pixel_2/a_n30_n2640# pixel_2/a_120_n780# VSUBS l=30 w=1400 x=3700 y=-2139 sky130_fd_pr__nfet_01v8_lvt
+x pixel_2/a_1000_n1450# pixel_3/DVDD pixel_2/a_1720_n1450# pixel_3/DVDD l=200 w=200 x=5090 y=-949 sky130_fd_pr__pfet_01v8_lvt
+x pixel_2/a_120_n550# pixel_2/AMP_OUT pixel_3/VDD VSUBS l=200 w=200 x=4060 y=-599 sky130_fd_pr__nfet_01v8_lvt
+x pixel_2/a_2287_n292# pixel_2/a_2200_n380# pixel_3/VDD VSUBS l=30 w=200 x=5960 y=-169 sky130_fd_pr__nfet_01v8_lvt
+x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/storage pixel_3/OUTx4x pixel_3/READ VSUBS l=30 w=200 x=7858 y=-2032 sky130_fd_pr__nfet_01v8
+x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/GRAYx4x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/storage VSUBS l=30 w=200 x=8088 y=-2032 sky130_fd_pr__nfet_01v8
+x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/storage pixel_3/OUTx5x pixel_3/READ VSUBS l=30 w=200 x=7858 y=-1919 sky130_fd_pr__nfet_01v8
+x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/GRAYx5x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/storage VSUBS l=30 w=200 x=8088 y=-1919 sky130_fd_pr__nfet_01v8
+x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/storage pixel_3/OUTx6x pixel_3/READ VSUBS l=30 w=200 x=7423 y=-2032 sky130_fd_pr__nfet_01v8
+x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/GRAYx6x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/storage VSUBS l=30 w=200 x=7653 y=-2032 sky130_fd_pr__nfet_01v8
+x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/storage pixel_3/OUTx7x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/RWL VSUBS l=30 w=200 x=7423 y=-1919 sky130_fd_pr__nfet_01v8
+x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/GRAYx7x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/storage VSUBS l=30 w=200 x=7653 y=-1919 sky130_fd_pr__nfet_01v8
+x pixel_3/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/storage pixel_3/OUTx0x pixel_3/READ VSUBS l=30 w=200 x=8728 y=-2032 sky130_fd_pr__nfet_01v8
+x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/GRAYx0x pixel_3/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/storage VSUBS l=30 w=200 x=8958 y=-2032 sky130_fd_pr__nfet_01v8
+x pixel_3/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/storage pixel_3/OUTx1x pixel_3/READ VSUBS l=30 w=200 x=8728 y=-1919 sky130_fd_pr__nfet_01v8
+x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/GRAYx1x pixel_3/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/storage VSUBS l=30 w=200 x=8958 y=-1919 sky130_fd_pr__nfet_01v8
+x pixel_3/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/storage pixel_3/OUTx2x pixel_3/READ VSUBS l=30 w=200 x=8293 y=-2032 sky130_fd_pr__nfet_01v8
+x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/GRAYx2x pixel_3/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/storage VSUBS l=30 w=200 x=8523 y=-2032 sky130_fd_pr__nfet_01v8
+x pixel_3/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/storage pixel_3/OUTx3x pixel_3/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/RWL VSUBS l=30 w=200 x=8293 y=-1919 sky130_fd_pr__nfet_01v8
+x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/GRAYx3x pixel_3/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/storage VSUBS l=30 w=200 x=8523 y=-1919 sky130_fd_pr__nfet_01v8
+x pixel_3/ROW_SEL pixel_3/PIX_OUT pixel_3/a_2200_n380# VSUBS l=200 w=400 x=8770 y=-469 sky130_fd_pr__nfet_01v8_lvt
+x pixel_3/a_1000_n1450# pixel_3/a_1000_n1450# pixel_3/DVDD pixel_3/DVDD l=200 w=200 x=7640 y=-949 sky130_fd_pr__pfet_01v8_lvt
+x pixel_3/a_1870_n1400# VSUBS pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL VSUBS l=30 w=200 x=8800 y=-1339 sky130_fd_pr__nfet_01v8
+x pixel_3/NB1 pixel_3/a_n30_n2640# VSUBS VSUBS l=200 w=240 x=6610 y=-2529 sky130_fd_pr__nfet_01v8_lvt
+x pixel_3/VBIAS pixel_3/a_n140_n780# pixel_3/a_n140_n550# VSUBS l=160 w=200 x=6431 y=-599 sky130_fd_pr__nfet_01v8_lvt
+x pixel_3/V_RAMP pixel_3/a_1100_n1450# pixel_3/a_1720_n1450# VSUBS l=30 w=200 x=8260 y=-1339 sky130_fd_pr__nfet_01v8_lvt
+x pixel_3/a_1720_n1450# pixel_3/DVDD pixel_3/a_1870_n1400# pixel_3/DVDD l=90 w=200 x=8500 y=-949 sky130_fd_pr__pfet_01v8_lvt
+x pixel_3/AMP_OUT pixel_3/a_1000_n1450# pixel_3/a_1100_n1450# VSUBS l=30 w=200 x=7640 y=-1339 sky130_fd_pr__nfet_01v8_lvt
+x pixel_3/AMP_OUT VSUBS pixel_3/a_2287_n292# pixel_3/VDD l=200 w=200 x=8700 y=91 sky130_fd_pr__pfet_01v8_lvt
+x pixel_3/a_1870_n1400# pixel_3/DVDD pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/DVDD l=40 w=200 x=8790 y=-999 sky130_fd_pr__pfet_01v8
+x pixel_3/NB2 pixel_3/a_300_n1210# pixel_3/AMP_OUT VSUBS l=240 w=200 x=6870 y=-1019 sky130_fd_pr__nfet_01v8_lvt
+x pixel_3/BIAS1 VSUBS pixel_3/a_1100_n1450# VSUBS l=200 w=90 x=7900 y=-1509 sky130_fd_pr__nfet_01v8
+x pixel_3/a_n140_n550# pixel_3/a_n140_n550# pixel_3/a_350_10# pixel_3/VDD l=400 w=200 x=6521 y=120 sky130_fd_pr__pfet_01v8_lvt
+x pixel_3/SF_IB pixel_3/a_2287_n292# pixel_3/VDD pixel_3/VDD l=200 w=200 x=9000 y=91 sky130_fd_pr__pfet_01v8_lvt
+x pixel_3/PIX_IN pixel_3/AMP_OUT l=400 w=400 x=6700 y=-1629 sky130_fd_pr__cap_mim_m3_1
+x pixel_3/VREF pixel_3/a_n140_n780# pixel_3/a_n30_n2640# VSUBS l=30 w=1400 x=6590 y=-2139 sky130_fd_pr__nfet_01v8_lvt
+x pixel_3/a_350_10# pixel_3/a_350_10# pixel_3/VDD pixel_3/VDD l=400 w=200 x=6990 y=120 sky130_fd_pr__pfet_01v8_lvt
+x pixel_3/a_350_10# pixel_3/VDD pixel_3/a_1460_10# pixel_3/VDD l=400 w=200 x=7630 y=120 sky130_fd_pr__pfet_01v8_lvt
+x pixel_3/CSA_VREF pixel_3/PIX_IN pixel_3/AMP_OUT pixel_3/VDD l=1600 w=84 x=6690 y=-209 sky130_fd_pr__pfet_01v8_lvt
+x pixel_3/BIAS2 VSUBS pixel_3/a_1870_n1400# VSUBS l=200 w=200 x=8440 y=-1489 sky130_fd_pr__nfet_01v8_lvt
+x pixel_3/a_n140_n550# pixel_3/a_1460_10# pixel_3/a_120_n550# pixel_3/VDD l=400 w=200 x=8100 y=120 sky130_fd_pr__pfet_01v8_lvt
+x pixel_3/VBIAS pixel_3/a_120_n780# pixel_3/a_120_n550# VSUBS l=160 w=200 x=6690 y=-599 sky130_fd_pr__nfet_01v8_lvt
+x pixel_3/PIX_IN pixel_3/a_n30_n2640# pixel_3/a_120_n780# VSUBS l=30 w=1400 x=6700 y=-2139 sky130_fd_pr__nfet_01v8_lvt
+x pixel_3/a_1000_n1450# pixel_3/DVDD pixel_3/a_1720_n1450# pixel_3/DVDD l=200 w=200 x=8090 y=-949 sky130_fd_pr__pfet_01v8_lvt
+x pixel_3/a_120_n550# pixel_3/AMP_OUT pixel_3/VDD VSUBS l=200 w=200 x=7060 y=-599 sky130_fd_pr__nfet_01v8_lvt
+x pixel_3/a_2287_n292# pixel_3/a_2200_n380# pixel_3/VDD VSUBS l=30 w=200 x=8960 y=-169 sky130_fd_pr__nfet_01v8_lvt
+C pixel_3/CSA_VREF pixel_3/SF_IB 2.68
+C pixel_3/GRAYx5x pixel_3/OUTx4x 2.94
+C pixel_3/OUTx2x pixel_3/GRAYx5x 2.07
+C pixel_3/DVDD pixel_3/V_RAMP 3.29
+C pixel_1/NB1 pixel_1/READ 2.44
+C pixel_3/GRAYx3x pixel_3/OUTx0x 2.07
+C pixel_3/gring pixel_2/PIX_IN 3.00
+C pixel_3/GRAYx7x pixel_3/OUTx4x 2.07
+C pixel_2/OUTx0x pixel_2/GRAYx1x 2.94
+C pixel_3/GRAYx7x pixel_3/OUTx6x 2.93
+C pixel_3/GRAYx3x pixel_3/OUTx2x 2.94
+C pixel_2/GRAYx3x pixel_2/OUTx2x 2.94
+C pixel_3/gring pixel_3/PIX_IN 2.93
+C pixel_2/GRAYx5x pixel_2/OUTx2x 2.07
+C pixel_1/DVDD pixel_1/V_RAMP 3.29
+C pixel_2/OUTx0x pixel_2/GRAYx3x 2.07
+C pixel_2/OUTx4x pixel_2/GRAYx5x 2.94
+C pixel_2/VBIAS pixel_2/VREF 3.52
+C pixel_3/READ pixel_3/NB1 2.43
+C pixel_3/GRAYx1x pixel_3/OUTx0x 2.94
+C pixel_3/V_RAMP pixel_3/BIAS1 3.49
+C pixel_2/GRAYx7x pixel_2/OUTx6x 2.93
+C pixel_3/gring pixel_0/PIX_IN 3.00
+C pixel_2/OUTx4x pixel_2/GRAYx7x 2.07
+C pixel_1/PIX_IN pixel_3/gring 2.93
+C pixel_1/SF_IB pixel_1/CSA_VREF 2.68
+C pixel_1/BIAS1 pixel_1/V_RAMP 3.49
+C pixel_3/VBIAS pixel_3/VREF 3.51
+R pixel_3/PIX_IN 2878
+R pixel_3/a_1100_n1450# 1658
+R pixel_3/a_300_n1210# 356
+R pixel_3/a_1870_n1400# 2261
+R pixel_3/a_1720_n1450# 1349
+R pixel_3/a_1000_n1450# 1641
+R pixel_3/a_n30_n2640# 3155
+R pixel_3/a_120_n780# 4074
+R pixel_3/a_n140_n780# 4074
+R pixel_3/a_2200_n380# 898
+R pixel_3/a_2287_n292# 1050
+C pixel_3/AMP_OUT GND 2.87
+R pixel_3/AMP_OUT 2793
+R pixel_3/a_120_n550# 1874
+R pixel_3/a_1460_10# 563
+R pixel_3/a_350_10# 1192
+R pixel_3/a_n140_n550# 2088
+R pixel_3/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/RWL 458
+R pixel_3/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/storage 995
+R pixel_3/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/storage 995
+C pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL GND 2.53
+R pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL 5657
+= pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/a_2260_n1450#
+= pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/WWL
+= pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/a_7_n377#
+= pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/a_60_n65#
+= pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/WWL
+= pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/WWL
+= pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/8bit_dram_0/4bit_dram_1/dram_array_0/a_7_n377#
+= pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/8bit_dram_0/4bit_dram_1/dram_array_0/a_60_n65#
+= pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/WWL
+= pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/WWL
+= pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/8bit_dram_0/4bit_dram_0/dram_array_1/a_7_n377#
+= pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/8bit_dram_0/4bit_dram_0/dram_array_1/a_60_n65#
+= pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/WWL
+= pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/WWL
+= pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/8bit_dram_0/4bit_dram_0/dram_array_0/a_7_n377#
+= pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_3/8bit_dram_0/4bit_dram_0/dram_array_0/a_60_n65#
+R pixel_3/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/storage 995
+R pixel_3/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/storage 995
+R pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/RWL 458
+R pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/storage 995
+R VSUBS 3905
+= VSUBS pixel_0/GND
+= VSUBS pixel_0/8bit_dram_0/VSUBS
+= VSUBS pixel_0/8bit_dram_0/4bit_dram_0/VSUBS
+= VSUBS pixel_0/8bit_dram_0/4bit_dram_0/dram_array_0/VSUBS
+= VSUBS pixel_0/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/VSUBS
+= VSUBS pixel_0/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/VSUBS
+= VSUBS pixel_0/8bit_dram_0/4bit_dram_0/dram_array_1/VSUBS
+= VSUBS pixel_0/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/VSUBS
+= VSUBS pixel_0/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/VSUBS
+= VSUBS pixel_0/8bit_dram_0/4bit_dram_1/VSUBS
+= VSUBS pixel_0/8bit_dram_0/4bit_dram_1/dram_array_0/VSUBS
+= VSUBS pixel_0/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/VSUBS
+= VSUBS pixel_0/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/VSUBS
+= VSUBS pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/VSUBS
+= VSUBS pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/VSUBS
+= VSUBS pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/VSUBS
+= VSUBS pixel_1/GND
+= VSUBS pixel_1/8bit_dram_0/VSUBS
+= VSUBS pixel_1/8bit_dram_0/4bit_dram_0/VSUBS
+= VSUBS pixel_1/8bit_dram_0/4bit_dram_0/dram_array_0/VSUBS
+= VSUBS pixel_1/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/VSUBS
+= VSUBS pixel_1/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/VSUBS
+= VSUBS pixel_1/8bit_dram_0/4bit_dram_0/dram_array_1/VSUBS
+= VSUBS pixel_1/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/VSUBS
+= VSUBS pixel_1/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/VSUBS
+= VSUBS pixel_1/8bit_dram_0/4bit_dram_1/VSUBS
+= VSUBS pixel_1/8bit_dram_0/4bit_dram_1/dram_array_0/VSUBS
+= VSUBS pixel_1/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/VSUBS
+= VSUBS pixel_1/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/VSUBS
+= VSUBS pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/VSUBS
+= VSUBS pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/VSUBS
+= VSUBS pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/VSUBS
+= VSUBS pixel_2/GND
+= VSUBS pixel_2/8bit_dram_0/VSUBS
+= VSUBS pixel_2/8bit_dram_0/4bit_dram_0/VSUBS
+= VSUBS pixel_2/8bit_dram_0/4bit_dram_0/dram_array_0/VSUBS
+= VSUBS pixel_2/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/VSUBS
+= VSUBS pixel_2/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/VSUBS
+= VSUBS pixel_2/8bit_dram_0/4bit_dram_0/dram_array_1/VSUBS
+= VSUBS pixel_2/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/VSUBS
+= VSUBS pixel_2/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/VSUBS
+= VSUBS pixel_2/8bit_dram_0/4bit_dram_1/VSUBS
+= VSUBS pixel_2/8bit_dram_0/4bit_dram_1/dram_array_0/VSUBS
+= VSUBS pixel_2/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/VSUBS
+= VSUBS pixel_2/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/VSUBS
+= VSUBS pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/VSUBS
+= VSUBS pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/VSUBS
+= VSUBS pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/VSUBS
+= VSUBS pixel_3/GND
+= VSUBS pixel_3/8bit_dram_0/VSUBS
+= VSUBS pixel_3/8bit_dram_0/4bit_dram_0/VSUBS
+= VSUBS pixel_3/8bit_dram_0/4bit_dram_0/dram_array_0/VSUBS
+= VSUBS pixel_3/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/VSUBS
+= VSUBS pixel_3/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/VSUBS
+= VSUBS pixel_3/8bit_dram_0/4bit_dram_0/dram_array_1/VSUBS
+= VSUBS pixel_3/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/VSUBS
+= VSUBS pixel_3/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/VSUBS
+= VSUBS pixel_3/8bit_dram_0/4bit_dram_1/VSUBS
+= VSUBS pixel_3/8bit_dram_0/4bit_dram_1/dram_array_0/VSUBS
+= VSUBS pixel_3/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/VSUBS
+= VSUBS pixel_3/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/VSUBS
+= VSUBS pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/VSUBS
+= VSUBS pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/VSUBS
+= VSUBS pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/VSUBS
+R pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/storage 995
+R pixel_3/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/storage 995
+R pixel_3/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/storage 995
+C pixel_3/gring GND 6.26
+= pixel_3/gring pixel_1/gring
+= pixel_3/gring pixel_0/gring
+= pixel_3/gring pixel_2/gring
+C pixel_3/NB1 GND 3.96
+R pixel_3/NB1 912
+= pixel_3/NB1 pixel_2/NB1
+C pixel_3/BIAS2 GND 3.62
+R pixel_3/BIAS2 474
+= pixel_3/BIAS2 pixel_2/BIAS2
+R pixel_3/BIAS1 391
+= pixel_3/BIAS1 pixel_2/BIAS1
+R pixel_3/V_RAMP 1333
+= pixel_3/V_RAMP pixel_2/V_RAMP
+R pixel_3/ROW_SEL 532
+= pixel_3/ROW_SEL pixel_2/ROW_SEL
+R pixel_2/PIX_IN 2878
+C pixel_3/CSA_VREF GND 2.08
+R pixel_3/CSA_VREF 1375
+= pixel_3/CSA_VREF pixel_2/CSA_VREF
+R pixel_3/SF_IB 447
+= pixel_3/SF_IB pixel_2/SF_IB
+C pixel_3/DVDD GND 6.64
+R pixel_3/DVDD 17912
+= pixel_3/DVDD pixel_2/DVDD
+C pixel_3/VDD GND 15.51
+R pixel_3/VDD 21206
+= pixel_3/VDD pixel_2/VDD
+R pixel_2/a_1100_n1450# 1658
+R pixel_2/a_300_n1210# 356
+R pixel_2/a_1870_n1400# 2261
+R pixel_2/a_1720_n1450# 1349
+R pixel_2/a_1000_n1450# 1641
+R pixel_2/a_n30_n2640# 3155
+R pixel_2/a_120_n780# 4074
+R pixel_2/a_n140_n780# 4074
+R pixel_2/a_2200_n380# 898
+R pixel_2/a_2287_n292# 1050
+C pixel_2/AMP_OUT GND 2.84
+R pixel_2/AMP_OUT 2793
+R pixel_2/a_120_n550# 1874
+R pixel_2/a_1460_10# 563
+R pixel_2/a_350_10# 1192
+R pixel_2/a_n140_n550# 2088
+R pixel_2/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/RWL 458
+R pixel_2/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/storage 995
+R pixel_2/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/storage 995
+C pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL GND 2.56
+R pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL 5657
+= pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/a_2260_n1450#
+= pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/WWL
+= pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/a_7_n377#
+= pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/a_60_n65#
+= pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/WWL
+= pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/WWL
+= pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/8bit_dram_0/4bit_dram_1/dram_array_0/a_7_n377#
+= pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/8bit_dram_0/4bit_dram_1/dram_array_0/a_60_n65#
+= pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/WWL
+= pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/WWL
+= pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/8bit_dram_0/4bit_dram_0/dram_array_1/a_7_n377#
+= pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/8bit_dram_0/4bit_dram_0/dram_array_1/a_60_n65#
+= pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/WWL
+= pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/WWL
+= pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/8bit_dram_0/4bit_dram_0/dram_array_0/a_7_n377#
+= pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/8bit_dram_0/4bit_dram_0/dram_array_0/a_60_n65#
+R pixel_2/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/storage 995
+C pixel_3/READ GND 2.16
+R pixel_3/READ 8938
+= pixel_3/READ pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/RWL
+= pixel_3/READ pixel_3/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/RWL
+= pixel_3/READ pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/li_348_163#
+= pixel_3/READ pixel_3/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/RWL
+= pixel_3/READ pixel_3/8bit_dram_0/4bit_dram_1/li_370_440#
+= pixel_3/READ pixel_3/8bit_dram_0/4bit_dram_1/dram_array_0/li_348_163#
+= pixel_3/READ pixel_3/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/RWL
+= pixel_3/READ pixel_3/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/RWL
+= pixel_3/READ pixel_3/8bit_dram_0/4bit_dram_0/dram_array_1/li_348_163#
+= pixel_3/READ pixel_3/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/RWL
+= pixel_3/READ pixel_3/8bit_dram_0/4bit_dram_0/li_370_440#
+= pixel_3/READ pixel_3/8bit_dram_0/4bit_dram_0/dram_array_0/li_348_163#
+= pixel_3/READ pixel_2/READ
+= pixel_3/READ pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/RWL
+= pixel_3/READ pixel_2/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/RWL
+= pixel_3/READ pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/li_348_163#
+= pixel_3/READ pixel_2/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/RWL
+= pixel_3/READ pixel_2/8bit_dram_0/4bit_dram_1/li_370_440#
+= pixel_3/READ pixel_2/8bit_dram_0/4bit_dram_1/dram_array_0/li_348_163#
+= pixel_3/READ pixel_2/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/RWL
+= pixel_3/READ pixel_2/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/RWL
+= pixel_3/READ pixel_2/8bit_dram_0/4bit_dram_0/dram_array_1/li_348_163#
+= pixel_3/READ pixel_2/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/RWL
+= pixel_3/READ pixel_2/8bit_dram_0/4bit_dram_0/li_370_440#
+= pixel_3/READ pixel_2/8bit_dram_0/4bit_dram_0/dram_array_0/li_348_163#
+R pixel_2/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/storage 995
+R pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/RWL 458
+R pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/storage 995
+R pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/storage 995
+R pixel_2/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/storage 995
+R pixel_2/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/storage 995
+C pixel_3/NB2 GND 2.23
+R pixel_3/NB2 572
+= pixel_3/NB2 pixel_1/NB2
+R pixel_3/VREF 5313
+= pixel_3/VREF pixel_1/VREF
+R pixel_3/PIX_OUT 1435
+= pixel_3/PIX_OUT pixel_1/PIX_OUT
+R pixel_3/VBIAS 1000
+= pixel_3/VBIAS pixel_1/VBIAS
+R pixel_1/PIX_IN 2878
+R pixel_1/a_1100_n1450# 1658
+R pixel_1/a_300_n1210# 356
+R pixel_1/a_1870_n1400# 2261
+R pixel_1/a_1720_n1450# 1349
+R pixel_1/a_1000_n1450# 1641
+R pixel_1/a_n30_n2640# 3155
+R pixel_1/a_120_n780# 4074
+R pixel_1/a_n140_n780# 4074
+R pixel_1/a_2200_n380# 898
+R pixel_1/a_2287_n292# 1050
+C pixel_1/AMP_OUT GND 2.83
+R pixel_1/AMP_OUT 2793
+R pixel_1/a_120_n550# 1874
+R pixel_1/a_1460_10# 563
+R pixel_1/a_350_10# 1192
+R pixel_1/a_n140_n550# 2088
+R pixel_3/GRAYx3x 1254
+= pixel_3/GRAYx3x pixel_3/m4_1874_n1740#
+= pixel_3/GRAYx3x pixel_3/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/WBL
+= pixel_3/GRAYx3x pixel_3/8bit_dram_0/4bit_dram_0/dram_array_1/li_0_n280#
+= pixel_3/GRAYx3x pixel_3/8bit_dram_0/4bit_dram_0/dram_array_1/li_0_n160#
+= pixel_3/GRAYx3x pixel_1/GRAYx3x
+= pixel_3/GRAYx3x pixel_1/m4_1874_n1740#
+= pixel_3/GRAYx3x pixel_1/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/WBL
+= pixel_3/GRAYx3x pixel_1/8bit_dram_0/4bit_dram_0/dram_array_1/li_0_n280#
+= pixel_3/GRAYx3x pixel_1/8bit_dram_0/4bit_dram_0/dram_array_1/li_0_n160#
+R pixel_1/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/RWL 458
+R pixel_3/OUTx3x 1180
+= pixel_3/OUTx3x pixel_3/m2_1809_n1725#
+= pixel_3/OUTx3x pixel_3/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/RBL
+= pixel_3/OUTx3x pixel_3/8bit_dram_0/4bit_dram_0/dram_array_1/li_228_n102#
+= pixel_3/OUTx3x pixel_1/OUTx3x
+= pixel_3/OUTx3x pixel_1/m2_1809_n1725#
+= pixel_3/OUTx3x pixel_1/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/RBL
+= pixel_3/OUTx3x pixel_1/8bit_dram_0/4bit_dram_0/dram_array_1/li_228_n102#
+R pixel_1/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/storage 995
+R pixel_3/OUTx2x 1167
+= pixel_3/OUTx2x pixel_3/m4_1684_n1740#
+= pixel_3/OUTx2x pixel_3/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/RBL
+= pixel_3/OUTx2x pixel_3/8bit_dram_0/4bit_dram_0/dram_array_1/li_230_20#
+= pixel_3/OUTx2x pixel_1/OUTx2x
+= pixel_3/OUTx2x pixel_1/m4_1684_n1740#
+= pixel_3/OUTx2x pixel_1/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/RBL
+= pixel_3/OUTx2x pixel_1/8bit_dram_0/4bit_dram_0/dram_array_1/li_230_20#
+R pixel_3/GRAYx2x 1318
+= pixel_3/GRAYx2x pixel_3/m2_1974_n1740#
+= pixel_3/GRAYx2x pixel_3/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/WBL
+= pixel_3/GRAYx2x pixel_3/8bit_dram_0/4bit_dram_0/dram_array_1/li_0_210#
+= pixel_3/GRAYx2x pixel_1/GRAYx2x
+= pixel_3/GRAYx2x pixel_1/m2_1974_n1740#
+= pixel_3/GRAYx2x pixel_1/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/WBL
+= pixel_3/GRAYx2x pixel_1/8bit_dram_0/4bit_dram_0/dram_array_1/li_0_210#
+R pixel_1/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/storage 995
+R pixel_3/GRAYx1x 1254
+= pixel_3/GRAYx1x pixel_3/m4_2309_n1740#
+= pixel_3/GRAYx1x pixel_3/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/WBL
+= pixel_3/GRAYx1x pixel_3/8bit_dram_0/4bit_dram_0/dram_array_0/li_0_n280#
+= pixel_3/GRAYx1x pixel_3/8bit_dram_0/4bit_dram_0/dram_array_0/li_0_n160#
+= pixel_3/GRAYx1x pixel_1/GRAYx1x
+= pixel_3/GRAYx1x pixel_1/m4_2309_n1740#
+= pixel_3/GRAYx1x pixel_1/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/WBL
+= pixel_3/GRAYx1x pixel_1/8bit_dram_0/4bit_dram_0/dram_array_0/li_0_n280#
+= pixel_3/GRAYx1x pixel_1/8bit_dram_0/4bit_dram_0/dram_array_0/li_0_n160#
+C pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL GND 2.54
+R pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL 5657
+= pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_1/a_2260_n1450#
+= pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/WWL
+= pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/a_7_n377#
+= pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/a_60_n65#
+= pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_1/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/WWL
+= pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_1/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/WWL
+= pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_1/8bit_dram_0/4bit_dram_1/dram_array_0/a_7_n377#
+= pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_1/8bit_dram_0/4bit_dram_1/dram_array_0/a_60_n65#
+= pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_1/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/WWL
+= pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_1/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/WWL
+= pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_1/8bit_dram_0/4bit_dram_0/dram_array_1/a_7_n377#
+= pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_1/8bit_dram_0/4bit_dram_0/dram_array_1/a_60_n65#
+= pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_1/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/WWL
+= pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_1/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/WWL
+= pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_1/8bit_dram_0/4bit_dram_0/dram_array_0/a_7_n377#
+= pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_1/8bit_dram_0/4bit_dram_0/dram_array_0/a_60_n65#
+R pixel_3/OUTx1x 1180
+= pixel_3/OUTx1x pixel_3/m2_2205_n1375#
+= pixel_3/OUTx1x pixel_3/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/RBL
+= pixel_3/OUTx1x pixel_3/8bit_dram_0/4bit_dram_0/dram_array_0/li_228_n102#
+= pixel_3/OUTx1x pixel_1/OUTx1x
+= pixel_3/OUTx1x pixel_1/m2_2205_n1375#
+= pixel_3/OUTx1x pixel_1/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/RBL
+= pixel_3/OUTx1x pixel_1/8bit_dram_0/4bit_dram_0/dram_array_0/li_228_n102#
+R pixel_1/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/storage 995
+R pixel_3/OUTx0x 1167
+= pixel_3/OUTx0x pixel_3/m4_2119_n1740#
+= pixel_3/OUTx0x pixel_3/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/RBL
+= pixel_3/OUTx0x pixel_3/8bit_dram_0/4bit_dram_0/dram_array_0/li_230_20#
+= pixel_3/OUTx0x pixel_1/OUTx0x
+= pixel_3/OUTx0x pixel_1/m4_2119_n1740#
+= pixel_3/OUTx0x pixel_1/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/RBL
+= pixel_3/OUTx0x pixel_1/8bit_dram_0/4bit_dram_0/dram_array_0/li_230_20#
+C pixel_3/GRAYx0x GND 2.44
+R pixel_3/GRAYx0x 1319
+= pixel_3/GRAYx0x pixel_3/m2_2409_n1700#
+= pixel_3/GRAYx0x pixel_3/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/WBL
+= pixel_3/GRAYx0x pixel_3/8bit_dram_0/4bit_dram_0/dram_array_0/li_0_210#
+= pixel_3/GRAYx0x pixel_1/GRAYx0x
+= pixel_3/GRAYx0x pixel_1/m2_2409_n1700#
+= pixel_3/GRAYx0x pixel_1/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/WBL
+= pixel_3/GRAYx0x pixel_1/8bit_dram_0/4bit_dram_0/dram_array_0/li_0_210#
+R pixel_1/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/storage 995
+R pixel_3/GRAYx7x 1254
+= pixel_3/GRAYx7x pixel_3/m4_1004_n1740#
+= pixel_3/GRAYx7x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WBL
+= pixel_3/GRAYx7x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/li_0_n280#
+= pixel_3/GRAYx7x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/li_0_n160#
+= pixel_3/GRAYx7x pixel_1/GRAYx7x
+= pixel_3/GRAYx7x pixel_1/m4_1004_n1740#
+= pixel_3/GRAYx7x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WBL
+= pixel_3/GRAYx7x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/li_0_n280#
+= pixel_3/GRAYx7x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/li_0_n160#
+R pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/RWL 458
+R pixel_3/OUTx7x 1180
+= pixel_3/OUTx7x pixel_3/m2_939_n1735#
+= pixel_3/OUTx7x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/RBL
+= pixel_3/OUTx7x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/li_228_n102#
+= pixel_3/OUTx7x pixel_1/OUTx7x
+= pixel_3/OUTx7x pixel_1/m2_939_n1735#
+= pixel_3/OUTx7x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/RBL
+= pixel_3/OUTx7x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/li_228_n102#
+R pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/storage 995
+R pixel_3/OUTx6x 1167
+= pixel_3/OUTx6x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/RBL
+= pixel_3/OUTx6x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/li_230_20#
+= pixel_3/OUTx6x pixel_1/OUTx6x
+= pixel_3/OUTx6x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/RBL
+= pixel_3/OUTx6x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/li_230_20#
+R pixel_3/GRAYx6x 1319
+= pixel_3/GRAYx6x pixel_3/m2_1104_n1730#
+= pixel_3/GRAYx6x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/WBL
+= pixel_3/GRAYx6x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_1/li_0_210#
+= pixel_3/GRAYx6x pixel_1/GRAYx6x
+= pixel_3/GRAYx6x pixel_1/m2_1104_n1730#
+= pixel_3/GRAYx6x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/WBL
+= pixel_3/GRAYx6x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/li_0_210#
+R pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/storage 995
+R pixel_3/GRAYx5x 1254
+= pixel_3/GRAYx5x pixel_3/m4_1439_n1740#
+= pixel_3/GRAYx5x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/WBL
+= pixel_3/GRAYx5x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_0/li_0_n280#
+= pixel_3/GRAYx5x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_0/li_0_n160#
+= pixel_3/GRAYx5x pixel_1/GRAYx5x
+= pixel_3/GRAYx5x pixel_1/m4_1439_n1740#
+= pixel_3/GRAYx5x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/WBL
+= pixel_3/GRAYx5x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_0/li_0_n280#
+= pixel_3/GRAYx5x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_0/li_0_n160#
+R pixel_3/OUTx5x 1180
+= pixel_3/OUTx5x pixel_3/m2_1374_n1735#
+= pixel_3/OUTx5x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/RBL
+= pixel_3/OUTx5x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_0/li_228_n102#
+= pixel_3/OUTx5x pixel_1/OUTx5x
+= pixel_3/OUTx5x pixel_1/m2_1374_n1735#
+= pixel_3/OUTx5x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/RBL
+= pixel_3/OUTx5x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_0/li_228_n102#
+R pixel_1/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/storage 995
+R pixel_3/OUTx4x 1167
+= pixel_3/OUTx4x pixel_3/m4_1249_n1740#
+= pixel_3/OUTx4x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/RBL
+= pixel_3/OUTx4x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_0/li_230_20#
+= pixel_3/OUTx4x pixel_1/OUTx4x
+= pixel_3/OUTx4x pixel_1/m4_1249_n1740#
+= pixel_3/OUTx4x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/RBL
+= pixel_3/OUTx4x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_0/li_230_20#
+R pixel_3/GRAYx4x 1318
+= pixel_3/GRAYx4x pixel_3/m2_1539_n1730#
+= pixel_3/GRAYx4x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/WBL
+= pixel_3/GRAYx4x pixel_3/8bit_dram_0/4bit_dram_1/dram_array_0/li_0_210#
+= pixel_3/GRAYx4x pixel_1/GRAYx4x
+= pixel_3/GRAYx4x pixel_1/m2_1539_n1730#
+= pixel_3/GRAYx4x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/WBL
+= pixel_3/GRAYx4x pixel_1/8bit_dram_0/4bit_dram_1/dram_array_0/li_0_210#
+R pixel_1/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/storage 995
+C pixel_1/NB1 GND 2.64
+R pixel_1/NB1 912
+= pixel_1/NB1 pixel_0/NB1
+C pixel_1/BIAS2 GND 3.59
+R pixel_1/BIAS2 474
+= pixel_1/BIAS2 pixel_0/BIAS2
+R pixel_1/BIAS1 391
+= pixel_1/BIAS1 pixel_0/BIAS1
+R pixel_1/V_RAMP 1333
+= pixel_1/V_RAMP pixel_0/V_RAMP
+C pixel_2/NB2 GND 2.29
+R pixel_2/NB2 572
+= pixel_2/NB2 pixel_0/NB2
+C pixel_2/VREF GND 2.16
+R pixel_2/VREF 5313
+= pixel_2/VREF pixel_0/VREF
+R pixel_2/PIX_OUT 1435
+= pixel_2/PIX_OUT pixel_0/PIX_OUT
+R pixel_1/ROW_SEL 532
+= pixel_1/ROW_SEL pixel_0/ROW_SEL
+R pixel_2/VBIAS 1000
+= pixel_2/VBIAS pixel_0/VBIAS
+R pixel_0/PIX_IN 2878
+R pixel_1/CSA_VREF 1375
+= pixel_1/CSA_VREF pixel_0/CSA_VREF
+R pixel_1/SF_IB 447
+= pixel_1/SF_IB pixel_0/SF_IB
+C pixel_1/DVDD GND 6.62
+R pixel_1/DVDD 17912
+= pixel_1/DVDD pixel_0/DVDD
+C pixel_1/VDD GND 12.66
+R pixel_1/VDD 21206
+= pixel_1/VDD pixel_0/VDD
+R pixel_0/a_1100_n1450# 1658
+R pixel_0/a_300_n1210# 356
+R pixel_0/a_1870_n1400# 2261
+R pixel_0/a_1720_n1450# 1349
+R pixel_0/a_1000_n1450# 1641
+R pixel_0/a_n30_n2640# 3155
+R pixel_0/a_120_n780# 4074
+R pixel_0/a_n140_n780# 4074
+R pixel_0/a_2200_n380# 898
+R pixel_0/a_2287_n292# 1050
+C pixel_0/AMP_OUT GND 2.79
+R pixel_0/AMP_OUT 2793
+R pixel_0/a_120_n550# 1874
+R pixel_0/a_1460_10# 563
+R pixel_0/a_350_10# 1192
+R pixel_0/a_n140_n550# 2088
+R pixel_2/GRAYx3x 1254
+= pixel_2/GRAYx3x pixel_2/m4_1874_n1740#
+= pixel_2/GRAYx3x pixel_2/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/WBL
+= pixel_2/GRAYx3x pixel_2/8bit_dram_0/4bit_dram_0/dram_array_1/li_0_n280#
+= pixel_2/GRAYx3x pixel_2/8bit_dram_0/4bit_dram_0/dram_array_1/li_0_n160#
+= pixel_2/GRAYx3x pixel_0/GRAYx3x
+= pixel_2/GRAYx3x pixel_0/m4_1874_n1740#
+= pixel_2/GRAYx3x pixel_0/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/WBL
+= pixel_2/GRAYx3x pixel_0/8bit_dram_0/4bit_dram_0/dram_array_1/li_0_n280#
+= pixel_2/GRAYx3x pixel_0/8bit_dram_0/4bit_dram_0/dram_array_1/li_0_n160#
+R pixel_0/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/RWL 458
+R pixel_2/OUTx3x 1180
+= pixel_2/OUTx3x pixel_2/m2_1809_n1725#
+= pixel_2/OUTx3x pixel_2/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/RBL
+= pixel_2/OUTx3x pixel_2/8bit_dram_0/4bit_dram_0/dram_array_1/li_228_n102#
+= pixel_2/OUTx3x pixel_0/OUTx3x
+= pixel_2/OUTx3x pixel_0/m2_1809_n1725#
+= pixel_2/OUTx3x pixel_0/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/RBL
+= pixel_2/OUTx3x pixel_0/8bit_dram_0/4bit_dram_0/dram_array_1/li_228_n102#
+R pixel_0/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/storage 995
+R pixel_2/OUTx2x 1167
+= pixel_2/OUTx2x pixel_2/m4_1684_n1740#
+= pixel_2/OUTx2x pixel_2/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/RBL
+= pixel_2/OUTx2x pixel_2/8bit_dram_0/4bit_dram_0/dram_array_1/li_230_20#
+= pixel_2/OUTx2x pixel_0/OUTx2x
+= pixel_2/OUTx2x pixel_0/m4_1684_n1740#
+= pixel_2/OUTx2x pixel_0/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/RBL
+= pixel_2/OUTx2x pixel_0/8bit_dram_0/4bit_dram_0/dram_array_1/li_230_20#
+R pixel_2/GRAYx2x 1318
+= pixel_2/GRAYx2x pixel_2/m2_1974_n1740#
+= pixel_2/GRAYx2x pixel_2/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/WBL
+= pixel_2/GRAYx2x pixel_2/8bit_dram_0/4bit_dram_0/dram_array_1/li_0_210#
+= pixel_2/GRAYx2x pixel_0/GRAYx2x
+= pixel_2/GRAYx2x pixel_0/m2_1974_n1740#
+= pixel_2/GRAYx2x pixel_0/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/WBL
+= pixel_2/GRAYx2x pixel_0/8bit_dram_0/4bit_dram_0/dram_array_1/li_0_210#
+R pixel_0/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/storage 995
+R pixel_2/GRAYx1x 1254
+= pixel_2/GRAYx1x pixel_2/m4_2309_n1740#
+= pixel_2/GRAYx1x pixel_2/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/WBL
+= pixel_2/GRAYx1x pixel_2/8bit_dram_0/4bit_dram_0/dram_array_0/li_0_n280#
+= pixel_2/GRAYx1x pixel_2/8bit_dram_0/4bit_dram_0/dram_array_0/li_0_n160#
+= pixel_2/GRAYx1x pixel_0/GRAYx1x
+= pixel_2/GRAYx1x pixel_0/m4_2309_n1740#
+= pixel_2/GRAYx1x pixel_0/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/WBL
+= pixel_2/GRAYx1x pixel_0/8bit_dram_0/4bit_dram_0/dram_array_0/li_0_n280#
+= pixel_2/GRAYx1x pixel_0/8bit_dram_0/4bit_dram_0/dram_array_0/li_0_n160#
+C pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL GND 2.57
+R pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL 5657
+= pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_0/a_2260_n1450#
+= pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/WWL
+= pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/a_7_n377#
+= pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/a_60_n65#
+= pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_0/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/WWL
+= pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_0/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/WWL
+= pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_0/8bit_dram_0/4bit_dram_1/dram_array_0/a_7_n377#
+= pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_0/8bit_dram_0/4bit_dram_1/dram_array_0/a_60_n65#
+= pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_0/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_1/WWL
+= pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_0/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/WWL
+= pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_0/8bit_dram_0/4bit_dram_0/dram_array_1/a_7_n377#
+= pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_0/8bit_dram_0/4bit_dram_0/dram_array_1/a_60_n65#
+= pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_0/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/WWL
+= pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_0/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/WWL
+= pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_0/8bit_dram_0/4bit_dram_0/dram_array_0/a_7_n377#
+= pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_0/8bit_dram_0/4bit_dram_0/dram_array_0/a_60_n65#
+R pixel_2/OUTx1x 1180
+= pixel_2/OUTx1x pixel_2/m2_2205_n1375#
+= pixel_2/OUTx1x pixel_2/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/RBL
+= pixel_2/OUTx1x pixel_2/8bit_dram_0/4bit_dram_0/dram_array_0/li_228_n102#
+= pixel_2/OUTx1x pixel_0/OUTx1x
+= pixel_2/OUTx1x pixel_0/m2_2205_n1375#
+= pixel_2/OUTx1x pixel_0/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/RBL
+= pixel_2/OUTx1x pixel_0/8bit_dram_0/4bit_dram_0/dram_array_0/li_228_n102#
+R pixel_0/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/storage 995
+R pixel_1/READ 8937
+= pixel_1/READ pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/RWL
+= pixel_1/READ pixel_1/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/RWL
+= pixel_1/READ pixel_1/8bit_dram_0/4bit_dram_1/dram_array_1/li_348_163#
+= pixel_1/READ pixel_1/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/RWL
+= pixel_1/READ pixel_1/8bit_dram_0/4bit_dram_1/li_370_440#
+= pixel_1/READ pixel_1/8bit_dram_0/4bit_dram_1/dram_array_0/li_348_163#
+= pixel_1/READ pixel_1/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/RWL
+= pixel_1/READ pixel_1/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/RWL
+= pixel_1/READ pixel_1/8bit_dram_0/4bit_dram_0/dram_array_1/li_348_163#
+= pixel_1/READ pixel_1/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/RWL
+= pixel_1/READ pixel_1/8bit_dram_0/4bit_dram_0/li_370_440#
+= pixel_1/READ pixel_1/8bit_dram_0/4bit_dram_0/dram_array_0/li_348_163#
+= pixel_1/READ pixel_0/READ
+= pixel_1/READ pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/RWL
+= pixel_1/READ pixel_0/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/RWL
+= pixel_1/READ pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/li_348_163#
+= pixel_1/READ pixel_0/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/RWL
+= pixel_1/READ pixel_0/8bit_dram_0/4bit_dram_1/li_370_440#
+= pixel_1/READ pixel_0/8bit_dram_0/4bit_dram_1/dram_array_0/li_348_163#
+= pixel_1/READ pixel_0/8bit_dram_0/4bit_dram_0/dram_array_1/dram_cell_0/RWL
+= pixel_1/READ pixel_0/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_1/RWL
+= pixel_1/READ pixel_0/8bit_dram_0/4bit_dram_0/dram_array_1/li_348_163#
+= pixel_1/READ pixel_0/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/RWL
+= pixel_1/READ pixel_0/8bit_dram_0/4bit_dram_0/li_370_440#
+= pixel_1/READ pixel_0/8bit_dram_0/4bit_dram_0/dram_array_0/li_348_163#
+R pixel_2/OUTx0x 1167
+= pixel_2/OUTx0x pixel_2/m4_2119_n1740#
+= pixel_2/OUTx0x pixel_2/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/RBL
+= pixel_2/OUTx0x pixel_2/8bit_dram_0/4bit_dram_0/dram_array_0/li_230_20#
+= pixel_2/OUTx0x pixel_0/OUTx0x
+= pixel_2/OUTx0x pixel_0/m4_2119_n1740#
+= pixel_2/OUTx0x pixel_0/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/RBL
+= pixel_2/OUTx0x pixel_0/8bit_dram_0/4bit_dram_0/dram_array_0/li_230_20#
+C pixel_2/GRAYx0x GND 2.23
+R pixel_2/GRAYx0x 1319
+= pixel_2/GRAYx0x pixel_2/m2_2409_n1700#
+= pixel_2/GRAYx0x pixel_2/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/WBL
+= pixel_2/GRAYx0x pixel_2/8bit_dram_0/4bit_dram_0/dram_array_0/li_0_210#
+= pixel_2/GRAYx0x pixel_0/GRAYx0x
+= pixel_2/GRAYx0x pixel_0/m2_2409_n1700#
+= pixel_2/GRAYx0x pixel_0/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/WBL
+= pixel_2/GRAYx0x pixel_0/8bit_dram_0/4bit_dram_0/dram_array_0/li_0_210#
+R pixel_0/8bit_dram_0/4bit_dram_0/dram_array_0/dram_cell_0/storage 995
+R pixel_2/GRAYx7x 1254
+= pixel_2/GRAYx7x pixel_2/m4_1004_n1740#
+= pixel_2/GRAYx7x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WBL
+= pixel_2/GRAYx7x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/li_0_n280#
+= pixel_2/GRAYx7x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/li_0_n160#
+= pixel_2/GRAYx7x pixel_0/GRAYx7x
+= pixel_2/GRAYx7x pixel_0/m4_1004_n1740#
+= pixel_2/GRAYx7x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WBL
+= pixel_2/GRAYx7x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/li_0_n280#
+= pixel_2/GRAYx7x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/li_0_n160#
+R pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/RWL 458
+R pixel_2/OUTx7x 1180
+= pixel_2/OUTx7x pixel_2/m2_939_n1735#
+= pixel_2/OUTx7x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/RBL
+= pixel_2/OUTx7x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/li_228_n102#
+= pixel_2/OUTx7x pixel_0/OUTx7x
+= pixel_2/OUTx7x pixel_0/m2_939_n1735#
+= pixel_2/OUTx7x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/RBL
+= pixel_2/OUTx7x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/li_228_n102#
+R pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/storage 995
+R pixel_2/OUTx6x 1167
+= pixel_2/OUTx6x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/RBL
+= pixel_2/OUTx6x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/li_230_20#
+= pixel_2/OUTx6x pixel_0/OUTx6x
+= pixel_2/OUTx6x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/RBL
+= pixel_2/OUTx6x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/li_230_20#
+R pixel_2/GRAYx6x 1319
+= pixel_2/GRAYx6x pixel_2/m2_1104_n1730#
+= pixel_2/GRAYx6x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/WBL
+= pixel_2/GRAYx6x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_1/li_0_210#
+= pixel_2/GRAYx6x pixel_0/GRAYx6x
+= pixel_2/GRAYx6x pixel_0/m2_1104_n1730#
+= pixel_2/GRAYx6x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/WBL
+= pixel_2/GRAYx6x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/li_0_210#
+R pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_0/storage 995
+R pixel_2/GRAYx5x 1254
+= pixel_2/GRAYx5x pixel_2/m4_1439_n1740#
+= pixel_2/GRAYx5x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/WBL
+= pixel_2/GRAYx5x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_0/li_0_n280#
+= pixel_2/GRAYx5x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_0/li_0_n160#
+= pixel_2/GRAYx5x pixel_0/GRAYx5x
+= pixel_2/GRAYx5x pixel_0/m4_1439_n1740#
+= pixel_2/GRAYx5x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/WBL
+= pixel_2/GRAYx5x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_0/li_0_n280#
+= pixel_2/GRAYx5x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_0/li_0_n160#
+R pixel_2/OUTx5x 1180
+= pixel_2/OUTx5x pixel_2/m2_1374_n1735#
+= pixel_2/OUTx5x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/RBL
+= pixel_2/OUTx5x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_0/li_228_n102#
+= pixel_2/OUTx5x pixel_0/OUTx5x
+= pixel_2/OUTx5x pixel_0/m2_1374_n1735#
+= pixel_2/OUTx5x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/RBL
+= pixel_2/OUTx5x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_0/li_228_n102#
+R pixel_0/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/storage 995
+R pixel_2/OUTx4x 1167
+= pixel_2/OUTx4x pixel_2/m4_1249_n1740#
+= pixel_2/OUTx4x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/RBL
+= pixel_2/OUTx4x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_0/li_230_20#
+= pixel_2/OUTx4x pixel_0/OUTx4x
+= pixel_2/OUTx4x pixel_0/m4_1249_n1740#
+= pixel_2/OUTx4x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/RBL
+= pixel_2/OUTx4x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_0/li_230_20#
+R pixel_2/GRAYx4x 1318
+= pixel_2/GRAYx4x pixel_2/m2_1539_n1730#
+= pixel_2/GRAYx4x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/WBL
+= pixel_2/GRAYx4x pixel_2/8bit_dram_0/4bit_dram_1/dram_array_0/li_0_210#
+= pixel_2/GRAYx4x pixel_0/GRAYx4x
+= pixel_2/GRAYx4x pixel_0/m2_1539_n1730#
+= pixel_2/GRAYx4x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/WBL
+= pixel_2/GRAYx4x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_0/li_0_210#
+R pixel_0/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/storage 995

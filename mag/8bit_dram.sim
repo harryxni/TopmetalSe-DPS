@@ -1,0 +1,105 @@
+| units: 500000 tech: sky130A format: MIT
+x 4bit_dram_1/dram_array_0/dram_cell_0/storage 4bit_dram_1/dram_array_0/dram_cell_0/RBL 4bit_dram_1/dram_array_1/dram_cell_0/RWL VSUBS l=30 w=200 x=1180 y=441 sky130_fd_pr__nfet_01v8
+x 4bit_dram_1/dram_array_1/dram_cell_1/WWL 4bit_dram_1/dram_array_0/dram_cell_0/WBL 4bit_dram_1/dram_array_0/dram_cell_0/storage VSUBS l=30 w=200 x=950 y=441 sky130_fd_pr__nfet_01v8
+x 4bit_dram_1/dram_array_0/dram_cell_1/storage 4bit_dram_1/dram_array_0/dram_cell_1/RBL 4bit_dram_1/dram_array_1/dram_cell_0/RWL VSUBS l=30 w=200 x=1180 y=328 sky130_fd_pr__nfet_01v8
+x 4bit_dram_1/dram_array_1/dram_cell_1/WWL 4bit_dram_1/dram_array_0/dram_cell_1/WBL 4bit_dram_1/dram_array_0/dram_cell_1/storage VSUBS l=30 w=200 x=950 y=328 sky130_fd_pr__nfet_01v8
+x 4bit_dram_1/dram_array_1/dram_cell_0/storage 4bit_dram_1/dram_array_1/dram_cell_0/RBL 4bit_dram_1/dram_array_1/dram_cell_0/RWL VSUBS l=30 w=200 x=1615 y=441 sky130_fd_pr__nfet_01v8
+x 4bit_dram_1/dram_array_1/dram_cell_1/WWL 4bit_dram_1/dram_array_1/dram_cell_0/WBL 4bit_dram_1/dram_array_1/dram_cell_0/storage VSUBS l=30 w=200 x=1385 y=441 sky130_fd_pr__nfet_01v8
+x 4bit_dram_1/dram_array_1/dram_cell_1/storage 4bit_dram_1/dram_array_1/dram_cell_1/RBL 4bit_dram_1/dram_array_1/dram_cell_1/RWL VSUBS l=30 w=200 x=1615 y=328 sky130_fd_pr__nfet_01v8
+x 4bit_dram_1/dram_array_1/dram_cell_1/WWL 4bit_dram_1/dram_array_1/dram_cell_1/WBL 4bit_dram_1/dram_array_1/dram_cell_1/storage VSUBS l=30 w=200 x=1385 y=328 sky130_fd_pr__nfet_01v8
+x 4bit_dram_0/dram_array_0/dram_cell_0/storage 4bit_dram_0/dram_array_0/dram_cell_0/RBL 4bit_dram_1/dram_array_1/dram_cell_0/RWL VSUBS l=30 w=200 x=310 y=441 sky130_fd_pr__nfet_01v8
+x 4bit_dram_1/dram_array_1/dram_cell_1/WWL 4bit_dram_0/dram_array_0/dram_cell_0/WBL 4bit_dram_0/dram_array_0/dram_cell_0/storage VSUBS l=30 w=200 x=80 y=441 sky130_fd_pr__nfet_01v8
+x 4bit_dram_0/dram_array_0/dram_cell_1/storage 4bit_dram_0/dram_array_0/dram_cell_1/RBL 4bit_dram_1/dram_array_1/dram_cell_0/RWL VSUBS l=30 w=200 x=310 y=328 sky130_fd_pr__nfet_01v8
+x 4bit_dram_1/dram_array_1/dram_cell_1/WWL 4bit_dram_0/dram_array_0/dram_cell_1/WBL 4bit_dram_0/dram_array_0/dram_cell_1/storage VSUBS l=30 w=200 x=80 y=328 sky130_fd_pr__nfet_01v8
+x 4bit_dram_0/dram_array_1/dram_cell_0/storage 4bit_dram_0/dram_array_1/dram_cell_0/RBL 4bit_dram_1/dram_array_1/dram_cell_0/RWL VSUBS l=30 w=200 x=745 y=441 sky130_fd_pr__nfet_01v8
+x 4bit_dram_1/dram_array_1/dram_cell_1/WWL 4bit_dram_0/dram_array_1/dram_cell_0/WBL 4bit_dram_0/dram_array_1/dram_cell_0/storage VSUBS l=30 w=200 x=515 y=441 sky130_fd_pr__nfet_01v8
+x 4bit_dram_0/dram_array_1/dram_cell_1/storage 4bit_dram_0/dram_array_1/dram_cell_1/RBL 4bit_dram_0/dram_array_1/dram_cell_1/RWL VSUBS l=30 w=200 x=745 y=328 sky130_fd_pr__nfet_01v8
+x 4bit_dram_1/dram_array_1/dram_cell_1/WWL 4bit_dram_0/dram_array_1/dram_cell_1/WBL 4bit_dram_0/dram_array_1/dram_cell_1/storage VSUBS l=30 w=200 x=515 y=328 sky130_fd_pr__nfet_01v8
+R 4bit_dram_0/dram_array_1/dram_cell_1/WBL 460
+= 4bit_dram_0/dram_array_1/dram_cell_1/WBL 4bit_dram_0/dram_array_1/li_0_n280#
+= 4bit_dram_0/dram_array_1/dram_cell_1/WBL 4bit_dram_0/dram_array_1/li_0_n160#
+R 4bit_dram_0/dram_array_1/dram_cell_1/RWL 458
+R 4bit_dram_0/dram_array_1/dram_cell_1/RBL 410
+= 4bit_dram_0/dram_array_1/dram_cell_1/RBL 4bit_dram_0/dram_array_1/li_228_n102#
+R 4bit_dram_0/dram_array_1/dram_cell_1/storage 995
+R 4bit_dram_0/dram_array_1/dram_cell_0/RBL 412
+= 4bit_dram_0/dram_array_1/dram_cell_0/RBL 4bit_dram_0/dram_array_1/li_230_20#
+R 4bit_dram_0/dram_array_1/dram_cell_0/WBL 488
+= 4bit_dram_0/dram_array_1/dram_cell_0/WBL 4bit_dram_0/dram_array_1/li_0_210#
+R 4bit_dram_0/dram_array_1/dram_cell_0/storage 995
+R 4bit_dram_0/dram_array_0/dram_cell_1/WBL 460
+= 4bit_dram_0/dram_array_0/dram_cell_1/WBL 4bit_dram_0/dram_array_0/li_0_n280#
+= 4bit_dram_0/dram_array_0/dram_cell_1/WBL 4bit_dram_0/dram_array_0/li_0_n160#
+R 4bit_dram_1/dram_array_1/dram_cell_1/WWL 4711
+= 4bit_dram_1/dram_array_1/dram_cell_1/WWL 4bit_dram_1/dram_array_1/dram_cell_0/WWL
+= 4bit_dram_1/dram_array_1/dram_cell_1/WWL 4bit_dram_1/dram_array_1/a_7_n377#
+= 4bit_dram_1/dram_array_1/dram_cell_1/WWL 4bit_dram_1/dram_array_1/a_60_n65#
+= 4bit_dram_1/dram_array_1/dram_cell_1/WWL 4bit_dram_1/dram_array_0/dram_cell_1/WWL
+= 4bit_dram_1/dram_array_1/dram_cell_1/WWL 4bit_dram_1/dram_array_0/dram_cell_0/WWL
+= 4bit_dram_1/dram_array_1/dram_cell_1/WWL 4bit_dram_1/dram_array_0/a_7_n377#
+= 4bit_dram_1/dram_array_1/dram_cell_1/WWL 4bit_dram_1/dram_array_0/a_60_n65#
+= 4bit_dram_1/dram_array_1/dram_cell_1/WWL 4bit_dram_0/dram_array_1/dram_cell_1/WWL
+= 4bit_dram_1/dram_array_1/dram_cell_1/WWL 4bit_dram_0/dram_array_1/dram_cell_0/WWL
+= 4bit_dram_1/dram_array_1/dram_cell_1/WWL 4bit_dram_0/dram_array_1/a_7_n377#
+= 4bit_dram_1/dram_array_1/dram_cell_1/WWL 4bit_dram_0/dram_array_1/a_60_n65#
+= 4bit_dram_1/dram_array_1/dram_cell_1/WWL 4bit_dram_0/dram_array_0/dram_cell_1/WWL
+= 4bit_dram_1/dram_array_1/dram_cell_1/WWL 4bit_dram_0/dram_array_0/dram_cell_0/WWL
+= 4bit_dram_1/dram_array_1/dram_cell_1/WWL 4bit_dram_0/dram_array_0/a_7_n377#
+= 4bit_dram_1/dram_array_1/dram_cell_1/WWL 4bit_dram_0/dram_array_0/a_60_n65#
+R 4bit_dram_0/dram_array_0/dram_cell_1/RBL 410
+= 4bit_dram_0/dram_array_0/dram_cell_1/RBL 4bit_dram_0/dram_array_0/li_228_n102#
+R 4bit_dram_0/dram_array_0/dram_cell_1/storage 995
+R 4bit_dram_1/dram_array_1/dram_cell_0/RWL 4331
+= 4bit_dram_1/dram_array_1/dram_cell_0/RWL 4bit_dram_1/dram_array_0/dram_cell_1/RWL
+= 4bit_dram_1/dram_array_1/dram_cell_0/RWL 4bit_dram_1/dram_array_1/li_348_163#
+= 4bit_dram_1/dram_array_1/dram_cell_0/RWL 4bit_dram_1/dram_array_0/dram_cell_0/RWL
+= 4bit_dram_1/dram_array_1/dram_cell_0/RWL 4bit_dram_1/li_370_440#
+= 4bit_dram_1/dram_array_1/dram_cell_0/RWL 4bit_dram_1/dram_array_0/li_348_163#
+= 4bit_dram_1/dram_array_1/dram_cell_0/RWL 4bit_dram_0/dram_array_1/dram_cell_0/RWL
+= 4bit_dram_1/dram_array_1/dram_cell_0/RWL 4bit_dram_0/dram_array_0/dram_cell_1/RWL
+= 4bit_dram_1/dram_array_1/dram_cell_0/RWL 4bit_dram_0/dram_array_1/li_348_163#
+= 4bit_dram_1/dram_array_1/dram_cell_0/RWL 4bit_dram_0/dram_array_0/dram_cell_0/RWL
+= 4bit_dram_1/dram_array_1/dram_cell_0/RWL 4bit_dram_0/li_370_440#
+= 4bit_dram_1/dram_array_1/dram_cell_0/RWL 4bit_dram_0/dram_array_0/li_348_163#
+R 4bit_dram_0/dram_array_0/dram_cell_0/RBL 412
+= 4bit_dram_0/dram_array_0/dram_cell_0/RBL 4bit_dram_0/dram_array_0/li_230_20#
+R 4bit_dram_0/dram_array_0/dram_cell_0/WBL 488
+= 4bit_dram_0/dram_array_0/dram_cell_0/WBL 4bit_dram_0/dram_array_0/li_0_210#
+R 4bit_dram_0/dram_array_0/dram_cell_0/storage 995
+R 4bit_dram_1/dram_array_1/dram_cell_1/WBL 460
+= 4bit_dram_1/dram_array_1/dram_cell_1/WBL 4bit_dram_1/dram_array_1/li_0_n280#
+= 4bit_dram_1/dram_array_1/dram_cell_1/WBL 4bit_dram_1/dram_array_1/li_0_n160#
+R 4bit_dram_1/dram_array_1/dram_cell_1/RWL 458
+R 4bit_dram_1/dram_array_1/dram_cell_1/RBL 410
+= 4bit_dram_1/dram_array_1/dram_cell_1/RBL 4bit_dram_1/dram_array_1/li_228_n102#
+R 4bit_dram_1/dram_array_1/dram_cell_1/storage 995
+= VSUBS 4bit_dram_0/VSUBS
+= VSUBS 4bit_dram_0/dram_array_0/VSUBS
+= VSUBS 4bit_dram_0/dram_array_0/dram_cell_0/VSUBS
+= VSUBS 4bit_dram_0/dram_array_0/dram_cell_1/VSUBS
+= VSUBS 4bit_dram_0/dram_array_1/VSUBS
+= VSUBS 4bit_dram_0/dram_array_1/dram_cell_0/VSUBS
+= VSUBS 4bit_dram_0/dram_array_1/dram_cell_1/VSUBS
+= VSUBS 4bit_dram_1/VSUBS
+= VSUBS 4bit_dram_1/dram_array_0/VSUBS
+= VSUBS 4bit_dram_1/dram_array_0/dram_cell_0/VSUBS
+= VSUBS 4bit_dram_1/dram_array_0/dram_cell_1/VSUBS
+= VSUBS 4bit_dram_1/dram_array_1/VSUBS
+= VSUBS 4bit_dram_1/dram_array_1/dram_cell_0/VSUBS
+= VSUBS 4bit_dram_1/dram_array_1/dram_cell_1/VSUBS
+R 4bit_dram_1/dram_array_1/dram_cell_0/RBL 412
+= 4bit_dram_1/dram_array_1/dram_cell_0/RBL 4bit_dram_1/dram_array_1/li_230_20#
+R 4bit_dram_1/dram_array_1/dram_cell_0/WBL 488
+= 4bit_dram_1/dram_array_1/dram_cell_0/WBL 4bit_dram_1/dram_array_1/li_0_210#
+R 4bit_dram_1/dram_array_1/dram_cell_0/storage 995
+R 4bit_dram_1/dram_array_0/dram_cell_1/WBL 460
+= 4bit_dram_1/dram_array_0/dram_cell_1/WBL 4bit_dram_1/dram_array_0/li_0_n280#
+= 4bit_dram_1/dram_array_0/dram_cell_1/WBL 4bit_dram_1/dram_array_0/li_0_n160#
+R 4bit_dram_1/dram_array_0/dram_cell_1/RBL 410
+= 4bit_dram_1/dram_array_0/dram_cell_1/RBL 4bit_dram_1/dram_array_0/li_228_n102#
+R 4bit_dram_1/dram_array_0/dram_cell_1/storage 995
+R 4bit_dram_1/dram_array_0/dram_cell_0/RBL 412
+= 4bit_dram_1/dram_array_0/dram_cell_0/RBL 4bit_dram_1/dram_array_0/li_230_20#
+R 4bit_dram_1/dram_array_0/dram_cell_0/WBL 488
+= 4bit_dram_1/dram_array_0/dram_cell_0/WBL 4bit_dram_1/dram_array_0/li_0_210#
+R 4bit_dram_1/dram_array_0/dram_cell_0/storage 995

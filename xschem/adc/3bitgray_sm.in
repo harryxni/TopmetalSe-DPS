@@ -1,0 +1,9 @@
+* 3bit Gray Conter State Machine Input File 
+0 0s 0s 0s 1 -> 1 
+1 0s 0s 1s 1 -> 2
+2 0s 1s 1s 1 -> 3
+3 0s 1s 0s 1 -> 4
+4 1s 1s 0s 1 -> 5 
+5 1s 1s 1s 1 -> 6
+6 1s 0s 1s 1 -> 7
+7 1s 0s 0s 1 -> 1

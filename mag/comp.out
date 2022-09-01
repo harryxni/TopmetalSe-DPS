@@ -1,0 +1,51 @@
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+
+Subcircuit summary:
+Circuit 1: pixel.spice                     |Circuit 2: pixel_old.spice                 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8_lvt (9)            |sky130_fd_pr__nfet_01v8_lvt (9)            
+sky130_fd_pr__pfet_01v8_lvt (7)            |sky130_fd_pr__pfet_01v8_lvt (7)            
+sky130_fd_pr__cap_mim_m3_1 (1)             |sky130_fd_pr__cap_mim_m3_1 (1)             
+Number of devices: 17                      |Number of devices: 17                      
+Number of nets: 21                         |Number of nets: 21                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Property errors were found.
+Netlists match uniquely.
+There were property errors.
+sky130_fd_pr__pfet_01v8_lvt6 vs. sky130_fd_pr__pfet_01v8_lvt4:
+ pd circuit1: 8.1   circuit2: 0   
+ ad circuit1: 1.05   circuit2: 0   
+sky130_fd_pr__nfet_01v8_lvt12 vs. sky130_fd_pr__nfet_01v8_lvt2:
+ as circuit1: 2.1525   circuit2: 3.99   (delta=59.8%, cutoff=0%)
+sky130_fd_pr__nfet_01v8_lvt2 vs. sky130_fd_pr__nfet_01v8_lvt6:
+ as circuit1: 2.1525   circuit2: 3.52   (delta=48.2%, cutoff=0%)
+sky130_fd_pr__nfet_01v8_lvt14 vs. sky130_fd_pr__nfet_01v8_lvt7:
+ ps circuit1: 0   circuit2: 3   
+ as circuit1: 0   circuit2: 0.5   
+ pd circuit1: 8.4   circuit2: 8.3   (delta=1.2%, cutoff=0%)
+ ad circuit1: 1.185   circuit2: 1.15   (delta=3%, cutoff=0%)
+sky130_fd_pr__nfet_01v8_lvt13 vs. sky130_fd_pr__nfet_01v8_lvt9:
+ ps circuit1: 0   circuit2: 17.9   
+ as circuit1: 0   circuit2: 3.22   
+sky130_fd_pr__nfet_01v8_lvt1 vs. sky130_fd_pr__nfet_01v8_lvt12:
+ ps circuit1: 17.9   circuit2: 0   
+ as circuit1: 3.22   circuit2: 0   
+ pd circuit1: 5.9   circuit2: 0   
+ ad circuit1: 0.82   circuit2: 0   
+sky130_fd_pr__nfet_01v8_lvt0 vs. sky130_fd_pr__nfet_01v8_lvt13:
+ ps circuit1: 5   circuit2: 9.4   (delta=61.1%, cutoff=0%)
+ as circuit1: 1   circuit2: 5.4   (delta=138%, cutoff=0%)
+ pd circuit1: 5   circuit2: 5.9   (delta=16.5%, cutoff=0%)
+ ad circuit1: 0.65   circuit2: 1.2   (delta=59.5%, cutoff=0%)
+sky130_fd_pr__nfet_01v8_lvt4 vs. sky130_fd_pr__nfet_01v8_lvt15:
+ l circuit1: 1.2   circuit2: 1.15   (delta=4.26%, cutoff=0%)
+ pd circuit1: 5.7   circuit2: 0   
+ ad circuit1: 0.6975   circuit2: 0   
+Cells have no pins;  pin matching not needed.
+Device classes pixel.spice and pixel_old.spice are equivalent.
+Circuits match uniquely.
+Property errors were found.
+The following cells had property errors: pixel.spice

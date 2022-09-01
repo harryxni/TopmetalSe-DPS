@@ -1,0 +1,421 @@
+** sch_path: /home/hni/topmetal_dps/xschem/testbench/sim_dpspixel_tb.sch
+**.subckt sim_dpspixel_tb COL0x7x,COL0x6x,COL0x5x,COL0x4x,COL0x3x,COL0x2x,COL0x1x,COL0x0x
+*.opin COL0x7x,COL0x6x,COL0x5x,COL0x4x,COL0x3x,COL0x2x,COL0x1x,COL0x0x
+x1 SF_IB CSA PLUS itest ANALOG AMP_OUT row_sel NB1 NB2 vbias OUTx7x OUTx6x OUTx5x OUTx4x OUTx3x
++ OUTx2x OUTx1x OUTx0x VCC RAMP BIAS1_OUT BIAS2_OUT READ GRAY_INx7x GRAY_INx6x GRAY_INx5x GRAY_INx4x
++ GRAY_INx3x GRAY_INx2x GRAY_INx1x GRAY_INx0x pixel_dps
+I1 VCC net14 100n
+I3 VCC net15 40n
+V8 VDD GND 1.8
+V9 PLUS GND DC=0.80
+V11 vbias GND DC=1
+V12 CSA GND DC=0.7
+V1 VCC GND 1.8
+V2 RAMP GND PULSE({ramp_low} {ramp_high} {t_start} {t_ramp} 0.01u {pixel_rate-t_ramp} {pixel_rate})
+I0 VDD NB1 400n
+I4 VDD NB2 30n
+V10 SA_VREF GND 400m
+I2 GND itest DC=0 PULSE(0 300p 110u 0.01u 0.01u 10u)
+.save  v(ramp)
+.save  v(vcc)
+V4 net1 GND PULSE(0 1.8 {t_start} 0.01u 0.01u {per/2} {per})
+XM1 net1 net2 CLK GND sky130_fd_pr__nfet_01v8 L=5 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+V3 net2 GND PULSE(2 0 {read_start} 0.01us 0.01us {pixel_rate-t_ramp} {pixel_rate})
+.save  v(clk)
+V7 READ GND PULSE(0 1.8 {read_start} 0.01u 0.01u {t_read} {pixel_rate})
+.save  v(read)
+x2 OUTx7x OUTx6x OUTx5x OUTx4x OUTx3x OUTx2x OUTx1x OUTx0x SA_VREF SA_IREF_OUT COL0x7x COL0x6x
++ COL0x5x COL0x4x COL0x3x COL0x2x COL0x1x COL0x0x 8bit_SA_converter
+x6 net4 GND adc_bridge
+x8 net5 VCC adc_bridge
+x7 net3 CLK adc_bridge
+x10 net13 net5 net12 net3 net11 net10 net4 net9 net8 net7 net6 8bit_graycounter
+x5 GRAY_INx7x net13 dac_bridge
+x9 GRAY_INx6x net12 dac_bridge
+x11 GRAY_INx5x net11 dac_bridge
+x12 GRAY_INx4x net10 dac_bridge
+x13 GRAY_INx3x net9 dac_bridge
+x14 GRAY_INx2x net8 dac_bridge
+x15 GRAY_INx1x net7 dac_bridge
+x16 GRAY_INx0x net6 dac_bridge
+.save  v(analog)
+I6 SF_IB GND 200n
+V5 row_sel GND dc=2
+.save  v(amp_out)
+.global VCC
+I8 VCC net16 100n
+XM8 ANALOG COL_SEL0 ARRAY_OUT GND sky130_fd_pr__nfet_01v8_lvt L=0.15 W=8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+I9 ARRAY_OUT GND 1u
+Vcol1 COL_SEL0 GND 1.8
+x3 NB1 ADC_ON NB2 net14 BIAS1_OUT SF_IB net15 BIAS2_OUT net16 SA_IREF_OUT bias
+V6 ADC_ON GND 1.8
+V20 DVDD GND 1.8
+.global DVDD
+**** begin user architecture code
+
+
+.param per = 0.1u
+.param t_start = 4u
+
+.param num_bits=8
+.param num_rows = 1
+.param num_cols = 1
+
+.param ramp_low=400m
+.param ramp_high=800m
+.param t_read=2u
+
+.param t_ramp = {per * pow(2,num_bits)}
+.param read_start = {t_start + t_ramp}
+.param pixel_rate = {t_ramp + t_read*num_rows}
+
+
+
+** opencircuitdesign pdks install
+.lib /opt/OpenICEDA/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  pixel_dps.sym # of pins=17
+** sym_path: /home/hni/topmetal_dps/xschem/pixel_dps.sym
+** sch_path: /home/hni/topmetal_dps/xschem/pixel_dps.sch
+.subckt pixel_dps  SF_IB CSA_VREF VREF PIX_IN PIX_OUT AMP_OUT ROW_SEL NB1 NB2 VBIAS OUTx7x OUTx6x
++ OUTx5x OUTx4x OUTx3x OUTx2x OUTx1x OUTx0x VCC V_RAMP BIAS1 BIAS2 READ GRAYx7x GRAYx6x GRAYx5x GRAYx4x
++ GRAYx3x GRAYx2x GRAYx1x GRAYx0x
+*.ipin V_RAMP
+*.ipin VCC
+*.opin OUTx7x,OUTx6x,OUTx5x,OUTx4x,OUTx3x,OUTx2x,OUTx1x,OUTx0x
+*.ipin READ
+*.ipin VREF
+*.ipin PIX_IN
+*.ipin CSA_VREF
+*.ipin VBIAS
+*.ipin NB1
+*.ipin NB2
+*.ipin GRAYx7x,GRAYx6x,GRAYx5x,GRAYx4x,GRAYx3x,GRAYx2x,GRAYx1x,GRAYx0x
+*.ipin BIAS1
+*.ipin BIAS2
+*.opin PIX_OUT
+*.ipin SF_IB
+*.ipin ROW_SEL
+*.opin AMP_OUT
+
+X8bit_dram_0 GRAYx2x OUTx4x OUTx2x OUTx6x GRAYx3x GRAYx4x OUTx0x GRAYx1x OUTx7x GRAYx5x
++ OUTx3x READ GRAYx7x 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL OUTx5x
++ OUTx1x GRAYx6x GRAYx0x x8bit_dram
+
+X0 a_2200_n380# ROW_SEL PIX_OUT GND sky130_fd_pr__nfet_01v8_lvt ad=6.5e+11p pd=5e+06u as=1e+12p ps=5e+06u w=2e+06u l=1e+06u
+X1 DVDD a_1000_n1450# a_1000_n1450# DVDD sky130_fd_pr__pfet_01v8_lvt ad=1.45e+12p pd=1.09e+07u as=3.5e+11p ps=2.7e+06u w=1e+06u l=1e+06u
+X2 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL a_1870_n1400# GND GND sky130_fd_pr__nfet_01v8 ad=4e+11p pd=2.8e+06u as=8.70025e+11p ps=7.105e+06u w=1e+06u l=150000u
+X3 GND NB1 a_n30_n2640# GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=3.22e+12p ps=1.79e+07u w=1.2e+06u l=1e+06u
+X4 a_n140_n550# VBIAS a_n140_n780# GND sky130_fd_pr__nfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=2.1525e+12p ps=1.76e+07u w=1e+06u l=800000u
+X5 a_1720_n1450# V_RAMP a_1100_n1450# GND sky130_fd_pr__nfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=8.8e+11p ps=7.1e+06u w=1e+06u l=150000u
+X6 a_1870_n1400# a_1720_n1450# DVDD DVDD sky130_fd_pr__pfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=0p ps=0u w=1e+06u l=450000u
+X7 a_1100_n1450# AMP_OUT a_1000_n1450# GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=3.5e+11p ps=2.7e+06u w=1e+06u l=150000u
+X8 a_2287_n292# AMP_OUT GND VDD sky130_fd_pr__pfet_01v8_lvt ad=5e+11p pd=3e+06u as=3.50025e+11p ps=2.705e+06u w=1e+06u l=1e+06u
+X9 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL a_1870_n1400# DVDD DVDD sky130_fd_pr__pfet_01v8 ad=3.5e+11p pd=2.7e+06u as=0p ps=0u w=1e+06u l=200000u
+X10 AMP_OUT NB2 GND GND sky130_fd_pr__nfet_01v8_lvt ad=6.975e+11p pd=5.7e+06u as=0p ps=0u w=1e+06u l=1.2e+06u
+X11 a_1100_n1450# BIAS1 GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=450000u l=1e+06u
+X12 a_350_10# a_n140_n550# a_n140_n550# VDD sky130_fd_pr__pfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=3.5e+11p ps=2.7e+06u w=1e+06u l=2e+06u
+X13 VDD SF_IB a_2287_n292# VDD sky130_fd_pr__pfet_01v8_lvt ad=1.05e+12p pd=8.1e+06u as=0p ps=0u w=1e+06u l=1e+06u
+X14 PIX_IN AMP_OUT sky130_fd_pr__cap_mim_m3_1 l=2e+06u w=2e+06u
+X15 a_n30_n2640# VREF a_n140_n780# GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=7e+06u l=150000u
+X16 VDD a_350_10# a_350_10# VDD sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X17 a_1460_10# a_350_10# VDD VDD sky130_fd_pr__pfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=0p ps=0u w=1e+06u l=2e+06u
+X18 AMP_OUT CSA_VREF PIX_IN VDD sky130_fd_pr__pfet_01v8_lvt ad=2.94e+11p pd=2.24e+06u as=2.73e+11p ps=2.14e+06u w=420000u l=8e+06u
+X19 a_1870_n1400# BIAS2 GND GND sky130_fd_pr__nfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=0p ps=0u w=1e+06u l=1e+06u
+X20 a_120_n550# a_n140_n550# a_1460_10# VDD sky130_fd_pr__pfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=0p ps=0u w=1e+06u l=2e+06u
+X21 a_120_n550# VBIAS a_120_n780# GND sky130_fd_pr__nfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=2.1525e+12p ps=1.76e+07u w=1e+06u l=800000u
+X22 a_120_n780# PIX_IN a_n30_n2640# GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=7e+06u l=150000u
+X23 a_1720_n1450# a_1000_n1450# DVDD DVDD sky130_fd_pr__pfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=0p ps=0u w=1e+06u l=1e+06u
+X24 VDD a_120_n550# AMP_OUT GND sky130_fd_pr__nfet_01v8_lvt ad=1.185e+12p pd=8.4e+06u as=0p ps=0u w=1e+06u l=1e+06u
+X25 VDD a_2287_n292# a_2200_n380# GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+
+.ends
+
+
+
+.subckt dram_cell WWL WBL RWL RBL 
+X0 RWL storage RBL GND sky130_fd_pr__nfet_01v8 ad=3e+11p pd=2.6e+06u as=3.5e+11p ps=2.7e+06u w=1e+06u l=150000u
+X1 storage WWL WBL GND sky130_fd_pr__nfet_01v8 ad=3.5e+11p pd=2.7e+06u as=3e+11p ps=2.6e+06u w=1e+06u l=150000u
+.ends
+
+.subckt dram_array dram_cell_1/WWL dram_cell_1/RWL dram_cell_0/WBL dram_cell_1/WBL
++ dram_cell_1/RBL dram_cell_0/RBL  dram_cell_0/RWL
+Xdram_cell_0 dram_cell_1/WWL dram_cell_0/WBL dram_cell_0/RWL dram_cell_0/RBL 
++ dram_cell
+Xdram_cell_1 dram_cell_1/WWL dram_cell_1/WBL dram_cell_1/RWL dram_cell_1/RBL
++ dram_cell
+.ends
+
+.subckt x4bit_dram dram_array_1/dram_cell_0/RWL dram_array_1/dram_cell_0/WBL dram_array_1/dram_cell_0/RBL
++ dram_array_1/dram_cell_1/WWL dram_array_0/dram_cell_0/RBL dram_array_0/dram_cell_1/WBL
++ dram_array_1/dram_cell_1/WBL dram_array_0/dram_cell_1/RBL dram_array_1/dram_cell_1/RBL
++ dram_array_0/dram_cell_0/WBL
+Xdram_array_0 dram_array_1/dram_cell_1/WWL dram_array_1/dram_cell_0/RWL dram_array_0/dram_cell_0/WBL
++ dram_array_0/dram_cell_1/WBL dram_array_0/dram_cell_1/RBL dram_array_0/dram_cell_0/RBL
++ dram_array_1/dram_cell_0/RWL dram_array
+Xdram_array_1 dram_array_1/dram_cell_1/WWL dram_array_1/dram_cell_1/RWL dram_array_1/dram_cell_0/WBL
++ dram_array_1/dram_cell_1/WBL dram_array_1/dram_cell_1/RBL dram_array_1/dram_cell_0/RBL
++ dram_array_1/dram_cell_0/RWL dram_array
+.ends
+
+.subckt x8bit_dram 4bit_dram_0/dram_array_1/dram_cell_0/WBL 4bit_dram_1/dram_array_0/dram_cell_0/RBL
++ 4bit_dram_0/dram_array_1/dram_cell_0/RBL 4bit_dram_1/dram_array_1/dram_cell_0/RBL
++ 4bit_dram_0/dram_array_1/dram_cell_1/WBL 4bit_dram_1/dram_array_0/dram_cell_0/WBL
++ 4bit_dram_0/dram_array_0/dram_cell_0/RBL 4bit_dram_0/dram_array_0/dram_cell_1/WBL
++ 4bit_dram_1/dram_array_1/dram_cell_1/RBL 4bit_dram_1/dram_array_0/dram_cell_1/WBL
++ 4bit_dram_0/dram_array_1/dram_cell_1/RBL 4bit_dram_1/dram_array_1/dram_cell_0/RWL
++ 4bit_dram_1/dram_array_1/dram_cell_1/WBL 4bit_dram_1/dram_array_1/dram_cell_1/WWL
++ 4bit_dram_1/dram_array_0/dram_cell_1/RBL 4bit_dram_0/dram_array_0/dram_cell_1/RBL
++ 4bit_dram_1/dram_array_1/dram_cell_0/WBL  4bit_dram_0/dram_array_0/dram_cell_0/WBL
+X4bit_dram_1 4bit_dram_1/dram_array_1/dram_cell_0/RWL 4bit_dram_1/dram_array_1/dram_cell_0/WBL
++ 4bit_dram_1/dram_array_1/dram_cell_0/RBL 4bit_dram_1/dram_array_1/dram_cell_1/WWL
++ 4bit_dram_1/dram_array_0/dram_cell_0/RBL 4bit_dram_1/dram_array_0/dram_cell_1/WBL
++ 4bit_dram_1/dram_array_1/dram_cell_1/WBL 4bit_dram_1/dram_array_0/dram_cell_1/RBL
++ 4bit_dram_1/dram_array_1/dram_cell_1/RBL 4bit_dram_1/dram_array_0/dram_cell_0/WBL
++  x4bit_dram
+X4bit_dram_0 4bit_dram_1/dram_array_1/dram_cell_0/RWL 4bit_dram_0/dram_array_1/dram_cell_0/WBL
++ 4bit_dram_0/dram_array_1/dram_cell_0/RBL 4bit_dram_1/dram_array_1/dram_cell_1/WWL
++ 4bit_dram_0/dram_array_0/dram_cell_0/RBL 4bit_dram_0/dram_array_0/dram_cell_1/WBL
++ 4bit_dram_0/dram_array_1/dram_cell_1/WBL 4bit_dram_0/dram_array_0/dram_cell_1/RBL
++ 4bit_dram_0/dram_array_1/dram_cell_1/RBL 4bit_dram_0/dram_array_0/dram_cell_0/WBL
++ x4bit_dram
+.ends
+
+
+
+
+
+
+* expanding   symbol:  8bit_SA_converter.sym # of pins=4
+** sym_path: /home/hni/topmetal_dps/xschem/8bit_SA_converter.sym
+** sch_path: /home/hni/topmetal_dps/xschem/8bit_SA_converter.sch
+.subckt 8bit_SA_converter  INx7x INx6x INx5x INx4x INx3x INx2x INx1x INx0x VREF SA_IREF BIN_OUTx7x
++ BIN_OUTx6x BIN_OUTx5x BIN_OUTx4x BIN_OUTx3x BIN_OUTx2x BIN_OUTx1x BIN_OUTx0x
+*.ipin INx7x,INx6x,INx5x,INx4x,INx3x,INx2x,INx1x,INx0x
+*.ipin VREF
+*.opin BIN_OUTx7x,BIN_OUTx6x,BIN_OUTx5x,BIN_OUTx4x,BIN_OUTx3x,BIN_OUTx2x,BIN_OUTx1x,BIN_OUTx0x
+*.ipin SA_IREF
+x38 INx7x INx6x INx5x INx4x INx3x INx2x INx1x INx0x VREF SA_IREF OUT_Ax7x OUT_Ax6x OUT_Ax5x OUT_Ax4x
++ OUT_Ax3x OUT_Ax2x OUT_Ax1x OUT_Ax0x 8bit_SA
+
+x11 net8 net9 net10 net7 net6 net11 net5 net12 net13 net4 net3 net14 net15 net2 net16 net1
++ 8bitgray2bin
+
+x12 BIN_OUTx7x net8 dac_bridge
+x13 BIN_OUTx6x net7 dac_bridge
+x14 BIN_OUTx5x net6 dac_bridge
+x16 BIN_OUTx4x net5 dac_bridge
+x17 BIN_OUTx3x net4 dac_bridge
+x18 BIN_OUTx2x net3 dac_bridge
+x19 BIN_OUTx1x net2 dac_bridge
+x37 BIN_OUTx0x net1 dac_bridge
+x39 net9 OUT_Ax7x adc_bridge
+x40 net10 OUT_Ax6x adc_bridge
+x41 net11 OUT_Ax5x adc_bridge
+x42 net12 OUT_Ax4x adc_bridge
+x43 net13 OUT_Ax3x adc_bridge
+x44 net14 OUT_Ax2x adc_bridge
+x45 net15 OUT_Ax1x adc_bridge
+x46 net16 OUT_Ax0x adc_bridge
+.save  v(bin_outx7x)
+.save  v(bin_outx6x)
+.save  v(bin_outx5x)
+.save  v(bin_outx4x)
+.save  v(bin_outx3x)
+.save  v(bin_outx2x)
+.save  v(bin_outx1x)
+.save  v(bin_outx0x)
+.ends
+
+
+* expanding   symbol:  digital_prims/adc_bridge.sym # of pins=2
+** sym_path: /home/hni/topmetal_dps/xschem/digital_prims/adc_bridge.sym
+** sch_path: /home/hni/topmetal_dps/xschem/digital_prims/adc_bridge.sch
+.subckt adc_bridge  D_OUT ANALOG_IN
+*.ipin ANALOG_IN
+*.opin D_OUT
+**** begin user architecture code
+
+
+abridge [ANALOG_IN] [D_OUT] adc_buff
+.model adc_buff adc_bridge(in_low=0.9 in_high =0.9)
+
+
+**** end user architecture code
+.ends
+
+
+* expanding   symbol:  adc/8bit_graycounter.sym # of pins=11
+** sym_path: /home/hni/topmetal_dps/xschem/adc/8bit_graycounter.sym
+** sch_path: /home/hni/topmetal_dps/xschem/adc/8bit_graycounter.sch
+.subckt 8bit_graycounter  8 ON_D 7 CLK_D 6 5 RESET 4 3 2 1
+*.ipin ON_D
+*.ipin CLK_D
+*.ipin RESET
+*.opin 7
+*.opin 6
+*.opin 5
+*.opin 4
+*.opin 3
+*.opin 2
+*.opin 1
+*.opin 8
+**** begin user architecture code
+
+
+a1 [ON_D] CLK_D RESET [8 7 6 5 4 3 2 1] gc_sm
+.model gc_sm d_state(state_file="/home/hni/topmetal_dps/xschem/adc/graycntr.in")
+
+
+**** end user architecture code
+.ends
+
+
+* expanding   symbol:  digital_prims/dac_bridge.sym # of pins=2
+** sym_path: /home/hni/topmetal_dps/xschem/digital_prims/dac_bridge.sym
+** sch_path: /home/hni/topmetal_dps/xschem/digital_prims/dac_bridge.sch
+.subckt dac_bridge  ANALOG_OUT D_IN
+*.ipin D_IN
+*.opin ANALOG_OUT
+**** begin user architecture code
+
+
+abridge_d [D_IN] [ANALOG_OUT] dac_buff
+.model dac_buff dac_bridge(out_high=1.8)
+
+
+**** end user architecture code
+.ends
+
+
+* expanding   symbol:  bias.sym # of pins=10
+** sym_path: /home/hni/topmetal_dps/xschem/bias.sym
+** sch_path: /home/hni/topmetal_dps/xschem/bias.sch
+.subckt bias  NB1 ADC_ON NB2 BIAS1 BIAS1_OUT SF_IB BIAS2 BIAS2_OUT SA_IREF SA_IREF_OUT
+*.iopin SF_IB
+*.iopin NB2
+*.iopin NB1
+*.ipin ADC_ON
+*.ipin BIAS1
+*.opin BIAS1_OUT
+*.ipin BIAS2
+*.opin BIAS2_OUT
+*.ipin SA_IREF
+*.opin SA_IREF_OUT
+X0 BIAS1 ADC_ON BIAS1_OUT GND sky130_fd_pr__nfet_01v8 ad=2.5e+12p pd=1.1e+07u as=5.9425e+12p ps=1.514e+07u w=5e+06u l=1e+06u
+X1 NB1 NB1 GND GND sky130_fd_pr__nfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=1.272e+13p ps=4.894e+07u w=1e+06u l=1.2e+06u
+X2 BIAS2_OUT BIAS2_OUT GND GND sky130_fd_pr__nfet_01v8_lvt ad=5.9725e+12p pd=1.52e+07u as=0p ps=0u w=1e+06u l=1e+06u
+X3 SA_IREF_OUT SA_IREF_OUT GND GND sky130_fd_pr__nfet_01v8 ad=5.9905e+12p pd=1.53e+07u as=0p ps=0u w=500000u l=1e+06u
+X4 NB2 NB2 GND GND sky130_fd_pr__nfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=0p ps=0u w=1e+06u l=1.2e+06u
+X5 BIAS2 ADC_ON BIAS2_OUT GND sky130_fd_pr__nfet_01v8 ad=2.5e+12p pd=1.1e+07u as=0p ps=0u w=5e+06u l=1e+06u
+X8 SA_IREF ADC_ON SA_IREF_OUT GND sky130_fd_pr__nfet_01v8 ad=2.5e+12p pd=1.1e+07u as=0p ps=0u w=5e+06u l=1e+06u
+X9 BIAS1_OUT BIAS1_OUT GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=1e+06u
+X10 SF_IB SF_IB VDD VDD sky130_fd_pr__pfet_01v8_lvt ad=5.5e+11p pd=3.1e+06u as=4.5e+11p ps=2.9e+06u w=1e+06u l=1e+06u
+
+
+.ends
+
+.subckt 8bit_SA  INx7x INx6x INx5x INx4x INx3x INx2x INx1x INx0x VREF SA_IREF OUTx7x OUTx6x OUTx5x
++ OUTx4x OUTx3x OUTx2x OUTx1x OUTx0x
+*.ipin INx7x,INx6x,INx5x,INx4x,INx3x,INx2x,INx1x,INx0x
+*.ipin VREF
+*.opin OUTx7x,OUTx6x,OUTx5x,OUTx4x,OUTx3x,OUTx2x,OUTx1x,OUTx0x
+*.ipin SA_IREF
+x2 OUTx7x VREF INx7x SA_IREF sens_amp
+x3 OUTx6x VREF INx6x SA_IREF sens_amp
+x4 OUTx5x VREF INx5x SA_IREF sens_amp
+x5 OUTx4x VREF INx4x SA_IREF sens_amp
+x6 OUTx3x VREF INx3x SA_IREF sens_amp
+x7 OUTx2x net1 INx2x SA_IREF sens_amp
+x8 OUTx1x VREF INx1x SA_IREF sens_amp
+x9 OUTx0x VREF INx0x SA_IREF sens_amp
+.ends
+
+
+* expanding   symbol:  adc/8bitgray2bin.sym # of pins=16
+** sym_path: /home/hni/topmetal_dps/xschem/adc/8bitgray2bin.sym
+** sch_path: /home/hni/topmetal_dps/xschem/adc/8bitgray2bin.sch
+.subckt 8bitgray2bin  8 g8 g7 7 6 g6 5 g5 g4 4 3 g3 g2 2 g1 1
+*.opin 7
+*.opin 6
+*.opin 5
+*.opin 4
+*.opin 3
+*.opin 2
+*.opin 1
+*.opin 8
+*.ipin g5
+*.ipin g4
+*.ipin g3
+*.ipin g8
+*.ipin g7
+*.ipin g6
+*.ipin g2
+*.ipin g1
+**** begin user architecture code
+
+
+* lsb first.
+a1 [g1 g2 g3 g4 g5 g6 g7 g8] [1 2 3 4 5 6 7 8] gray2bin_lut
+.model gray2bin_lut d_genlut(rise_delay=[1p 1p] fall_delay=[1p 1p]  input_load=[1p 1p]
++ input_delay=[0 0]
++ table_values=01101001100101101001011001101001100101100110100101101001100101101001011001101001011010011001011001101001100101101001011001101001100101100110100101101001100101100110100110010110100101100110100101101001100101101001011001101001100101100110100101101001100101100011110011000011110000110011110011000011001111000011110011000011110000110011110000111100110000110011110011000011110000110011110011000011001111000011110011000011001111001100001111000011001111000011110011000011110000110011110011000011001111000011110011000011000011111111000011110000000011111111000000001111000011111111000011110000000011110000111111110000000011111111000011110000000011111111000000001111000011111111000000001111111100001111000000001111000011111111000011110000000011111111000000001111000011111111000000000000111111111111111100000000111111110000000000000000111111111111111100000000000000001111111100000000111111111111111100000000111111110000000000000000111111110000000011111111111111110000000000000000111111111111111100000000111111110000000000000000111111110000000000000000111111111111111111111111111111110000000000000000111111111111111100000000000000000000000000000000111111111111111111111111111111110000000000000000000000000000000011111111111111110000000000000000111111111111111111111111111111110000000000000000000000000000000000000000000000001111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000001111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000001111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)
+
+
+
+
+**** end user architecture code
+.ends
+
+.subckt sens_amp  OUT REF V_IN SA_IREF
+*.ipin REF
+*.ipin V_IN
+*.opin OUT
+*.ipin SA_IREF
+XM5 net1 GN VDD VDD sky130_fd_pr__pfet_01v8_lvt L=0.5 W=1 nf=1 ad='W * 0.29' as='W * 0.29' pd='2*(W + 0.29)'
++ ps='2*(W + 0.29)' nrd=0 nrs=0 sa=0 sb=0 sd=0 mult=1 m=1
+XM6 GN GN VDD VDD sky130_fd_pr__pfet_01v8_lvt L=0.5 W=1 nf=1 ad='W * 0.29' as='W * 0.29' pd='2*(W + 0.29)'
++ ps='2*(W + 0.29)' nrd=0 nrs=0 sa=0 sb=0 sd=0 mult=1 m=1
+XM23 net1 V_IN net2 GND sky130_fd_pr__nfet_01v8_lvt L=0.15 W=4 nf=1 ad='W * 0.29' as='W * 0.29' pd='2*(W + 0.29)'
++ ps='2*(W + 0.29)' nrd=0 nrs=0 sa=0 sb=0 sd=0 mult=1 m=1
+XM16 GN REF net2 GND sky130_fd_pr__nfet_01v8_lvt L=0.15 W=4 nf=1 ad='W * 0.29' as='W * 0.29' pd='2*(W + 0.29)'
++ ps='2*(W + 0.29)' nrd=0 nrs=0 sa=0 sb=0 sd=0 mult=1 m=1
+XM1 OUT net1 GND GND sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 ad='W * 0.29' as='W * 0.29' pd='2*(W + 0.29)'
++ ps='2*(W + 0.29)' nrd=0 nrs=0 sa=0 sb=0 sd=0 mult=1 m=1
+XM2 OUT net1 VDD VDD sky130_fd_pr__pfet_01v8_lvt L=0.35 W=3 nf=1 ad='W * 0.29' as='W * 0.29' pd='2*(W + 0.29)'
++ ps='2*(W + 0.29)' nrd=0 nrs=0 sa=0 sb=0 sd=0 mult=1 m=1
+XM3 net3 SA_IREF GND GND sky130_fd_pr__nfet_01v8_lvt L=1 W=0.5 nf=1 ad='W * 0.29' as='W * 0.29' pd='2*(W + 0.29)'
++ ps='2*(W + 0.29)' nrd=0 nrs=0 sa=0 sb=0 sd=0 mult=1 m=1
+Vmeas net2 net3 0
+.save  i(vmeas)
+.ends
+
+
+
+.GLOBAL GND
+.GLOBAL VDD
+**** begin user architecture code
+
+
+.options gmin=10e-20
+.control
+save all
+
+*dc v2 0 1.8 0.05
+*plot v(test)
+tran 1u 200u
+
+write sim_dpspixel_tb.raw
+.endc
+
+
+**** end user architecture code
+.end

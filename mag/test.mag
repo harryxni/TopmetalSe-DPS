@@ -1,0 +1,14 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1660886377
+<< poly >>
+rect 38 236 68 315
+use dram_cell  dram_cell_0 ~/topmetal_dps/magic/ram
+timestamp 1660883971
+transform 1 0 18 0 1 106
+box -40 -100 340 223
+<< labels >>
+rlabel poly 50 300 50 300 1 WWL
+port 1 n
+<< end >>

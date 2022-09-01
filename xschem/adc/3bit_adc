@@ -1,0 +1,42 @@
+v {xschem version=3.0.0 file_version=1.2 }
+G {}
+K {}
+V {}
+S {}
+E {}
+N -220 -120 -190 -120 {
+lab=ENABLE_D}
+N -410 -80 -380 -80 {
+lab=RESET}
+N -220 -80 -190 -80 {
+lab=RESET_D}
+N -400 -120 -380 -120 {
+lab=ENABLE}
+N -80 -20 -70 -20 {
+lab=ENABLE_D}
+N -80 0 -70 0 {
+lab=RESET_D}
+N -80 90 -70 90 {
+lab=ENABLE_D}
+N -80 110 -70 110 {
+lab=RESET_D}
+N -80 200 -70 200 {
+lab=ENABLE_D}
+N -80 220 -70 220 {
+lab=RESET_D}
+C {mem_dlatch.sym} 80 -20 0 0 {name=x1}
+C {mem_dlatch.sym} 80 90 0 0 {name=x2}
+C {mem_dlatch.sym} 80 200 0 0 {name=x3}
+C {adc_bridge.sym} -310 -120 0 0 {name=x4}
+C {devices/opin.sym} 160 -40 0 0 {name=p1 lab=xxx}
+C {devices/ipin.sym} -400 -120 0 0 {name=p2 lab=ENABLE}
+C {devices/lab_pin.sym} -190 -120 2 0 {name=l1 sig_type=std_logic lab=ENABLE_D}
+C {devices/lab_pin.sym} -80 -20 0 0 {name=l2 sig_type=std_logic lab=ENABLE_D}
+C {adc_bridge.sym} -310 -80 0 0 {name=x5}
+C {devices/ipin.sym} -410 -80 0 0 {name=x6 lab=RESET}
+C {devices/lab_pin.sym} -190 -80 2 0 {name=x7 lab = RESET_D}
+C {devices/lab_pin.sym} -80 0 0 0 {name=x8 lab = RESET_D}
+C {devices/lab_pin.sym} -80 90 0 0 {name=l3 sig_type=std_logic lab=ENABLE_D}
+C {devices/lab_pin.sym} -80 110 0 0 {name=x9 lab = RESET_D}
+C {devices/lab_pin.sym} -80 200 0 0 {name=l4 sig_type=std_logic lab=ENABLE_D}
+C {devices/lab_pin.sym} -80 220 0 0 {name=x10 lab = RESET_D}

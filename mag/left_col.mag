@@ -1,0 +1,29 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1662065835
+use left_pixel  left_pixel_0 ~/topmetal_dps/magic
+timestamp 1662065835
+transform 1 0 2367 0 1 120
+box -2819 -148 3560 3640
+use left_pixel  left_pixel_1
+timestamp 1662065835
+transform 1 0 2367 0 1 -2880
+box -2819 -148 3560 3640
+use left_pixel  left_pixel_2
+timestamp 1662065835
+transform 1 0 2367 0 1 -5880
+box -2819 -148 3560 3640
+use left_pixel  left_pixel_3
+timestamp 1662065835
+transform 1 0 2367 0 1 -8880
+box -2819 -148 3560 3640
+use left_pixel  left_pixel_4
+timestamp 1662065835
+transform 1 0 2367 0 1 -11880
+box -2819 -148 3560 3640
+use left_pixel  left_pixel_5
+timestamp 1662065835
+transform 1 0 2367 0 1 -14880
+box -2819 -148 3560 3640
+<< end >>

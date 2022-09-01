@@ -1,0 +1,12 @@
+magic
+tech sky130A
+timestamp 1662069552
+use right_pixel  right_pixel_0
+timestamp 1662069552
+transform 1 0 40 0 1 155
+box -40 -155 3420 1825
+use right_pixel  right_pixel_1
+timestamp 1662069552
+transform 1 0 40 0 1 -1345
+box -40 -155 3420 1825
+<< end >>

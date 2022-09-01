@@ -1,0 +1,24 @@
+* SPICE3 file created from 8bit_sens.ext - technology: sky130A
+
+.subckt sens_amp V_IN SA_IREF OUT REF VDD GND
+X0 GN GN VDD VDD sky130_fd_pr__pfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=1.8e+12p ps=1.22e+07u w=1e+06u l=500000u
+X1 net1 V_IN net2 GND sky130_fd_pr__nfet_01v8_lvt ad=1.4e+12p pd=8.7e+06u as=1.775e+12p ps=1.05e+07u w=4e+06u l=150000u
+X2 net2 REF GN GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=1.45e+12p ps=9.1e+06u w=4e+06u l=150000u
+X3 net1 GN VDD VDD sky130_fd_pr__pfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=0p ps=0u w=1e+06u l=500000u
+X4 net2 SA_IREF GND GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=6e+11p ps=4.7e+06u w=500000u l=1e+06u
+X5 OUT net1 VDD VDD sky130_fd_pr__pfet_01v8_lvt ad=1.05e+12p pd=6.7e+06u as=0p ps=0u w=3e+06u l=350000u
+X6 OUT net1 GND GND sky130_fd_pr__nfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=0p ps=0u w=1e+06u l=150000u
+.ends
+
+.subckt x8bit_sens INx1x INx0x INx2x INx3x INx4x INx5x INx6x INx7x OUTx7x OUTx6x OUTx5x
++ OUTx4x OUTx3x OUTx2x OUTx1x OUTx0x SA_IREF VREF GND VDD
+Xsens_amp_2 INx5x SA_IREF OUTx5x VREF VDD GND sens_amp
+Xsens_amp_3 INx4x SA_IREF OUTx4x VREF VDD GND sens_amp
+Xsens_amp_4 INx3x SA_IREF OUTx3x VREF VDD GND sens_amp
+Xsens_amp_5 INx2x SA_IREF OUTx2x VREF VDD GND sens_amp
+Xsens_amp_6 INx1x SA_IREF OUTx1x VREF VDD GND sens_amp
+Xsens_amp_7 INx0x SA_IREF OUTx0x VREF VDD GND sens_amp
+Xsens_amp_0 INx7x SA_IREF OUTx7x VREF VDD GND sens_amp
+Xsens_amp_1 INx6x SA_IREF OUTx6x VREF VDD GND sens_amp
+.ends
+
