@@ -1,5 +1,5 @@
 magic
-tech sky130A
+tech sky130B
 magscale 1 2
 timestamp 1662065835
 use left_pixel  left_pixel_0 ~/topmetal_dps/magic

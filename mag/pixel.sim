@@ -1,4 +1,4 @@
-| units: 500000 tech: sky130A format: MIT
+| units: 500000 tech: sky130B format: MIT
 x 8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/storage OUTx4x READ GND l=30 w=200 x=1288 y=-2142 sky130_fd_pr__nfet_01v8
 x 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL GRAYx4x 8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/storage GND l=30 w=200 x=1518 y=-2142 sky130_fd_pr__nfet_01v8
 x 8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/storage OUTx5x READ GND l=30 w=200 x=1288 y=-2029 sky130_fd_pr__nfet_01v8

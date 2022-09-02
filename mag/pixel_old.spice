@@ -1,4 +1,4 @@
-* NGSPICE file created from /home/hni/TopMetalSe-OpenMPW6/mag/pixel.ext - technology: sky130A
+* NGSPICE file created from /home/hni/TopMetalSe-OpenMPW6/mag/pixel.ext - technology: sky130B
 
 *.subckt pixel_old gring test_net VREF ROW_SEL NB1 VBIAS
 *+ NB2 AMP_IN SF_IB PIX_OUT CSA_VREF VDD GND

@@ -1,4 +1,4 @@
-| units: 500000 tech: sky130A format: MIT
+| units: 500000 tech: sky130B format: MIT
 x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/storage pixel_2/OUTx4x pixel_1/READ VSUBS l=30 w=200 x=4858 y=968 sky130_fd_pr__nfet_01v8
 x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL pixel_2/GRAYx4x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_0/storage VSUBS l=30 w=200 x=5088 y=968 sky130_fd_pr__nfet_01v8
 x pixel_0/8bit_dram_0/4bit_dram_1/dram_array_0/dram_cell_1/storage pixel_2/OUTx5x pixel_1/READ VSUBS l=30 w=200 x=4858 y=1081 sky130_fd_pr__nfet_01v8

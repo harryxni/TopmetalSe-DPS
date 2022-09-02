@@ -1,4 +1,4 @@
-* SPICE3 file created from /home/hni/topmetal_dps/magic/adc.ext - technology: sky130A
+* SPICE3 file created from /home/hni/topmetal_dps/magic/adc.ext - technology: sky130B
 
 .subckt dram_cell storage WWL WBL RWL RBL VSUBS
 X0 RWL storage RBL VSUBS sky130_fd_pr__nfet_01v8 ad=3e+11p pd=2.6e+06u as=3.5e+11p ps=2.7e+06u w=1e+06u l=150000u

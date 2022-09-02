@@ -1,4 +1,4 @@
-* SPICE3 file created from bias_cell.ext - technology: sky130A
+* SPICE3 file created from bias_cell.ext - technology: sky130B
 
 .subckt bias_cell NB1 NB2 OUT_IB AMP_IB SF_IB BIAS1_OUT BIAS2_OUT ADC_ON BIAS1 BIAS2
 + SA_IREF_OUT SA_IREF VDD GND
