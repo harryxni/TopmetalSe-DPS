@@ -50,7 +50,7 @@ X4bit_dram_0 4bit_dram_0/dram_array_0/dram_cell_1/RBL 4bit_dram_1/dram_array_1/d
 .ends
 
 .subckt adc V_IN BIAS2 BIAS1 V_RAMP GRAY_INx1x GRAY_INx0x OUTx0x GRAY_INx2x GRAY_INx3x
-+ OUTx3x GRAY_INx4x GRAY_INx5x OUTx5x GRAY_INx6x GRAY_INx7x OUTx7x READ OUTx1x OUTx6x
++ OUTx3x GRAY_INx4x GRAY_INx5x OUTx5x GRAY_INx6x GRAY_INx7x OUTx7x OUTx1x READ OUTx6x
 + VDD GND OUTx4x OUTx2x
 X8bit_dram_0 READ GRAY_INx4x GRAY_INx2x OUTx6x GRAY_INx7x GRAY_INx0x OUTx4x OUTx2x
 + GRAY_INx5x GRAY_INx3x OUTx7x OUTx0x GRAY_INx1x OUTx3x OUTx5x 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL
@@ -223,7 +223,7 @@ C1 SA_IREF GND 6.02fF
 + wbs_stb_i wbs_we_i
 Xadc_0 adc_0/V_IN adc_0/BIAS2 adc_0/BIAS1 io_analog[2] la_data_in[121] la_data_in[120]
 + adc_0/OUTx0x la_data_in[122] la_data_in[123] adc_0/OUTx3x la_data_in[124] la_data_in[125]
-+ adc_0/OUTx5x la_data_in[126] la_data_in[127] adc_0/OUTx7x adc_0/READ adc_0/OUTx1x
++ adc_0/OUTx5x la_data_in[126] la_data_in[127] adc_0/OUTx7x adc_0/OUTx1x gpio_analog[12]
 + adc_0/OUTx6x vccd1 vssa2 adc_0/OUTx4x adc_0/OUTx2x adc
 Xbias_cell_0 io_analog[9] io_analog[8] io_analog[7] io_analog[6] io_analog[10] adc_0/BIAS1
 + adc_0/BIAS2 gpio_analog[7] io_analog[4] io_analog[5] 8bit_sens_0/SA_IREF io_analog[3]
@@ -231,44 +231,44 @@ Xbias_cell_0 io_analog[9] io_analog[8] io_analog[7] io_analog[6] io_analog[10] a
 X8bit_sens_0 adc_0/OUTx1x adc_0/OUTx0x adc_0/OUTx2x adc_0/OUTx3x adc_0/OUTx4x adc_0/OUTx5x
 + adc_0/OUTx6x adc_0/OUTx7x la_data_out[1] la_data_out[2] la_data_out[3] la_data_out[4]
 + la_data_out[5] la_data_out[6] la_data_out[7] la_data_out[8] 8bit_sens_0/SA_IREF
-+ 8bit_sens_0/VREF vccd1 vssa2 8bit_sens
-C0 io_analog[8] io_analog[7] 3.50fF
-C1 io_analog[10] vccd2 13.80fF
-C2 io_analog[2] adc_0/BIAS1 2.53fF
-C3 vccd1 la_data_in[124] 2.16fF
-C4 io_analog[2] vccd2 10.71fF
-C5 la_data_in[120] vccd1 75.78fF
-C6 la_data_out[3] la_data_out[2] 23.11fF
-C7 la_data_out[2] la_data_out[1] 27.41fF
-C8 la_data_out[5] la_data_out[4] 41.43fF
-C9 vccd1 io_analog[2] 2.22fF
-C10 gpio_analog[7] 8bit_sens_0/SA_IREF 4.47fF
-C11 la_data_out[4] la_data_out[3] 43.18fF
-C12 la_data_in[121] la_data_in[122] 49.58fF
-C13 8bit_sens_0/SA_IREF adc_0/BIAS1 9.04fF
-C14 la_data_in[127] la_data_in[126] 27.40fF
-C15 la_data_out[6] la_data_out[7] 38.74fF
-C16 io_analog[4] io_analog[3] 14.51fF
-C17 la_data_in[125] la_data_in[126] 41.93fF
-C18 io_analog[6] io_analog[5] 5.39fF
-C19 la_data_in[123] la_data_in[122] 32.99fF
-C20 io_analog[6] vccd2 12.76fF
-C21 io_analog[7] io_analog[6] 2.42fF
-C22 io_analog[4] io_analog[5] 15.91fF
-C23 io_analog[5] vccd2 2.11fF
-C24 vccd1 la_data_in[121] 4.93fF
-C25 la_data_out[6] la_data_out[5] 40.26fF
-C26 io_analog[7] vccd2 10.12fF
-C27 vccd1 la_data_in[126] 2.17fF
-C28 vccd1 la_data_in[122] 2.54fF
-C29 vccd1 la_data_in[127] 2.11fF
-C30 la_data_in[120] la_data_in[121] 86.33fF
-C31 vccd1 la_data_in[123] 2.14fF
++ gpio_analog[13] vccd1 vssa2 8bit_sens
+C0 io_analog[3] io_analog[4] 14.51fF
+C1 la_data_out[7] la_data_out[6] 38.74fF
+C2 adc_0/BIAS1 8bit_sens_0/SA_IREF 9.04fF
+C3 io_analog[7] vccd2 10.12fF
+C4 io_analog[5] io_analog[6] 5.39fF
+C5 io_analog[2] vccd2 10.71fF
+C6 vccd1 la_data_in[124] 2.16fF
+C7 la_data_in[123] la_data_in[124] 30.97fF
+C8 la_data_in[122] vccd1 2.54fF
+C9 la_data_in[122] la_data_in[123] 32.99fF
+C10 io_analog[8] io_analog[7] 3.50fF
+C11 la_data_in[125] la_data_in[124] 40.36fF
+C12 la_data_in[120] vccd1 75.78fF
+C13 io_analog[7] io_analog[6] 2.42fF
+C14 la_data_in[126] la_data_in[127] 27.40fF
+C15 la_data_in[127] vccd1 2.11fF
+C16 io_analog[5] io_analog[4] 15.91fF
+C17 la_data_out[5] la_data_out[6] 40.26fF
+C18 la_data_out[3] la_data_out[2] 23.11fF
+C19 la_data_out[5] la_data_out[4] 41.43fF
+C20 la_data_in[121] vccd1 4.93fF
+C21 io_analog[2] vccd1 2.22fF
+C22 adc_0/BIAS1 adc_0/BIAS2 30.55fF
+C23 8bit_sens_0/SA_IREF gpio_analog[7] 4.47fF
+C24 la_data_out[1] la_data_out[2] 27.41fF
+C25 la_data_in[126] vccd1 2.17fF
+C26 adc_0/BIAS1 io_analog[2] 2.53fF
+C27 la_data_in[123] vccd1 2.14fF
+C28 io_analog[5] vccd2 2.11fF
+C29 io_analog[10] vccd2 13.80fF
+C30 vccd2 io_analog[6] 12.76fF
+C31 la_data_in[126] la_data_in[125] 41.93fF
 C32 la_data_in[125] vccd1 2.10fF
-C33 la_data_in[123] la_data_in[124] 30.97fF
-C34 adc_0/BIAS2 adc_0/BIAS1 30.56fF
-C35 la_data_in[125] la_data_in[124] 40.36fF
-C36 la_data_out[7] la_data_out[8] 37.02fF
+C33 la_data_out[3] la_data_out[4] 43.18fF
+C34 la_data_in[122] la_data_in[121] 49.58fF
+C35 la_data_out[7] la_data_out[8] 37.02fF
+C36 la_data_in[121] la_data_in[120] 86.33fF
 C37 vssa1 vssa2 23.98fF
 C38 vssd1 vssa2 11.99fF
 C39 vssd2 vssa2 13.63fF
@@ -286,9 +286,9 @@ C50 io_analog[10] vssa2 41.15fF
 C51 la_data_out[2] vssa2 47.84fF
 C52 la_data_out[1] vssa2 74.10fF
 C53 la_data_out[8] vssa2 88.64fF
-C54 vccd1 vssa2 2024.86fF
-C55 8bit_sens_0/SA_IREF vssa2 180.51fF
-C56 8bit_sens_0/VREF vssa2 2.04fF
+C54 vccd1 vssa2 2024.83fF
+C55 8bit_sens_0/SA_IREF vssa2 182.85fF
+C56 gpio_analog[13] vssa2 46.84fF
 C57 la_data_out[7] vssa2 64.51fF
 C58 la_data_out[6] vssa2 62.06fF
 C59 la_data_out[5] vssa2 60.58fF
@@ -303,16 +303,17 @@ C67 io_analog[3] vssa2 189.27fF
 C68 io_analog[4] vssa2 158.11fF
 C69 io_analog[5] vssa2 114.32fF
 C70 vccd2 vssa2 322.78fF
-C71 adc_0/BIAS2 vssa2 158.27fF
-C72 adc_0/BIAS1 vssa2 141.75fF
+C71 adc_0/BIAS2 vssa2 161.84fF
+C72 adc_0/BIAS1 vssa2 141.59fF
 C73 io_analog[2] vssa2 984.46fF
 C74 la_data_in[123] vssa2 281.79fF
 C75 la_data_in[122] vssa2 263.34fF
 C76 la_data_in[121] vssa2 237.68fF
 C77 la_data_in[120] vssa2 218.66fF
 C78 la_data_in[127] vssa2 318.43fF
-C79 la_data_in[126] vssa2 291.01fF
-C80 la_data_in[125] vssa2 274.61fF
-C81 la_data_in[124] vssa2 279.97fF
+C79 gpio_analog[12] vssa2 56.91fF
+C80 la_data_in[126] vssa2 291.01fF
+C81 la_data_in[125] vssa2 274.61fF
+C82 la_data_in[124] vssa2 279.97fF
 .ends
 
