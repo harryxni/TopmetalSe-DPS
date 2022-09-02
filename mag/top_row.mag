@@ -1,5 +1,5 @@
 magic
-tech sky130A
+tech sky130B
 timestamp 1662063950
 use top_pixel  top_pixel_0 ~/topmetal_dps/magic
 timestamp 1662063950

@@ -7,85 +7,85 @@ resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 
 use dram_cell dram_cell_1 1 0 40 0 -1 -150
 use dram_cell dram_cell_0 1 0 40 0 1 100
 node "li_0_n280#" 26 9.96052 0 -280 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800 120 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_228_n102#" 16 207.121 228 -102 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 3604 244 29250 1810 0 0 0 0 0 0 0 0
-node "li_0_n160#" 27 381.08 0 -160 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3200 240 11752 572 5600 300 14000 480 48864 1744 0 0 0 0
-node "li_230_20#" 26 338.234 230 20 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1846 182 3328 232 5876 322 10920 452 48792 1744 0 0 0 0
-node "li_348_163#" 51 315.614 348 163 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3586 298 3604 244 4888 284 29500 1100 0 0 0 0 0 0
-node "li_0_210#" 35 295.611 0 210 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4000 280 3952 256 33248 1728 0 0 0 0 0 0 0 0
-node "a_7_n377#" 197 454.115 7 -377 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5568 360 0 0 2244 200 12966 782 4888 284 31300 1160 0 0 0 0 0 0
+node "li_228_n102#" 16 186.578 228 -102 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 3604 244 29250 1810 0 0 0 0 0 0 0 0
+node "li_0_n160#" 27 359.333 0 -160 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3200 240 11752 572 5600 300 14000 480 48864 1744 0 0 0 0
+node "li_230_20#" 26 316.868 230 20 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1846 182 3328 232 5876 322 10920 452 48792 1744 0 0 0 0
+node "li_348_163#" 51 294.752 348 163 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3586 298 3604 244 4888 284 29500 1100 0 0 0 0 0 0
+node "li_0_210#" 35 270.023 0 210 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4000 280 3952 256 33248 1728 0 0 0 0 0 0 0 0
+node "a_7_n377#" 197 433.627 7 -377 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5568 360 0 0 2244 200 12966 782 4888 284 31300 1160 0 0 0 0 0 0
 node "a_60_n65#" 153 70.0959 60 -65 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2850 250 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "li_0_n160#" "a_60_n65#" 2.01218
-cap "li_0_n160#" "a_7_n377#" 220.896
-cap "li_0_n160#" "li_0_n280#" 11.5169
-cap "a_60_n65#" "li_228_n102#" 0.424384
-cap "li_0_210#" "li_348_163#" 18.2207
-cap "li_230_20#" "li_0_n160#" 356.237
-cap "a_7_n377#" "li_228_n102#" 74.2841
-cap "li_0_n280#" "li_228_n102#" 0.0870753
-cap "a_7_n377#" "a_60_n65#" 2.7942
-cap "li_230_20#" "li_228_n102#" 135.911
-cap "li_0_210#" "li_0_n160#" 151.385
-cap "a_7_n377#" "li_0_n280#" 13.0709
-cap "li_230_20#" "a_60_n65#" 1.63008
-cap "li_230_20#" "a_7_n377#" 52.8994
-cap "li_0_n160#" "li_348_163#" 52.9195
-cap "li_0_210#" "li_228_n102#" 211.711
-cap "li_230_20#" "li_0_n280#" 0.0765594
-cap "li_0_210#" "a_60_n65#" 0.28435
-cap "li_348_163#" "li_228_n102#" 32.2065
-cap "li_0_210#" "a_7_n377#" 22.5724
-cap "li_0_210#" "li_0_n280#" 1.11037
-cap "li_348_163#" "a_60_n65#" 0.347632
-cap "li_230_20#" "li_0_210#" 5.20225
-cap "a_7_n377#" "li_348_163#" 39.9951
-cap "li_0_n280#" "li_348_163#" 0.0891905
-cap "li_0_n160#" "li_228_n102#" 63.6762
-cap "li_230_20#" "li_348_163#" 102.825
-cap "dram_cell_1/WBL" "dram_cell_1/RWL" 6.58053
-cap "dram_cell_0/storage" "dram_cell_1/RBL" 8.64864
-cap "dram_cell_1/WBL" "dram_cell_1/RBL" 4.07163
-cap "dram_cell_1/WBL" "dram_cell_0/RWL" 1.57332
-cap "dram_cell_1/storage" "dram_cell_0/RBL" 12.4076
-cap "dram_cell_0/storage" "dram_cell_0/RWL" 13.0057
-cap "dram_cell_0/storage" "dram_cell_0/WBL" 37.7047
-cap "dram_cell_1/WBL" "dram_cell_0/WBL" 15.3016
-cap "dram_cell_1/storage" "dram_cell_1/RWL" 0.436311
-cap "dram_cell_1/RBL" "dram_cell_1/storage" 8.30831
-cap "dram_cell_0/storage" "dram_cell_1/WWL" 8.37803
-cap "dram_cell_1/WBL" "dram_cell_1/WWL" 15.9857
-cap "dram_cell_0/WBL" "dram_cell_1/storage" 1.23092
-cap "dram_cell_0/RWL" "dram_cell_1/storage" 5.70507
-cap "dram_cell_1/WBL" "dram_cell_0/storage" 14.2424
-cap "dram_cell_0/RBL" "dram_cell_1/RWL" 4.78725
-cap "dram_cell_1/WWL" "dram_cell_1/storage" 55.361
-cap "dram_cell_1/RBL" "dram_cell_0/RBL" 12.4475
-cap "dram_cell_0/RWL" "dram_cell_0/RBL" 14.1149
-cap "dram_cell_0/WBL" "dram_cell_0/RBL" 2.78433
-cap "dram_cell_1/WBL" "dram_cell_1/storage" 6.00545
-cap "dram_cell_0/storage" "dram_cell_1/storage" 32.2037
-cap "dram_cell_1/RBL" "dram_cell_1/RWL" 0.276974
-cap "dram_cell_0/WBL" "dram_cell_1/RWL" 0.419607
-cap "dram_cell_0/RWL" "dram_cell_1/RWL" 21.1165
-cap "dram_cell_1/RBL" "dram_cell_0/RWL" 3.67357
-cap "dram_cell_0/WBL" "dram_cell_1/RBL" 0.761617
-cap "dram_cell_1/WWL" "dram_cell_0/RBL" 3.58249
-cap "dram_cell_0/WBL" "dram_cell_0/RWL" 2.2792
-cap "dram_cell_0/storage" "dram_cell_0/RBL" 16.6152
-cap "dram_cell_1/WWL" "dram_cell_1/RWL" 2.45647
-cap "dram_cell_1/WBL" "dram_cell_0/RBL" 0.657634
-cap "dram_cell_1/WWL" "dram_cell_1/RBL" 3.32873
-cap "dram_cell_0/WBL" "dram_cell_1/WWL" 3.1419
-cap "dram_cell_1/WWL" "dram_cell_0/RWL" 5.3182
-cap "dram_cell_0/storage" "dram_cell_1/RWL" 0.429482
-merge "dram_cell_0/RWL" "li_348_163#" -109.162 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3518 -294 0 0 0 0 0 0 0 0 0 0 0 0
+cap "a_60_n65#" "li_230_20#" 1.49879
+cap "li_348_163#" "li_0_n280#" 0.0763167
+cap "li_230_20#" "li_228_n102#" 135.265
+cap "li_0_210#" "li_230_20#" 4.69797
+cap "li_230_20#" "li_0_n160#" 356.063
+cap "a_60_n65#" "li_348_163#" 0.307802
+cap "a_7_n377#" "li_230_20#" 51.809
+cap "li_348_163#" "li_228_n102#" 31.6351
+cap "li_0_210#" "li_348_163#" 17.3411
+cap "li_0_n280#" "li_228_n102#" 0.0667699
+cap "li_0_210#" "li_0_n280#" 0.876257
+cap "li_348_163#" "li_0_n160#" 52.348
+cap "li_0_n280#" "li_0_n160#" 11.4979
+cap "a_7_n377#" "li_348_163#" 39.1482
+cap "a_7_n377#" "li_0_n280#" 13.0584
+cap "a_60_n65#" "li_228_n102#" 0.376524
+cap "a_60_n65#" "li_0_210#" 0.237529
+cap "li_0_210#" "li_228_n102#" 210.959
+cap "a_60_n65#" "li_0_n160#" 1.84898
+cap "li_228_n102#" "li_0_n160#" 62.9293
+cap "li_0_210#" "li_0_n160#" 140.81
+cap "a_60_n65#" "a_7_n377#" 2.76266
+cap "a_7_n377#" "li_228_n102#" 70.9593
+cap "a_7_n377#" "li_0_210#" 18.8088
+cap "li_348_163#" "li_230_20#" 102.311
+cap "a_7_n377#" "li_0_n160#" 219.417
+cap "li_230_20#" "li_0_n280#" 0.0696857
+cap "dram_cell_1/RWL" "dram_cell_1/WWL" 2.18712
+cap "dram_cell_0/WBL" "dram_cell_0/RBL" 2.53837
+cap "dram_cell_1/RWL" "dram_cell_1/WBL" 6.14084
+cap "dram_cell_1/RWL" "dram_cell_0/WBL" 0.33996
+cap "dram_cell_0/RWL" "dram_cell_0/RBL" 13.0238
+cap "dram_cell_0/RBL" "dram_cell_0/storage" 15.4855
+cap "dram_cell_0/RWL" "dram_cell_1/RWL" 20.2535
+cap "dram_cell_1/RBL" "dram_cell_0/RBL" 11.5227
+cap "dram_cell_1/RWL" "dram_cell_0/storage" 0.429482
+cap "dram_cell_1/WBL" "dram_cell_1/WWL" 14.9871
+cap "dram_cell_0/WBL" "dram_cell_1/WWL" 2.89656
+cap "dram_cell_1/RWL" "dram_cell_1/RBL" -0.516477
+cap "dram_cell_0/WBL" "dram_cell_1/WBL" 14.7197
+cap "dram_cell_1/storage" "dram_cell_0/RBL" 11.4474
+cap "dram_cell_1/WWL" "dram_cell_0/storage" 7.63897
+cap "dram_cell_0/RWL" "dram_cell_1/WWL" 4.75772
+cap "dram_cell_1/RWL" "dram_cell_1/storage" 0.436311
+cap "dram_cell_0/RWL" "dram_cell_1/WBL" 1.40204
+cap "dram_cell_1/WBL" "dram_cell_0/storage" 12.9481
+cap "dram_cell_1/RBL" "dram_cell_1/WWL" 3.07768
+cap "dram_cell_1/RBL" "dram_cell_1/WBL" 3.6311
+cap "dram_cell_0/RWL" "dram_cell_0/WBL" 1.94476
+cap "dram_cell_0/WBL" "dram_cell_0/storage" 37.4231
+cap "dram_cell_0/WBL" "dram_cell_1/RBL" 0.633176
+cap "dram_cell_1/storage" "dram_cell_1/WWL" 54.3891
+cap "dram_cell_0/RWL" "dram_cell_0/storage" 11.5727
+cap "dram_cell_1/storage" "dram_cell_1/WBL" 4.40135
+cap "dram_cell_1/RWL" "dram_cell_0/RBL" 4.35185
+cap "dram_cell_0/RWL" "dram_cell_1/RBL" 3.16207
+cap "dram_cell_1/RBL" "dram_cell_0/storage" 7.25935
+cap "dram_cell_1/storage" "dram_cell_0/WBL" 0.986025
+cap "dram_cell_0/RWL" "dram_cell_1/storage" 5.05907
+cap "dram_cell_1/storage" "dram_cell_0/storage" 32.2037
+cap "dram_cell_0/RBL" "dram_cell_1/WWL" 3.28261
+cap "dram_cell_0/RBL" "dram_cell_1/WBL" 0.608887
+cap "dram_cell_1/storage" "dram_cell_1/RBL" 7.34975
+merge "dram_cell_0/RWL" "li_348_163#" -106.118 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3518 -294 0 0 0 0 0 0 0 0 0 0 0 0
 merge "dram_cell_0/VSUBS" "dram_cell_1/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "dram_cell_1/VSUBS" "VSUBS"
-merge "dram_cell_1/WBL" "li_0_n280#" -120.394 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4000 -360 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dram_cell_1/WBL" "li_0_n280#" -116.976 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4000 -360 0 0 0 0 0 0 0 0 0 0 0 0
 merge "li_0_n280#" "li_0_n160#"
-merge "dram_cell_0/RBL" "li_230_20#" -68.621 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1322 -152 0 0 0 0 0 0 0 0 0 0 0 0
-merge "dram_cell_0/WWL" "dram_cell_1/WWL" -138.062 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2250 -330 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dram_cell_0/RBL" "li_230_20#" -66.3173 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1322 -152 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dram_cell_0/WWL" "dram_cell_1/WWL" -136.127 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2250 -330 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "dram_cell_1/WWL" "a_7_n377#"
 merge "a_7_n377#" "a_60_n65#"
-merge "dram_cell_1/RBL" "li_228_n102#" -48.0997 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1024 -128 0 0 0 0 0 0 0 0 0 0 0 0
-merge "dram_cell_0/WBL" "li_0_210#" -53.3747 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -800 -120 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dram_cell_1/RBL" "li_228_n102#" -45.6387 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1024 -128 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dram_cell_0/WBL" "li_0_210#" -52.2458 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -800 -120 0 0 0 0 0 0 0 0 0 0 0 0
