@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1662180122
+timestamp 1662227450
 << nwell >>
 rect -770 -3590 -1 -3240
 rect 2520 -3590 3470 -3240
@@ -264,7 +264,7 @@ rect 2645 -7245 2646 -7181
 rect 2574 -7246 2646 -7245
 rect 2580 -7420 2640 -7246
 use 8bit_sens  8bit_sens_0
-timestamp 1661898952
+timestamp 1662227450
 transform 1 0 -251 0 1 -6480
 box -110 -750 2810 3340
 use pixel  pixel_0

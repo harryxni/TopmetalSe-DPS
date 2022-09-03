@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1661898952
+timestamp 1662227450
 << nwell >>
 rect -100 2890 2810 3240
 << metal1 >>
@@ -29,35 +29,35 @@ rect 1870 -750 1930 -690
 rect 2210 -750 2270 -690
 rect 2550 -750 2610 -690
 use sens_amp  sens_amp_0
-timestamp 1661898952
+timestamp 1662227450
 transform 1 0 -590 0 1 2350
 box 530 -3100 1000 977
 use sens_amp  sens_amp_1
-timestamp 1661898952
+timestamp 1662227450
 transform 1 0 -250 0 1 2350
 box 530 -3100 1000 977
 use sens_amp  sens_amp_2
-timestamp 1661898952
+timestamp 1662227450
 transform 1 0 90 0 1 2350
 box 530 -3100 1000 977
 use sens_amp  sens_amp_3
-timestamp 1661898952
+timestamp 1662227450
 transform 1 0 430 0 1 2350
 box 530 -3100 1000 977
 use sens_amp  sens_amp_4
-timestamp 1661898952
+timestamp 1662227450
 transform 1 0 770 0 1 2350
 box 530 -3100 1000 977
 use sens_amp  sens_amp_5
-timestamp 1661898952
+timestamp 1662227450
 transform 1 0 1110 0 1 2350
 box 530 -3100 1000 977
 use sens_amp  sens_amp_6
-timestamp 1661898952
+timestamp 1662227450
 transform 1 0 1450 0 1 2350
 box 530 -3100 1000 977
 use sens_amp  sens_amp_7
-timestamp 1661898952
+timestamp 1662227450
 transform 1 0 1790 0 1 2350
 box 530 -3100 1000 977
 << labels >>
