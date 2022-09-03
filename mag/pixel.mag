@@ -1,10 +1,9 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1662068818
+timestamp 1662180122
 << nwell >>
-rect 1920 290 2800 300
-rect -200 -60 2800 290
+rect -200 -60 2956 290
 rect -200 -370 1920 -60
 rect 960 -1180 2385 -750
 << pwell >>
@@ -1868,8 +1867,8 @@ rect 2640 -2540 2960 140
 rect -360 -2860 2960 -2540
 << glass >>
 rect 480 -2020 2120 -380
-use 8bit_dram  8bit_dram_0 ~/topmetal_dps/magic/ram
-timestamp 1661550438
+use 8bit_dram  8bit_dram_0
+timestamp 1662167647
 transform -1 0 2469 0 -1 -1700
 box -70 -20 1745 780
 << labels >>

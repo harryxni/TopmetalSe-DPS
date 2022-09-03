@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1662015318
+timestamp 1662180122
 << nwell >>
 rect 960 -1180 2385 -750
 << pwell >>
@@ -658,7 +658,7 @@ rect 1874 -1740 1934 -720
 rect 2119 -1740 2179 -720
 rect 2309 -1740 2369 -720
 use 8bit_dram  8bit_dram_0
-timestamp 1662015318
+timestamp 1662167647
 transform -1 0 2469 0 -1 -1700
 box -70 -20 1745 780
 << labels >>

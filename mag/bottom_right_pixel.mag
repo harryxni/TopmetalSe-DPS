@@ -1,10 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1662180122
-<< nwell >>
-rect -770 -3590 -1 -3240
-rect 2520 -3590 3470 -3240
+timestamp 1662181774
 << nmoslvt >>
 rect 2590 -6880 2630 -5280
 << ndiff >>
@@ -267,10 +264,10 @@ use 8bit_sens  8bit_sens_0
 timestamp 1661898952
 transform 1 0 -251 0 1 -6480
 box -110 -750 2810 3340
-use pixel  pixel_0
-timestamp 1662180122
-transform 1 0 0 0 1 70
-box -470 -3000 3090 570
+use right_pixel  right_pixel_0
+timestamp 1662181774
+transform 1 0 -470 0 1 -2930
+box -80 -310 6840 3650
 << labels >>
 rlabel metal4 2341 -2908 2341 -2908 1 GRAYx1x
 port 77 n

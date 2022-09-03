@@ -16,15 +16,15 @@ node "WBL" 458 60.4264 -37 119 li 0 0 0 0 0 0 0 0 12000 520 0 0 0 0 0 0 0 0 0 0 
 node "WWL" 418 57.7445 33 154 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7800 580 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "storage" 995 217.734 132 186 li 0 0 0 0 0 0 0 0 14000 540 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11274 754 0 0 19600 1028 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "WBL" "WWL" 0.092861
 cap "RBL" "WBL" 0.381765
-cap "RWL" "storage" 3.30838
-cap "RWL" "WBL" 0.303046
-cap "RBL" "WWL" 0.203425
 cap "storage" "WBL" 90.7551
-cap "RWL" "WWL" 0.0898708
-cap "RWL" "RBL" 90.6652
-cap "storage" "WWL" 5.46676
 cap "RBL" "storage" 116.972
+cap "WBL" "RWL" 0.303046
+cap "RBL" "RWL" 90.6652
+cap "storage" "RWL" 3.30838
+cap "WBL" "WWL" 0.092861
+cap "RBL" "WWL" 0.203425
+cap "storage" "WWL" 5.46676
+cap "WWL" "RWL" 0.0898708
 device msubckt sky130_fd_pr__nfet_01v8 250 -70 251 -69 l=30 w=200 "VSUBS" "storage" 60 0 "RBL" 200 0 "RWL" 200 0
 device msubckt sky130_fd_pr__nfet_01v8 20 -70 21 -69 l=30 w=200 "VSUBS" "WWL" 60 0 "WBL" 200 0 "storage" 200 0
