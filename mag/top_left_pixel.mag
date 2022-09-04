@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1662180174
+timestamp 1662244514
 << metal1 >>
 rect -1895 3270 -1745 3276
 rect -600 3270 -210 3320
@@ -112,7 +112,7 @@ rect -610 170 -560 3030
 rect -240 170 -210 3030
 rect -610 -120 -210 170
 use top_pixel  top_pixel_0
-timestamp 1662180122
+timestamp 1662244514
 transform 1 0 10 0 1 0
 box -10 0 3560 4380
 << end >>

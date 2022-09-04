@@ -22,33 +22,33 @@ node "GN" 2690 1245.57 640 -2220 ndif 0 0 0 0 0 0 0 0 58000 1820 14000 540 0 0 0
 node "VDD" 10051 2635.35 600 600 m1 0 0 0 0 680000 4680 0 0 52400 1080 72000 2440 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 119000 4000 68000 1080 0 0 0 0 0 0 0 0 0 0
 substrate "GND" 0 0 660 -2940 m1 0 0 0 0 0 0 0 0 24000 940 27200 840 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 51200 1600 85048 1848 87856 4016 0 0 0 0 0 0 0 0
 cap "GN" "SA_IREF" 34.4763
-cap "GN" "VDD" 438.341
-cap "V_IN" "net1" 209.966
-cap "OUT" "REF" 48.6315
-cap "OUT" "net2" 43.4476
-cap "OUT" "SA_IREF" 35.7969
-cap "OUT" "VDD" 196.007
-cap "net2" "REF" 31.1038
-cap "GN" "net1" 638.65
-cap "SA_IREF" "REF" 123.24
-cap "REF" "VDD" 9.96654
-cap "SA_IREF" "net2" 17.5566
-cap "net2" "VDD" 1.46875
-cap "SA_IREF" "VDD" 0.012455
-cap "GN" "V_IN" 35.1114
-cap "OUT" "net1" 161.173
-cap "REF" "net1" 21.5495
-cap "OUT" "V_IN" 97.9036
 cap "net2" "net1" 396.364
-cap "SA_IREF" "net1" 4.48275
+cap "VDD" "SA_IREF" 0.012455
+cap "net2" "REF" 31.1038
+cap "OUT" "V_IN" 97.9036
+cap "net1" "OUT" 161.173
+cap "REF" "OUT" 48.6315
+cap "GN" "V_IN" 35.1114
+cap "VDD" "V_IN" 164.427
+cap "GN" "net1" 638.65
+cap "V_IN" "SA_IREF" 12.1123
 cap "VDD" "net1" 349.364
-cap "V_IN" "REF" 80.4455
-cap "V_IN" "net2" 30.474
-cap "SA_IREF" "V_IN" 12.1123
-cap "V_IN" "VDD" 164.427
-cap "OUT" "GN" 114.567
+cap "net2" "OUT" 43.4476
 cap "GN" "REF" 127.538
+cap "VDD" "REF" 9.96654
+cap "net1" "SA_IREF" 4.48275
+cap "REF" "SA_IREF" 123.24
 cap "GN" "net2" 393.9
+cap "VDD" "net2" 1.46875
+cap "net2" "SA_IREF" 17.5566
+cap "GN" "OUT" 114.567
+cap "net1" "V_IN" 209.966
+cap "VDD" "OUT" 196.007
+cap "REF" "V_IN" 80.4455
+cap "OUT" "SA_IREF" 35.7969
+cap "net1" "REF" 21.5495
+cap "VDD" "GN" 438.341
+cap "net2" "V_IN" 30.474
 device msubckt sky130_fd_pr__nfet_01v8_lvt 730 -2660 731 -2659 l=200 w=100 "GND" "SA_IREF" 400 0 "GND" 100 0 "net2" 100 0
 device msubckt sky130_fd_pr__nfet_01v8_lvt 820 -2220 821 -2219 l=30 w=800 "GND" "V_IN" 60 0 "net2" 800 0 "net1" 800 0
 device msubckt sky130_fd_pr__nfet_01v8_lvt 710 -2220 711 -2219 l=30 w=800 "GND" "REF" 60 0 "GN" 800 0 "net2" 800 0

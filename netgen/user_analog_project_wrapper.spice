@@ -49,8 +49,8 @@ X4bit_dram_0 4bit_dram_1/dram_array_1/dram_cell_1/RWL 4bit_dram_0/dram_array_1/d
 .ends
 
 .subckt adc V_IN BIAS2 BIAS1 V_RAMP GRAY_INx1x GRAY_INx0x OUTx0x GRAY_INx2x GRAY_INx3x
-+ OUTx3x GRAY_INx4x GRAY_INx5x OUTx5x GRAY_INx6x GRAY_INx7x OUTx7x OUTx1x READ OUTx6x
-+ VDD GND OUTx4x OUTx2x
++ OUTx3x GRAY_INx4x GRAY_INx5x OUTx5x GRAY_INx6x GRAY_INx7x OUTx7x OUTx1x OUTx6x VDD
++ READ GND OUTx4x OUTx2x
 X8bit_dram_0 GRAY_INx2x OUTx4x OUTx2x OUTx6x GRAY_INx3x GRAY_INx4x OUTx0x GRAY_INx1x
 + OUTx7x GRAY_INx5x OUTx3x GRAY_INx7x READ 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL
 + OUTx5x OUTx1x GRAY_INx6x GND GRAY_INx0x x8bit_dram
@@ -170,8 +170,8 @@ X5 OUT net1 VDD VDD sky130_fd_pr__pfet_01v8_lvt ad=1.05e+12p pd=6.7e+06u as=0p p
 X6 OUT net1 GND GND sky130_fd_pr__nfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=0p ps=0u w=1e+06u l=150000u
 .ends
 
-.subckt 8bit_sens INx1x INx0x INx2x INx3x INx4x INx5x INx6x INx7x OUTx7x OUTx6x OUTx5x
-+ OUTx4x OUTx3x OUTx2x OUTx1x OUTx0x SA_IREF VDD VREF GND
+.subckt sens_amp8 INx0x INx3x INx6x OUTx7x OUTx6x OUTx5x OUTx4x OUTx3x OUTx2x OUTx1x
++ OUTx0x SA_IREF VDD INx2x VREF INx5x INx1x INx4x INx7x GND
 Xsens_amp_2 INx5x SA_IREF OUTx5x VREF VDD GND sens_amp
 Xsens_amp_3 INx4x SA_IREF OUTx4x VREF VDD GND sens_amp
 Xsens_amp_4 INx3x SA_IREF OUTx3x VREF VDD GND sens_amp
@@ -182,22 +182,22 @@ Xsens_amp_0 INx7x SA_IREF OUTx7x VREF VDD GND sens_amp
 Xsens_amp_1 INx6x SA_IREF OUTx6x VREF VDD GND sens_amp
 .ends
 
-.subckt bottom_pixel GRAYx0x OUTx0x OUTx2x OUTx6x OUTx7x GRAYx5x GRAYx4x GRAYx3x GRAYx2x
-+ GRAYx1x ARRAY_OUT COL_SEL pixel_0/VDD pixel_0/BIAS2 pixel_0/BIAS1 pixel_0/NB2 pixel_0/ROW_SEL
+.subckt bottom_pixel GRAYx0x OUTx0x OUTx2x OUTx6x OUTx7x GRAYx5x GRAYx3x GRAYx2x GRAYx1x
++ ARRAY_OUT COL_SEL pixel_0/VDD pixel_0/BIAS2 pixel_0/BIAS1 pixel_0/NB2 pixel_0/ROW_SEL
 + pixel_0/NB1 pixel_0/VREF 8bit_sens_0/SA_IREF pixel_0/CSA_VREF GRAYx7x pixel_0/DVDD
 + pixel_0/VBIAS pixel_0/gring pixel_0/PIX_OUT OUTx5x OUTx3x 8bit_sens_0/OUTx0x OUTx1x
 + 8bit_sens_0/OUTx1x 8bit_sens_0/OUTx2x 8bit_sens_0/OUTx3x 8bit_sens_0/VREF 8bit_sens_0/OUTx4x
 + 8bit_sens_0/VDD pixel_0/V_RAMP 8bit_sens_0/OUTx5x pixel_0/SF_IB 8bit_sens_0/OUTx6x
-+ 8bit_sens_0/OUTx7x VSUBS pixel_0/READ OUTx4x GRAYx6x
++ 8bit_sens_0/OUTx7x VSUBS pixel_0/READ OUTx4x GRAYx6x GRAYx4x
 Xpixel_0 pixel_0/AMP_OUT pixel_0/gring pixel_0/VREF pixel_0/PIX_OUT pixel_0/ROW_SEL
 + pixel_0/CSA_VREF pixel_0/SF_IB pixel_0/NB1 pixel_0/PIX_IN pixel_0/BIAS2 pixel_0/BIAS1
 + pixel_0/V_RAMP OUTx0x GRAYx5x GRAYx4x GRAYx2x GRAYx1x pixel_0/VBIAS pixel_0/NB2
 + OUTx5x pixel_0/READ pixel_0/DVDD OUTx3x OUTx6x GRAYx7x pixel_0/VDD GRAYx0x VSUBS
 + OUTx4x GRAYx6x OUTx7x OUTx2x OUTx1x GRAYx3x pixel
-X8bit_sens_0 OUTx1x OUTx0x OUTx2x OUTx3x OUTx4x OUTx5x OUTx6x OUTx7x 8bit_sens_0/OUTx7x
-+ 8bit_sens_0/OUTx6x 8bit_sens_0/OUTx5x 8bit_sens_0/OUTx4x 8bit_sens_0/OUTx3x 8bit_sens_0/OUTx2x
-+ 8bit_sens_0/OUTx1x 8bit_sens_0/OUTx0x 8bit_sens_0/SA_IREF 8bit_sens_0/VDD 8bit_sens_0/VREF
-+ VSUBS x8bit_sens
+X8bit_sens_0 OUTx0x OUTx3x OUTx6x 8bit_sens_0/OUTx7x 8bit_sens_0/OUTx6x 8bit_sens_0/OUTx5x
++ 8bit_sens_0/OUTx4x 8bit_sens_0/OUTx3x 8bit_sens_0/OUTx2x 8bit_sens_0/OUTx1x 8bit_sens_0/OUTx0x
++ 8bit_sens_0/SA_IREF 8bit_sens_0/VDD OUTx2x 8bit_sens_0/VREF OUTx5x OUTx1x OUTx4x
++ OUTx7x VSUBS sens_amp8
 X0 ARRAY_OUT COL_SEL pixel_0/PIX_OUT VSUBS sky130_fd_pr__nfet_01v8_lvt ad=2.8e+12p pd=1.67e+07u as=3.8e+12p ps=2.17e+07u w=8e+06u l=200000u
 .ends
 
@@ -235,9 +235,9 @@ Xtop_pixel_0 top_pixel_0/GRAYx0x top_pixel_0/GRAYx1x top_pixel_0/GRAYx2x top_pix
 + bottom_pixel_0/GRAYx0x bottom_pixel_0/8bit_sens_0/OUTx4x bottom_pixel_0/8bit_sens_0/VDD
 + bottom_pixel_0/8bit_sens_0/OUTx5x bottom_pixel_0/8bit_sens_0/OUTx6x VSUBS bottom_pixel_0/8bit_sens_0/OUTx7x
 Xbottom_pixel_0 bottom_pixel_0/GRAYx0x bottom_pixel_0/OUTx0x bottom_pixel_0/OUTx2x
-+ bottom_pixel_0/OUTx6x bottom_pixel_0/OUTx7x bottom_pixel_0/GRAYx5x bottom_pixel_0/GRAYx4x
-+ bottom_pixel_0/GRAYx3x bottom_pixel_0/GRAYx2x bottom_pixel_0/GRAYx1x bottom_pixel_0/ARRAY_OUT
-+ bottom_pixel_0/COL_SEL bottom_pixel_0/pixel_0/VDD bottom_pixel_0/pixel_0/BIAS2 bottom_pixel_0/pixel_0/BIAS1
++ bottom_pixel_0/OUTx6x bottom_pixel_0/OUTx7x bottom_pixel_0/GRAYx5x bottom_pixel_0/GRAYx3x
++ bottom_pixel_0/GRAYx2x bottom_pixel_0/GRAYx1x bottom_pixel_0/ARRAY_OUT bottom_pixel_0/COL_SEL
++ bottom_pixel_0/pixel_0/VDD bottom_pixel_0/pixel_0/BIAS2 bottom_pixel_0/pixel_0/BIAS1
 + bottom_pixel_0/pixel_0/NB2 bottom_pixel_0/pixel_0/ROW_SEL bottom_pixel_0/pixel_0/NB1
 + bottom_pixel_0/pixel_0/VREF bottom_pixel_0/8bit_sens_0/SA_IREF bottom_pixel_0/pixel_0/CSA_VREF
 + bottom_pixel_0/GRAYx7x bottom_pixel_0/pixel_0/DVDD bottom_pixel_0/pixel_0/VBIAS
@@ -247,7 +247,7 @@ Xbottom_pixel_0 bottom_pixel_0/GRAYx0x bottom_pixel_0/OUTx0x bottom_pixel_0/OUTx
 + bottom_pixel_0/8bit_sens_0/OUTx4x bottom_pixel_0/8bit_sens_0/VDD bottom_pixel_0/pixel_0/V_RAMP
 + bottom_pixel_0/8bit_sens_0/OUTx5x bottom_pixel_0/pixel_0/SF_IB bottom_pixel_0/8bit_sens_0/OUTx6x
 + bottom_pixel_0/8bit_sens_0/OUTx7x VSUBS bottom_pixel_0/pixel_0/READ bottom_pixel_0/OUTx4x
-+ bottom_pixel_0/GRAYx6x bottom_pixel
++ bottom_pixel_0/GRAYx6x bottom_pixel_0/GRAYx4x bottom_pixel
 .ends
 
 .subckt bottom_right_pixel GRAYx0x OUTx0x OUTx2x OUTx4x OUTx6x GRAYx5x GRAYx4x GRAYx2x
@@ -266,19 +266,19 @@ Xright_pixel_0 OUTx6x right_pixel_0/pixel_0/NB2 VSUBS right_pixel_0/pixel_0/ROW_
 + OUTx5x GRAYx0x GRAYx2x right_pixel_0/pixel_0/BIAS1 OUTx3x OUTx1x right_pixel_0/pixel_0/BIAS2
 + right_pixel_0/pixel_0/NB1 right_pixel_0/pixel_0/V_RAMP right_pixel_0/pixel_0/SF_IB
 + right_pixel_0/pixel_0/VDD OUTx0x right_pixel_0/pixel_0/READ OUTx4x GRAYx6x right_pixel
-X8bit_sens_0 OUTx1x OUTx0x OUTx2x OUTx3x OUTx4x OUTx5x OUTx6x OUTx7x 8bit_sens_0/OUTx7x
-+ 8bit_sens_0/OUTx6x 8bit_sens_0/OUTx5x 8bit_sens_0/OUTx4x 8bit_sens_0/OUTx3x 8bit_sens_0/OUTx2x
-+ 8bit_sens_0/OUTx1x 8bit_sens_0/OUTx0x 8bit_sens_0/SA_IREF 8bit_sens_0/VDD 8bit_sens_0/VREF
-+ VSUBS x8bit_sens
+X8bit_sens_0 OUTx0x OUTx3x OUTx6x 8bit_sens_0/OUTx7x 8bit_sens_0/OUTx6x 8bit_sens_0/OUTx5x
++ 8bit_sens_0/OUTx4x 8bit_sens_0/OUTx3x 8bit_sens_0/OUTx2x 8bit_sens_0/OUTx1x 8bit_sens_0/OUTx0x
++ 8bit_sens_0/SA_IREF 8bit_sens_0/VDD OUTx2x 8bit_sens_0/VREF OUTx5x OUTx1x OUTx4x
++ OUTx7x VSUBS sens_amp8
 X0 ARRAY_OUT COL_SEL right_pixel_0/pixel_0/PIX_OUT VSUBS sky130_fd_pr__nfet_01v8_lvt ad=2.8e+12p pd=1.67e+07u as=3.8e+12p ps=2.17e+07u w=8e+06u l=200000u
 .ends
 
 .subckt small_array bottom_right_pixel_0/COL_SEL pixel_0/NB2 bottom_pixel_0/COL_SEL
 + pixel_0/CSA_VREF pixel_0/GRAYx0x bottom_pixel_0/ARRAY_OUT pixel_0/GRAYx1x pixel_0/GRAYx2x
 + pixel_0/GRAYx3x left_pixel_0/pixel_0/GRAYx0x left_pixel_0/pixel_0/GRAYx1x pixel_0/GRAYx4x
-+ pixel_0/GRAYx5x left_pixel_0/pixel_0/GRAYx2x bottom_pixel_0/pixel_0/ROW_SEL pixel_0/GRAYx6x
-+ left_pixel_0/pixel_0/GRAYx3x bottom_left_pixel_0/bottom_pixel_0/8bit_sens_0/VREF
-+ left_pixel_0/pixel_0/GRAYx4x pixel_0/BIAS2 pixel_0/GRAYx7x bottom_left_pixel_0/bottom_pixel_0/8bit_sens_0/OUTx0x
++ left_pixel_0/pixel_0/GRAYx2x pixel_0/GRAYx5x bottom_pixel_0/pixel_0/ROW_SEL left_pixel_0/pixel_0/GRAYx3x
++ pixel_0/GRAYx6x bottom_left_pixel_0/bottom_pixel_0/8bit_sens_0/VREF pixel_0/BIAS2
++ pixel_0/GRAYx7x left_pixel_0/pixel_0/GRAYx4x bottom_left_pixel_0/bottom_pixel_0/8bit_sens_0/OUTx0x
 + left_pixel_0/pixel_0/GRAYx5x bottom_right_pixel_0/8bit_sens_0/VREF bottom_left_pixel_0/bottom_pixel_0/8bit_sens_0/OUTx1x
 + left_pixel_0/pixel_0/GRAYx6x bottom_left_pixel_0/bottom_pixel_0/8bit_sens_0/OUTx2x
 + left_pixel_0/pixel_0/GRAYx7x bottom_left_pixel_0/bottom_pixel_0/8bit_sens_0/OUTx3x
@@ -288,15 +288,15 @@ X0 ARRAY_OUT COL_SEL right_pixel_0/pixel_0/PIX_OUT VSUBS sky130_fd_pr__nfet_01v8
 + pixel_0/READ bottom_right_pixel_0/GRAYx1x bottom_right_pixel_0/8bit_sens_0/OUTx0x
 + bottom_left_pixel_0/bottom_pixel_0/8bit_sens_0/OUTx7x top_pixel_0/pixel_0/ROW_SEL
 + bottom_right_pixel_0/GRAYx2x bottom_right_pixel_0/8bit_sens_0/OUTx1x pixel_0/BIAS1
-+ bottom_right_pixel_0/GRAYx3x bottom_right_pixel_0/8bit_sens_0/OUTx2x bottom_right_pixel_0/GRAYx4x
-+ bottom_right_pixel_0/8bit_sens_0/OUTx3x pixel_0/SF_IB bottom_right_pixel_0/GRAYx5x
-+ bottom_right_pixel_0/8bit_sens_0/OUTx4x bottom_left_pixel_0/bottom_pixel_0/COL_SEL
-+ bottom_right_pixel_0/GRAYx6x pixel_0/V_RAMP bottom_right_pixel_0/8bit_sens_0/OUTx5x
-+ pixel_0/ROW_SEL bottom_right_pixel_0/GRAYx7x top_pixel_0/pixel_0/READ bottom_pixel_0/8bit_sens_0/OUTx0x
-+ bottom_pixel_0/pixel_0/READ bottom_pixel_0/8bit_sens_0/OUTx1x pixel_0/NB1 bottom_pixel_0/8bit_sens_0/OUTx2x
++ bottom_right_pixel_0/GRAYx3x bottom_right_pixel_0/8bit_sens_0/OUTx2x bottom_right_pixel_0/8bit_sens_0/OUTx3x
++ bottom_right_pixel_0/GRAYx4x pixel_0/SF_IB bottom_right_pixel_0/GRAYx5x bottom_right_pixel_0/8bit_sens_0/OUTx4x
++ bottom_left_pixel_0/bottom_pixel_0/COL_SEL bottom_right_pixel_0/GRAYx6x pixel_0/V_RAMP
++ bottom_right_pixel_0/8bit_sens_0/OUTx5x pixel_0/ROW_SEL bottom_right_pixel_0/GRAYx7x
++ top_pixel_0/pixel_0/READ bottom_pixel_0/8bit_sens_0/OUTx0x bottom_pixel_0/pixel_0/READ
++ bottom_pixel_0/8bit_sens_0/OUTx1x pixel_0/NB1 bottom_pixel_0/8bit_sens_0/OUTx2x
 + bottom_left_pixel_0/bottom_pixel_0/8bit_sens_0/SA_IREF bottom_pixel_0/8bit_sens_0/OUTx3x
 + bottom_pixel_0/8bit_sens_0/OUTx4x pixel_0/VBIAS bottom_pixel_0/8bit_sens_0/OUTx5x
-+ pixel_0/DVDD bottom_pixel_0/8bit_sens_0/VDD bottom_right_pixel_0/8bit_sens_0/SA_IREF
++ pixel_0/DVDD bottom_pixel_0/8bit_sens_0/VDD pixel_0/gring bottom_right_pixel_0/8bit_sens_0/SA_IREF
 + pixel_0/VDD pixel_0/VREF VSUBS
 Xpixel_0 pixel_0/AMP_OUT pixel_0/gring pixel_0/VREF pixel_0/PIX_OUT pixel_0/ROW_SEL
 + pixel_0/CSA_VREF pixel_0/SF_IB pixel_0/NB1 pixel_0/PIX_IN pixel_0/BIAS2 pixel_0/BIAS1
@@ -330,16 +330,16 @@ Xleft_pixel_0 pixel_0/BIAS2 pixel_0/BIAS1 pixel_0/VDD pixel_0/NB2 left_pixel_0/p
 + left_pixel_0/pixel_0/OUTx1x VSUBS pixel_0/V_RAMP pixel_0/SF_IB left_pixel_0/pixel_0/OUTx4x
 + left_pixel_0/pixel_0/OUTx0x left_pixel_0/pixel_0/GRAYx6x pixel_0/READ left_pixel
 Xbottom_pixel_0 pixel_0/GRAYx0x pixel_0/OUTx0x pixel_0/OUTx2x pixel_0/OUTx6x pixel_0/OUTx7x
-+ pixel_0/GRAYx5x pixel_0/GRAYx4x pixel_0/GRAYx3x pixel_0/GRAYx2x pixel_0/GRAYx1x
-+ bottom_pixel_0/ARRAY_OUT bottom_pixel_0/COL_SEL pixel_0/VDD pixel_0/BIAS2 pixel_0/BIAS1
-+ pixel_0/NB2 bottom_pixel_0/pixel_0/ROW_SEL pixel_0/NB1 pixel_0/VREF bottom_pixel_0/8bit_sens_0/SA_IREF
-+ pixel_0/CSA_VREF pixel_0/GRAYx7x pixel_0/DVDD pixel_0/VBIAS pixel_0/gring pixel_0/PIX_OUT
-+ pixel_0/OUTx5x pixel_0/OUTx3x bottom_pixel_0/8bit_sens_0/OUTx0x pixel_0/OUTx1x bottom_pixel_0/8bit_sens_0/OUTx1x
++ pixel_0/GRAYx5x pixel_0/GRAYx3x pixel_0/GRAYx2x pixel_0/GRAYx1x bottom_pixel_0/ARRAY_OUT
++ bottom_pixel_0/COL_SEL pixel_0/VDD pixel_0/BIAS2 pixel_0/BIAS1 pixel_0/NB2 bottom_pixel_0/pixel_0/ROW_SEL
++ pixel_0/NB1 pixel_0/VREF bottom_pixel_0/8bit_sens_0/SA_IREF pixel_0/CSA_VREF pixel_0/GRAYx7x
++ pixel_0/DVDD pixel_0/VBIAS pixel_0/gring pixel_0/PIX_OUT pixel_0/OUTx5x pixel_0/OUTx3x
++ bottom_pixel_0/8bit_sens_0/OUTx0x pixel_0/OUTx1x bottom_pixel_0/8bit_sens_0/OUTx1x
 + bottom_pixel_0/8bit_sens_0/OUTx2x bottom_pixel_0/8bit_sens_0/OUTx3x bottom_pixel_0/8bit_sens_0/VREF
 + bottom_pixel_0/8bit_sens_0/OUTx4x bottom_pixel_0/8bit_sens_0/VDD pixel_0/V_RAMP
 + bottom_pixel_0/8bit_sens_0/OUTx5x pixel_0/SF_IB bottom_pixel_0/8bit_sens_0/OUTx6x
 + bottom_pixel_0/8bit_sens_0/OUTx7x VSUBS bottom_pixel_0/pixel_0/READ pixel_0/OUTx4x
-+ pixel_0/GRAYx6x bottom_pixel
++ pixel_0/GRAYx6x pixel_0/GRAYx4x bottom_pixel
 Xtop_right_pixel_0 pixel_0/NB2 top_pixel_0/pixel_0/ROW_SEL pixel_0/VBIAS pixel_0/gring
 + pixel_0/CSA_VREF bottom_right_pixel_0/GRAYx4x pixel_0/NB1 bottom_right_pixel_0/GRAYx5x
 + pixel_0/SF_IB bottom_right_pixel_0/GRAYx2x bottom_right_pixel_0/GRAYx7x bottom_right_pixel_0/OUTx1x
@@ -1019,7 +1019,7 @@ Xsky130_fd_pr__pfet_01v8_YCMRKB_3 vin_p w_4660_n6791# vin_p voe1 voe1 vin_p vin_
 + vin_p vin_p voe1 voe1 voe1 vin_p sky130_fd_pr__pfet_01v8_YCMRKB
 .ends
 
-.subckt opamp_wrapper AOUT OUT_IB AMP_IB ARRAY_OUT opamp_v1_0/vdd opamp_v1_0/vss
+.subckt opamp_wrapper AOUT OUT_IB AMP_IB opamp_v1_0/vdd opamp_v1_0/vss ARRAY_OUT
 Xopamp_v1_0 opamp_v1_0/vdd opamp_v1_0/iref AOUT opamp_v1_0/vss ARRAY_OUT AOUT opamp_v1
 X0 ARRAY_OUT OUT_IB opamp_v1_0/vss opamp_v1_0/vss sky130_fd_pr__nfet_01v8_lvt ad=1.32e+13p pd=1.93e+07u as=1.4524e+14p ps=9.72e+08u w=8e+06u l=2e+06u
 X1 opamp_v1_0/iref AMP_IB opamp_v1_0/vss opamp_v1_0/vss sky130_fd_pr__nfet_01v8_lvt ad=1.6e+13p pd=2e+07u as=0p ps=0u w=8e+06u l=2e+06u
@@ -1028,7 +1028,7 @@ X1 opamp_v1_0/iref AMP_IB opamp_v1_0/vss opamp_v1_0/vss sky130_fd_pr__nfet_01v8_
 .subckt user_analog_project_wrapper gpio_analog[0] gpio_analog[10] gpio_analog[11]
 + gpio_analog[12] gpio_analog[13] gpio_analog[14] gpio_analog[15] gpio_analog[16]
 + gpio_analog[17] gpio_analog[1] gpio_analog[2] gpio_analog[3] gpio_analog[4] gpio_analog[5]
-+ gpio_analog[6] gpio_analog[7] gpio_analog[8] gpio_analog[9] gpio_noesd[0] gpio_noesd[10] 
++ gpio_analog[6] gpio_analog[7] gpio_analog[8] gpio_analog[9] gpio_noesd[0] gpio_noesd[10] vssd2
 + gpio_noesd[11] gpio_noesd[12] gpio_noesd[13] gpio_noesd[14] gpio_noesd[15] gpio_noesd[16]
 + gpio_noesd[17] gpio_noesd[1] gpio_noesd[2] gpio_noesd[3] gpio_noesd[4] gpio_noesd[5]
 + gpio_noesd[6] gpio_noesd[7] gpio_noesd[8] gpio_noesd[9] io_analog[0] io_analog[10]
@@ -1113,13 +1113,13 @@ X1 opamp_v1_0/iref AMP_IB opamp_v1_0/vss opamp_v1_0/vss sky130_fd_pr__nfet_01v8_
 + la_oenb[85] la_oenb[86] la_oenb[87] la_oenb[88] la_oenb[89] la_oenb[8] la_oenb[90]
 + la_oenb[91] la_oenb[92] la_oenb[93] la_oenb[94] la_oenb[95] la_oenb[96] la_oenb[97]
 + la_oenb[98] la_oenb[99] la_oenb[9] user_clock2 user_irq[0] user_irq[1] user_irq[2]
-+ vccd1 vccd2 vdda1 vdda2 vssa1 vssa2 vssd1 vssd2 wb_clk_i wb_rst_i wbs_ack_o wbs_adr_i[0]
-+ wbs_adr_i[10] wbs_adr_i[11] wbs_adr_i[12] wbs_adr_i[13] wbs_adr_i[14] wbs_adr_i[15]
-+ wbs_adr_i[16] wbs_adr_i[17] wbs_adr_i[18] wbs_adr_i[19] wbs_adr_i[1] wbs_adr_i[20]
-+ wbs_adr_i[21] wbs_adr_i[22] wbs_adr_i[23] wbs_adr_i[24] wbs_adr_i[25] wbs_adr_i[26]
-+ wbs_adr_i[27] wbs_adr_i[28] wbs_adr_i[29] wbs_adr_i[2] wbs_adr_i[30] wbs_adr_i[31]
-+ wbs_adr_i[3] wbs_adr_i[4] wbs_adr_i[5] wbs_adr_i[6] wbs_adr_i[7] wbs_adr_i[8] wbs_adr_i[9]
-+ wbs_cyc_i wbs_dat_i[0] wbs_dat_i[10] wbs_dat_i[11] wbs_dat_i[12] wbs_dat_i[13] wbs_dat_i[14]
++ vccd1 vccd2 vdda1 vdda2 vssa1 vssa2 vssd1 wb_clk_i wb_rst_i wbs_ack_o wbs_adr_i[0] wbs_adr_i[10]
++ wbs_adr_i[11] wbs_adr_i[12] wbs_adr_i[13] wbs_adr_i[14] wbs_adr_i[15] wbs_adr_i[16]
++ wbs_adr_i[17] wbs_adr_i[18] wbs_adr_i[19] wbs_adr_i[1] wbs_adr_i[20] wbs_adr_i[21]
++ wbs_adr_i[22] wbs_adr_i[23] wbs_adr_i[24] wbs_adr_i[25] wbs_adr_i[26] wbs_adr_i[27]
++ wbs_adr_i[28] wbs_adr_i[29] wbs_adr_i[2] wbs_adr_i[30] wbs_adr_i[31] wbs_adr_i[3]
++ wbs_adr_i[4] wbs_adr_i[5] wbs_adr_i[6] wbs_adr_i[7] wbs_adr_i[8] wbs_adr_i[9] wbs_cyc_i
++ wbs_dat_i[0] wbs_dat_i[10] wbs_dat_i[11] wbs_dat_i[12] wbs_dat_i[13] wbs_dat_i[14]
 + wbs_dat_i[15] wbs_dat_i[16] wbs_dat_i[17] wbs_dat_i[18] wbs_dat_i[19] wbs_dat_i[1]
 + wbs_dat_i[20] wbs_dat_i[21] wbs_dat_i[22] wbs_dat_i[23] wbs_dat_i[24] wbs_dat_i[25]
 + wbs_dat_i[26] wbs_dat_i[27] wbs_dat_i[28] wbs_dat_i[29] wbs_dat_i[2] wbs_dat_i[30]
@@ -1131,32 +1131,52 @@ X1 opamp_v1_0/iref AMP_IB opamp_v1_0/vss opamp_v1_0/vss sky130_fd_pr__nfet_01v8_
 + wbs_dat_o[30] wbs_dat_o[31] wbs_dat_o[3] wbs_dat_o[4] wbs_dat_o[5] wbs_dat_o[6]
 + wbs_dat_o[7] wbs_dat_o[8] wbs_dat_o[9] wbs_sel_i[0] wbs_sel_i[1] wbs_sel_i[2] wbs_sel_i[3]
 + wbs_stb_i wbs_we_i
-Xadc_0 gpio_analog[11] adc_0/BIAS2 adc_0/BIAS1 io_analog[2] la_data_in[121] la_data_in[120]
+Xadc_0 gpio_analog[11] adc_1/BIAS2 adc_1/BIAS1 io_analog[2] la_data_in[121] la_data_in[120]
 + adc_0/OUTx0x la_data_in[122] la_data_in[123] adc_0/OUTx3x la_data_in[124] la_data_in[125]
-+ adc_0/OUTx5x la_data_in[126] la_data_in[127] adc_0/OUTx7x adc_0/OUTx1x gpio_analog[12]
-+ adc_0/OUTx6x vccd1 small_array_0/VSUBS adc_0/OUTx4x adc_0/OUTx2x adc
++ adc_0/OUTx5x la_data_in[126] la_data_in[127] adc_0/OUTx7x adc_0/OUTx1x adc_0/OUTx6x
++ vccd1 gpio_analog[12] vssd2 adc_0/OUTx4x adc_0/OUTx2x adc
+Xadc_1 gpio_analog[6] adc_1/BIAS2 adc_1/BIAS1 gpio_analog[0] la_data_in[121] la_data_in[120]
++ adc_1/OUTx0x la_data_in[122] la_data_in[123] adc_1/OUTx3x la_data_in[124] la_data_in[125]
++ adc_1/OUTx5x la_data_in[126] la_data_in[127] adc_1/OUTx7x adc_1/OUTx1x adc_1/OUTx6x
++ adc_1/VDD io_in[2] vssd2 adc_1/OUTx4x adc_1/OUTx2x adc
 Xsmall_array_0 gpio_analog[1] io_analog[8] gpio_analog[3] gpio_analog[15] la_data_in[120]
 + opamp_wrapper_0/ARRAY_OUT la_data_in[121] la_data_in[122] la_data_in[123] la_data_in[120]
-+ la_data_in[121] la_data_in[124] la_data_in[125] la_data_in[122] gpio_analog[16]
-+ la_data_in[126] la_data_in[123] gpio_analog[17] la_data_in[124] adc_0/BIAS2 la_data_in[127]
++ la_data_in[121] la_data_in[124] la_data_in[122] la_data_in[125] gpio_analog[16]
++ la_data_in[123] la_data_in[126] gpio_analog[17] adc_1/BIAS2 la_data_in[127] la_data_in[124]
 + la_data_in[16] la_data_in[125] gpio_analog[17] la_data_in[15] la_data_in[126] la_data_in[14]
-+ la_data_in[127] la_data_in[13] la_data_in[12] 8bit_sens_0/SA_IREF la_data_in[11]
++ la_data_in[127] la_data_in[13] la_data_in[12] sens_amp8_0/SA_IREF la_data_in[11]
 + la_data_in[120] gpio_analog[17] la_data_in[10] gpio_analog[14] la_data_in[121] la_data_in[32]
-+ la_data_in[9] gpio_analog[10] la_data_in[122] la_data_in[31] adc_0/BIAS1 small_array_0/bottom_right_pixel_0/GRAYx3x
-+ la_data_in[30] la_data_in[124] la_data_in[29] io_analog[10] la_data_in[125] la_data_in[28]
++ la_data_in[9] gpio_analog[10] la_data_in[122] la_data_in[31] adc_1/BIAS1 small_array_0/bottom_right_pixel_0/GRAYx3x
++ la_data_in[30] la_data_in[29] la_data_in[124] io_analog[10] la_data_in[125] la_data_in[28]
 + gpio_analog[5] la_data_in[126] gpio_analog[0] la_data_in[27] gpio_analog[14] la_data_in[127]
 + gpio_analog[10] la_data_in[24] gpio_analog[16] la_data_in[23] io_analog[9] la_data_in[22]
-+ 8bit_sens_0/SA_IREF la_data_in[21] la_data_in[20] io_analog[1] la_data_in[19] vccd1
-+ vccd1 8bit_sens_0/SA_IREF vdda1 io_analog[0] small_array_0/VSUBS small_array
-Xbias_cell_0 io_analog[9] io_analog[8] io_analog[7] io_analog[6] io_analog[10] adc_0/BIAS1
-+ adc_0/BIAS2 gpio_analog[7] io_analog[4] io_analog[5] 8bit_sens_0/SA_IREF io_analog[3]
-+ vccd2 small_array_0/VSUBS bias_cell
-X8bit_sens_0 adc_0/OUTx1x adc_0/OUTx0x adc_0/OUTx2x adc_0/OUTx3x adc_0/OUTx4x adc_0/OUTx5x
-+ adc_0/OUTx6x adc_0/OUTx7x la_data_out[1] la_data_out[2] la_data_out[3] la_data_out[4]
-+ la_data_out[5] la_data_out[6] la_data_out[7] la_data_out[8] 8bit_sens_0/SA_IREF
-+ vccd1 gpio_analog[13] small_array_0/VSUBS 8bit_sens
-Xopamp_wrapper_0 gpio_analog[2] io_analog[7] io_analog[6] opamp_wrapper_0/ARRAY_OUT
-+ vdda1 small_array_0/VSUBS opamp_wrapper
-V0 small_array_0/VSUBS vssd2 0.0
++ sens_amp8_0/SA_IREF la_data_in[21] la_data_in[20] io_analog[1] la_data_in[19] vccd1
++ vccd1 gpio_analog[8] sens_amp8_0/SA_IREF vdda1 io_analog[0] vssd2 small_array
+Xbias_cell_0 io_analog[9] io_analog[8] io_analog[7] io_analog[6] io_analog[10] adc_1/BIAS1
++ adc_1/BIAS2 gpio_analog[7] io_analog[4] io_analog[5] sens_amp8_0/SA_IREF io_analog[3]
++ vccd2 vssd2 bias_cell
+X8bit_sens_0 adc_0/OUTx0x adc_0/OUTx3x adc_0/OUTx6x la_data_out[1] la_data_out[2]
++ la_data_out[3] la_data_out[4] la_data_out[5] la_data_out[6] la_data_out[7] la_data_out[8]
++ sens_amp8_0/SA_IREF vccd1 adc_0/OUTx2x gpio_analog[13] adc_0/OUTx5x adc_0/OUTx1x
++ adc_0/OUTx4x adc_0/OUTx7x vssd2 sens_amp8
+Xopamp_wrapper_0 gpio_analog[2] io_analog[7] io_analog[6] vdda1 vssd2 opamp_wrapper_0/ARRAY_OUT
++ opamp_wrapper
+Xopamp_wrapper_1 gpio_analog[4] io_analog[7] io_analog[6] vdda1 vssd2 bottom_pixel_0/ARRAY_OUT
++ opamp_wrapper
+Xbottom_pixel_0 bottom_pixel_0/GRAYx0x bottom_pixel_0/OUTx0x bottom_pixel_0/OUTx2x
++ bottom_pixel_0/OUTx6x bottom_pixel_0/OUTx7x la_data_in[125] la_data_in[123] la_data_in[122]
++ la_data_in[121] bottom_pixel_0/ARRAY_OUT io_in[5] vdda1 adc_1/BIAS2 adc_1/BIAS1
++ io_analog[8] vdda1 io_analog[9] io_analog[0] sens_amp8_0/SA_IREF gpio_analog[15]
++ la_data_in[127] vdda1 io_analog[1] bottom_pixel_0/pixel_0/gring bottom_pixel_0/pixel_0/PIX_OUT
++ bottom_pixel_0/OUTx5x bottom_pixel_0/OUTx3x la_data_out[110] la_data_in[120] la_data_out[109]
++ la_data_out[108] la_data_out[107] gpio_analog[9] la_data_out[106] vdda1 gpio_analog[0]
++ la_data_out[105] io_analog[10] la_data_out[104] la_data_out[103] vssd2 io_in[6]
++ bottom_pixel_0/OUTx4x la_data_in[126] la_data_in[124] bottom_pixel
+Xsens_amp8_0 adc_1/OUTx0x adc_1/OUTx3x adc_1/OUTx6x la_data_out[111] la_data_out[112]
++ la_data_out[113] la_data_out[114] la_data_out[115] la_data_out[116] la_data_out[117]
++ la_data_out[118] sens_amp8_0/SA_IREF adc_1/VDD adc_1/OUTx2x gpio_analog[9] adc_1/OUTx5x
++ adc_1/OUTx1x adc_1/OUTx4x adc_1/OUTx7x vssd2 sens_amp8
+V0 vssd2 vssd2 0.0
+V1 vssd2 vssa2 0.0
 .ends
 
