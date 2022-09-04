@@ -1,0 +1,15 @@
+magic
+tech sky130B
+timestamp 1662330820
+<< error_p >>
+rect -13 13 1 16
+rect -16 1 1 13
+rect -16 -13 16 1
+rect -13 -16 13 -13
+<< metal1 >>
+rect -13 0 0 16
+rect -13 -16 13 0
+<< metal2 >>
+rect -16 0 0 13
+rect -16 -13 16 0
+<< end >>
