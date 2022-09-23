@@ -80,10 +80,5 @@ X22 a_120_n780# PIX_IN a_n30_n2640# GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u 
 X23 a_1720_n1450# a_1000_n1450# DVDD DVDD sky130_fd_pr__pfet_01v8_lvt ad=3.5e+11p pd=2.7e+06u as=0p ps=0u w=1e+06u l=1e+06u
 X24 VDD a_120_n550# AMP_OUT GND sky130_fd_pr__nfet_01v8_lvt ad=1.185e+12p pd=8.4e+06u as=0p ps=0u w=1e+06u l=1e+06u
 X25 VDD a_2287_n292# a_2200_n380# GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
-C0 PIX_IN gring 3.00fF
-C1 DVDD GND 2.70fF
-C2 VDD GND 6.34fF
-C3 gring GND 2.85fF **FLOATING
-C4 8bit_dram_0/4bit_dram_1/dram_array_1/dram_cell_1/WWL GND 2.36fF
 .ends
 

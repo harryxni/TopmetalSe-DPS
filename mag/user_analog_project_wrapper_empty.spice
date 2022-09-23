@@ -106,30 +106,5 @@
 + wbs_dat_o[30] wbs_dat_o[31] wbs_dat_o[3] wbs_dat_o[4] wbs_dat_o[5] wbs_dat_o[6]
 + wbs_dat_o[7] wbs_dat_o[8] wbs_dat_o[9] wbs_sel_i[0] wbs_sel_i[1] wbs_sel_i[2] wbs_sel_i[3]
 + wbs_stb_i wbs_we_i
-C0 io_analog[4] VSUBS 23.14fF
-C1 io_analog[5] VSUBS 23.14fF
-C2 io_analog[6] VSUBS 23.14fF
-C3 vssa1 VSUBS 26.51fF
-C4 vssd2 VSUBS 13.26fF
-C5 vssd1 VSUBS 13.26fF
-C6 vdda2 VSUBS 13.26fF
-C7 vdda1 VSUBS 26.51fF
-C8 vssa2 VSUBS 13.26fF
-C9 vccd1 VSUBS 13.26fF
-C10 vccd2 VSUBS 13.26fF
-C11 io_analog[0] VSUBS 6.94fF
-C12 io_analog[10] VSUBS 6.94fF
-C13 io_analog[1] VSUBS 6.94fF
-C14 io_analog[2] VSUBS 6.94fF
-C15 io_analog[3] VSUBS 6.94fF
-C16 io_clamp_high[0] VSUBS 2.90fF
-C17 io_clamp_low[0] VSUBS 2.90fF
-C18 io_clamp_high[1] VSUBS 2.90fF
-C19 io_clamp_low[1] VSUBS 2.90fF
-C20 io_clamp_high[2] VSUBS 2.90fF
-C21 io_clamp_low[2] VSUBS 2.90fF
-C22 io_analog[7] VSUBS 6.94fF
-C23 io_analog[8] VSUBS 6.94fF
-C24 io_analog[9] VSUBS 6.94fF
 .ends
 

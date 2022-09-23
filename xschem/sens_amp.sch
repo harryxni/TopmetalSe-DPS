@@ -77,6 +77,8 @@ N 30 270 30 300 {
 lab=GND}
 N -40 300 30 300 {
 lab=GND}
+N -40 180 -40 240 {
+lab=#net2}
 C {devices/lab_pin.sym} -40 -170 0 0 {name=p192 lab=VDD}
 C {devices/lab_pin.sym} -100 -50 0 1 {name=l53 lab=GN}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 40 -80 0 0 {name=M5
@@ -167,4 +169,5 @@ model=nfet_01v8_lvt
 spiceprefix=X
  }
 C {devices/ipin.sym} -90 270 0 0 {name=p7 lab=SA_IREF}
-C {devices/ammeter.sym} -40 210 0 0 {name=Vmeas}
+C {devices/ipin.sym} -110 -250 0 0 {name=p8 lab=VDD}
+C {devices/ipin.sym} -110 -220 0 0 {name=p9 lab=GND}

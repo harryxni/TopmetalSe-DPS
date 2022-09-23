@@ -1,4 +1,4 @@
-timestamp 1655248036
+timestamp 1663803187
 version 8.3
 tech sky130B
 style ngspice()
@@ -10,110 +10,130 @@ port "AOUT" 2 26418 7258 26418 7258 m4
 port "OUT_IB" 3 -1078 -314 -1078 -314 m2
 port "ARRAY_OUT" 5 -1576 3762 -1576 3762 m2
 port "AMP_IB" 4 -2240 9968 -2240 9968 m1
-node "AOUT" 0 26534.4 26418 7258 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1012600 4100 1012600 4100 37244575 91410 0 0 0 0
+node "AOUT" 0 26541.9 26418 7258 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1012600 4100 1012600 4100 37244575 91410 0 0 0 0
 node "m1_24530_n1570#" 1 1589.38 24530 -1570 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 735000 5500 0 0 0 0 0 0 0 0 0 0
 node "m1_23020_11280#" 2 2473.26 23020 11280 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1152750 8530 0 0 0 0 0 0 0 0 0 0
-node "OUT_IB" 397 3274.15 -1078 -314 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 728200 5280 0 0 85000 1340 102000 1540 185300 2520 0 0 0 0 0 0 0 0
-node "ARRAY_OUT" 625 9723.9 -1576 3762 m2 0 0 0 0 0 0 0 0 528000 3860 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784000 4180 976000 4420 7481496 16324 0 0 0 0 0 0 0 0
+node "OUT_IB" 397 3309.2 -1078 -314 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 728200 5280 0 0 85000 1340 102000 1540 185300 2520 0 0 0 0 0 0 0 0
+node "ARRAY_OUT" 625 9788.61 -1576 3762 m2 0 0 0 0 0 0 0 0 528000 3860 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 784000 4180 976000 4420 7481496 16324 0 0 0 0 0 0 0 0
 node "AMP_IB" 335 2331.98 -2240 9968 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 745900 4900 0 0 113900 1680 214200 2860 0 0 0 0 0 0 0 0 0 0
-node "a_n950_10270#" 535 2958.04 -950 10270 ndif 0 0 0 0 0 0 0 0 640000 4000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 608000 3960 576000 3920 577479 3922 0 0 0 0 0 0 0 0
-substrate "a_n950_9270#" 0 0 -950 9270 ppd 0 0 0 0 0 0 0 0 784000 7380 1312000 8040 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2016000 8920 1980300 11940 1977500 11920 9170000 31550 0 0 0 0 0 0
-cap "AMP_IB" "AOUT" 292.143
+node "a_n950_10270#" 535 2977.55 -950 10270 ndif 0 0 0 0 0 0 0 0 640000 4000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 608000 3960 576000 3920 577479 3922 0 0 0 0 0 0 0 0
+substrate "vss" 0 0 -950 9270 ppd 0 0 0 0 0 0 0 0 784000 7380 1312000 8040 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2016000 8920 1980300 11940 1977500 11920 16912781 53084 0 0 0 0 0 0
 cap "AMP_IB" "a_n950_10270#" 168.68
+cap "AOUT" "a_n950_10270#" 134.281
+cap "AOUT" "AMP_IB" 292.143
+cap "ARRAY_OUT" "OUT_IB" 404.682
 cap "AOUT" "m1_23020_11280#" 312.242
-cap "a_n950_10270#" "AOUT" 134.281
-cap "OUT_IB" "ARRAY_OUT" 410.772
-device msubckt sky130_fd_pr__nfet_01v8_lvt 280 -850 281 -849 l=400 w=1600 "a_n950_9270#" "OUT_IB" 800 0 "a_n950_9270#" 1600 0 "ARRAY_OUT" 1600 0
-device msubckt sky130_fd_pr__nfet_01v8_lvt -950 9870 -949 9871 l=400 w=1600 "a_n950_9270#" "AMP_IB" 800 0 "a_n950_9270#" 1600 0 "a_n950_10270#" 1600 0
-cap "ARRAY_OUT" "opamp_v1_0/a_4019_n9933#" 55.0117
-cap "OUT_IB" "opamp_v1_0/a_4019_n9933#" 31.3549
-cap "ARRAY_OUT" "opamp_v1_0/a_4019_n9933#" 71.964
-cap "OUT_IB" "opamp_v1_0/a_4019_n9933#" 156.337
-cap "opamp_v1_0/a_4019_n9933#" "ARRAY_OUT" 300.873
-cap "ARRAY_OUT" "opamp_v1_0/a_4019_n9933#" 527.679
-cap "opamp_v1_0/vin_p" "opamp_v1_0/vss" 32.5615
-cap "opamp_v1_0/w_4660_n6791#" "opamp_v1_0/vin_p" 65.7029
-cap "opamp_v1_0/sky130_fd_pr__pfet_01v8_YCMRKB_3/a_n2861_n718#" "opamp_v1_0/vin_p" 8.92103
-cap "opamp_v1_0/via_sub_m1_10[0]/a_0_6#" "opamp_v1_0/vin_p" 61.5942
-cap "opamp_v1_0/sky130_fd_pr__pfet_01v8_YCMRKB_3/a_n2861_n718#" "opamp_v1_0/vin_p" 8.81901
-cap "opamp_v1_0/w_4660_n6791#" "opamp_v1_0/vin_p" 52.5567
-cap "opamp_v1_0/vin_p" "opamp_v1_0/w_4660_n6791#" 0.0524155
-cap "opamp_v1_0/vin_p" "opamp_v1_0/sky130_fd_pr__pfet_01v8_YCMRKB_3/a_n2861_n718#" 0.0095405
-cap "opamp_v1_0/sky130_fd_pr__pfet_01v8_YCMRKB_3/a_n2861_118#" "opamp_v1_0/vin_p" 4.9856
-cap "opamp_v1_0/vin_p" "opamp_v1_0/sky130_fd_pr__pfet_01v8_YCMRKB_3/a_n2861_n718#" 0.366106
-cap "opamp_v1_0/w_4660_n6791#" "opamp_v1_0/vin_p" 33.164
-cap "opamp_v1_0/vin_p" "opamp_v1_0/w_4660_n6791#" 49.2959
-cap "opamp_v1_0/sky130_fd_pr__pfet_01v8_YCMRKB_3/a_n2861_118#" "opamp_v1_0/vin_p" 9.1
-cap "opamp_v1_0/sky130_fd_pr__pfet_01v8_YCMRKB_3/a_n2861_n718#" "opamp_v1_0/vin_p" 0.28099
-cap "opamp_v1_0/w_4660_n6791#" "opamp_v1_0/vin_p" 0.0631997
-cap "opamp_v1_0/sky130_fd_pr__pfet_01v8_YCMRKB_3/a_n2861_n718#" "opamp_v1_0/vin_p" 0.00056554
-cap "opamp_v1_0/sky130_fd_pr__pfet_01v8_YCMRKB_3/a_n2861_118#" "opamp_v1_0/vin_p" 0.010106
-cap "opamp_v1_0/vin_n" "opamp_v1_0/w_4660_n4741#" 354.891
-cap "opamp_v1_0/w_4660_n4741#" "opamp_v1_0/vbn" -31.1631
-cap "opamp_v1_0/vin_n" "opamp_v1_0/vbn" 103.275
-cap "opamp_v1_0/vbn" "opamp_v1_0/vin_n" 0.207255
-cap "opamp_v1_0/w_4660_n4741#" "opamp_v1_0/vin_n" 3.39122
-cap "opamp_v1_0/vbn" "opamp_v1_0/w_4660_n4741#" -34.5737
-cap "opamp_v1_0/vin_n" "opamp_v1_0/w_4660_n4741#" 136.519
-cap "opamp_v1_0/vin_n" "opamp_v1_0/vbn" 169.983
-cap "opamp_v1_0/iref" "opamp_v1_0/w_4660_n4741#" 2.77556e-17
-cap "opamp_v1_0/iref" "opamp_v1_0/vin_n" 0.000772119
-cap "opamp_v1_0/vin_n" "opamp_v1_0/vbn" 3.62546
-cap "opamp_v1_0/vin_n" "opamp_v1_0/w_4660_n4741#" 3.24607
-cap "opamp_v1_0/iref" "a_n950_9270#" -2.62977e-05
-cap "opamp_v1_0/iref" "AMP_IB" 0.000328743
-cap "a_n950_9270#" "opamp_v1_0/iref" -0.000525954
-cap "a_n950_9270#" "AMP_IB" -0.0186982
+device msubckt sky130_fd_pr__nfet_01v8_lvt 280 -850 281 -849 l=400 w=1600 "vss" "OUT_IB" 800 0 "vss" 1600 0 "ARRAY_OUT" 1600 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -950 9870 -949 9871 l=400 w=1600 "vss" "AMP_IB" 800 0 "vss" 1600 0 "a_n950_10270#" 1600 0
+cap "opamp_v1_0/a_4019_n9933#" "OUT_IB" 19.3739
+cap "OUT_IB" "opamp_v1_0/a_4019_n9933#" 98.1447
+cap "opamp_v1_0/a_4019_n9933#" "OUT_IB" 11.9824
+cap "opamp_v1_0/a_4019_n9933#" "ARRAY_OUT" 309.194
+cap "opamp_v1_0/a_4019_n9933#" "OUT_IB" 58.1928
+cap "ARRAY_OUT" "opamp_v1_0/a_4019_n9933#" 496.489
+cap "opamp_v1_0/vbn" "opamp_v1_0/a_4019_n9933#" 6.54979
+cap "opamp_v1_0/a_4019_n9933#" "opamp_v1_0/vbn" 15.9456
+cap "opamp_v1_0/a_4019_n9933#" "opamp_v1_0/sky130_fd_pr__nfet_01v8_8HUREQ_1/a_203_n797#" 0.163974
+cap "opamp_v1_0/a_4019_n9933#" "opamp_v1_0/sky130_fd_pr__nfet_01v8_8HUREQ_1/a_n859_n797#" 0.163974
+cap "opamp_v1_0/sky130_fd_pr__nfet_01v8_8HUREQ_1/a_85_n797#" "opamp_v1_0/a_4019_n9933#" 0.163974
+cap "opamp_v1_0/sky130_fd_pr__nfet_01v8_8HUREQ_1/a_321_n797#" "opamp_v1_0/a_4019_n9933#" 0.163974
+cap "opamp_v1_0/a_4019_n9933#" "opamp_v1_0/sky130_fd_pr__nfet_01v8_8HUREQ_1/a_n505_n797#" 0.163974
+cap "opamp_v1_0/sky130_fd_pr__nfet_01v8_8HUREQ_1/a_439_n797#" "opamp_v1_0/a_4019_n9933#" 0.059627
+cap "opamp_v1_0/sky130_fd_pr__nfet_01v8_8HUREQ_1/a_n151_n797#" "opamp_v1_0/a_4019_n9933#" 0.163974
+cap "opamp_v1_0/a_4019_n9933#" "opamp_v1_0/sky130_fd_pr__nfet_01v8_8HUREQ_1/a_n387_n797#" 0.163974
+cap "opamp_v1_0/sky130_fd_pr__nfet_01v8_8HUREQ_1/a_n796_n709#" "opamp_v1_0/a_4019_n9933#" 14.325
+cap "opamp_v1_0/sky130_fd_pr__nfet_01v8_8HUREQ_1/a_n33_n797#" "opamp_v1_0/a_4019_n9933#" 0.163974
+cap "opamp_v1_0/sky130_fd_pr__nfet_01v8_8HUREQ_1/a_n623_n797#" "opamp_v1_0/a_4019_n9933#" 0.163974
+cap "opamp_v1_0/sky130_fd_pr__nfet_01v8_8HUREQ_1/a_n741_n797#" "opamp_v1_0/a_4019_n9933#" 0.163974
+cap "opamp_v1_0/sky130_fd_pr__nfet_01v8_8HUREQ_1/a_n269_n797#" "opamp_v1_0/a_4019_n9933#" 0.163974
+cap "opamp_v1_0/sky130_fd_pr__nfet_01v8_8HUREQ_1/a_675_n797#" "opamp_v1_0/vss" 0.164769
+cap "opamp_v1_0/vss" "opamp_v1_0/sky130_fd_pr__nfet_01v8_8HUREQ_1/a_n796_n709#" 5.13744
+cap "opamp_v1_0/sky130_fd_pr__nfet_01v8_8HUREQ_1/a_793_n797#" "opamp_v1_0/vss" 0.164769
+cap "opamp_v1_0/sky130_fd_pr__nfet_01v8_8HUREQ_1/a_439_n797#" "opamp_v1_0/vss" 0.104853
+cap "opamp_v1_0/sky130_fd_pr__nfet_01v8_8HUREQ_1/a_557_n797#" "opamp_v1_0/vss" 0.164769
+cap "opamp_v1_0/voe1" "opamp_v1_0/vss" 0.158712
+cap "opamp_v1_0/sky130_fd_pr__pfet_01v8_YCMRKB_3/a_n2861_n718#" "opamp_v1_0/vin_p" 3.42699
+cap "opamp_v1_0/w_4660_n6791#" "opamp_v1_0/vin_p" 42.6813
+cap "opamp_v1_0/vss" "opamp_v1_0/vin_p" 89.4124
+cap "opamp_v1_0/vin_p" "opamp_v1_0/vss" 174.7
+cap "opamp_v1_0/w_4660_n6791#" "opamp_v1_0/vin_p" 33.2423
+cap "opamp_v1_0/sky130_fd_pr__pfet_01v8_YCMRKB_3/a_n2861_n718#" "opamp_v1_0/vin_p" 3.33938
+cap "opamp_v1_0/vin_p" "opamp_v1_0/sky130_fd_pr__pfet_01v8_YCMRKB_3/a_n2861_n718#" 0.00378045
+cap "opamp_v1_0/vin_p" "opamp_v1_0/w_4660_n6791#" 0.0222363
+cap "opamp_v1_0/vin_p" "opamp_v1_0/sky130_fd_pr__pfet_01v8_YCMRKB_3/a_n2861_118#" 4.9856
+cap "opamp_v1_0/vin_p" "opamp_v1_0/sky130_fd_pr__pfet_01v8_YCMRKB_3/a_n2861_n718#" 5.86015
+cap "opamp_v1_0/vin_p" "opamp_v1_0/w_4660_n6791#" 59.1732
+cap "opamp_v1_0/vin_p" "opamp_v1_0/sky130_fd_pr__pfet_01v8_YCMRKB_3/a_n2861_n718#" 5.76061
+cap "opamp_v1_0/vin_p" "opamp_v1_0/w_4660_n6791#" 71.3208
+cap "opamp_v1_0/vin_p" "opamp_v1_0/sky130_fd_pr__pfet_01v8_YCMRKB_3/a_n2861_118#" 9.1
+cap "opamp_v1_0/vin_p" "opamp_v1_0/sky130_fd_pr__pfet_01v8_YCMRKB_3/a_n2861_n718#" 0.00632559
+cap "opamp_v1_0/w_4660_n6791#" "opamp_v1_0/vin_p" 0.0933789
+cap "opamp_v1_0/vin_p" "opamp_v1_0/sky130_fd_pr__pfet_01v8_YCMRKB_3/a_n2861_118#" 0.010106
+cap "opamp_v1_0/w_4660_n4741#" "opamp_v1_0/vin_p" 0.527652
+cap "opamp_v1_0/vin_p" "opamp_v1_0/w_4660_n4741#" 0.804595
+cap "opamp_v1_0/w_4660_n4741#" "opamp_v1_0/vbn" -10.6618
+cap "opamp_v1_0/vin_n" "opamp_v1_0/w_4660_n4741#" 116.074
+cap "opamp_v1_0/vin_n" "opamp_v1_0/vbn" 41.9761
+cap "opamp_v1_0/w_4660_n4741#" "opamp_v1_0/vin_n" 1.565
+cap "opamp_v1_0/vin_n" "opamp_v1_0/w_4660_n4741#" 373.179
+cap "opamp_v1_0/vin_n" "opamp_v1_0/vbn" 273.337
+cap "opamp_v1_0/vin_n" "opamp_v1_0/iref" 0.000772119
+cap "opamp_v1_0/w_4660_n4741#" "opamp_v1_0/vbn" -55.0749
+cap "opamp_v1_0/w_4660_n4741#" "opamp_v1_0/iref" -8.67362e-19
+cap "opamp_v1_0/vin_n" "opamp_v1_0/vbn" 3.83272
+cap "opamp_v1_0/vin_n" "opamp_v1_0/w_4660_n4741#" 5.07229
+cap "opamp_v1_0/iref" "vss" -2.62977e-05
+cap "AMP_IB" "opamp_v1_0/iref" 0.000328743
+cap "vss" "opamp_v1_0/iref" -0.000525954
+cap "vss" "AMP_IB" -0.0186982
 cap "opamp_v1_0/iref" "AMP_IB" -3.66466
-cap "a_n950_9270#" "opamp_v1_0/iref" -22.3052
-cap "opamp_v1_0/iref" "opamp_v1_0/w_4660_n4741#" 5.68434e-14
+cap "opamp_v1_0/iref" "vss" -22.3057
 cap "opamp_v1_0/iref" "opamp_v1_0/vin_n" 0.00223643
-cap "opamp_v1_0/iref" "opamp_v1_0/vdd" -2.27374e-13
-cap "opamp_v1_0/sky130_fd_pr__pfet_01v8_YT7TV5_0[2]/a_n623_n815#" "opamp_v1_0/vdd" -4.54747e-13
-cap "opamp_v1_0/sky130_fd_pr__pfet_01v8_YT7TV5_0[2]/a_n442_n718#" "opamp_v1_0/vdd" 0.000579065
+cap "opamp_v1_0/iref" "opamp_v1_0/w_4660_n4741#" 5.68434e-14
+cap "opamp_v1_0/vdd" "opamp_v1_0/sky130_fd_pr__pfet_01v8_YT7TV5_0[2]/a_n442_n718#" 0.000579065
+cap "opamp_v1_0/vdd" "opamp_v1_0/sky130_fd_pr__pfet_01v8_YT7TV5_0[2]/a_n623_n815#" -4.54747e-13
 cap "opamp_v1_0/vdd" "AOUT" 13.3596
+cap "opamp_v1_0/iref" "opamp_v1_0/vdd" 4.54747e-13
 cap "opamp_v1_0/vdd" "AOUT" 30.4858
-cap "AOUT" "opamp_v1_0/vdd" 32.8108
-cap "AOUT" "opamp_v1_0/vdd" 32.8108
-cap "AOUT" "opamp_v1_0/vdd" 32.8108
 cap "opamp_v1_0/vdd" "AOUT" 32.8108
-cap "opamp_v1_0/vdd" "AOUT" 40.5129
+cap "opamp_v1_0/vdd" "AOUT" 32.8108
+cap "opamp_v1_0/vdd" "AOUT" 32.8108
+cap "AOUT" "opamp_v1_0/vdd" 32.8108
+cap "AOUT" "opamp_v1_0/vdd" 45.035
 cap "opamp_v1_0/vdd" "AOUT" 33.3025
-cap "AOUT" "opamp_v1_0/vdd" 32.7909
+cap "opamp_v1_0/vdd" "AOUT" 32.7909
 cap "opamp_v1_0/vdd" "AOUT" 32.7909
 cap "AOUT" "opamp_v1_0/vdd" 32.7909
-cap "AOUT" "opamp_v1_0/vdd" 32.8677
-cap "opamp_v1_0/vdd" "AOUT" 32.9862
-cap "opamp_v1_0/vdd" "AOUT" 32.9862
-cap "opamp_v1_0/vdd" "AOUT" 32.9862
-cap "opamp_v1_0/vdd" "opamp_v1_0/sky130_fd_pr__pfet_01v8_YT7TV5_0[2]/a_974_n718#" 0.000788635
-cap "opamp_v1_0/vdd" "opamp_v1_0/sky130_fd_pr__pfet_01v8_YT7TV5_0[2]/a_1446_n718#" 0.0014917
+cap "opamp_v1_0/vdd" "AOUT" 32.8677
+cap "AOUT" "opamp_v1_0/vdd" 32.9862
+cap "AOUT" "opamp_v1_0/vdd" 32.9862
+cap "AOUT" "opamp_v1_0/vdd" 32.9862
 cap "opamp_v1_0/vdd" "AOUT" 33.0081
-cap "opamp_v1_0/vdd" "opamp_v1_0/sky130_fd_pr__pfet_01v8_YT7TV5_0[2]/a_1210_n718#" 0.0014917
-cap "opamp_v1_0/vdd" "AOUT" 4.16989
-cap "AOUT" "opamp_v1_0/vdd" 24.7909
+cap "opamp_v1_0/vdd" "opamp_v1_0/sky130_fd_pr__pfet_01v8_YT7TV5_0[2]/a_n442_n718#" 0.00377204
+cap "AOUT" "opamp_v1_0/vdd" 4.16989
+cap "opamp_v1_0/vdd" "AOUT" 24.7909
 cap "opamp_v1_0/vdd" "AOUT" 60.3509
-cap "opamp_v1_0/vdd" "AOUT" 76.0625
-cap "opamp_v1_0/vdd" "AOUT" 76.0614
+cap "AOUT" "opamp_v1_0/vdd" 76.0625
+cap "AOUT" "opamp_v1_0/vdd" 76.0614
 cap "opamp_v1_0/vdd" "AOUT" 76.0631
 cap "AOUT" "opamp_v1_0/vdd" 76.079
-cap "opamp_v1_0/vdd" "AOUT" 84.0033
+cap "opamp_v1_0/vdd" "AOUT" 93.0473
 cap "opamp_v1_0/vdd" "AOUT" 73.2885
 cap "AOUT" "opamp_v1_0/vdd" 76.062
 cap "AOUT" "opamp_v1_0/vdd" 75.976
-cap "opamp_v1_0/vdd" "AOUT" 76.0319
+cap "AOUT" "opamp_v1_0/vdd" 76.0319
 cap "opamp_v1_0/vdd" "AOUT" 76.0978
 cap "AOUT" "opamp_v1_0/vdd" 76.4126
-cap "opamp_v1_0/vdd" "AOUT" 76.4857
+cap "AOUT" "opamp_v1_0/vdd" 76.4857
 cap "opamp_v1_0/vdd" "AOUT" 76.5152
 cap "opamp_v1_0/vdd" "AOUT" 76.6906
 cap "AOUT" "opamp_v1_0/vdd" 8.90702
 cap "AOUT" "opamp_v1_0/vdd" 1.77636e-15
-merge "opamp_v1_0/vin_n" "opamp_v1_0/vout" -15453.7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -359282 -4074 0 0 -14352668 -69057 0 0 0 0
-merge "opamp_v1_0/vout" "AOUT"
-merge "opamp_v1_0/vin_p" "ARRAY_OUT" -1089.74 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -386136 -3858 0 0 0 0 0 0 0 0
-merge "opamp_v1_0/a_4019_n9933#" "m1_24530_n1570#" -7139.25 0 0 0 0 0 0 0 0 -55200 -710 -115200 -960 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -163200 -1160 -461024 -4724 -456975 -4100 -5965200 -19505 0 0 0 0 0 0
+merge "opamp_v1_0/vout" "opamp_v1_0/vin_n" -14854.9 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -359282 -4074 0 0 -13481468 -66945 0 0 0 0
+merge "opamp_v1_0/vin_n" "AOUT"
+merge "opamp_v1_0/vin_p" "ARRAY_OUT" -1086.98 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -384511 -3533 0 0 0 0 0 0 0 0
+merge "opamp_v1_0/a_4019_n9933#" "m1_24530_n1570#" -16205.5 0 0 0 0 0 0 0 0 -471200 -4430 -659200 -4840 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1091200 -5520 -1475324 -9204 -1471275 -8580 -13267325 -49428 0 0 0 0 0 0
 merge "m1_24530_n1570#" "opamp_v1_0/vss"
-merge "opamp_v1_0/vss" "a_n950_9270#"
+merge "opamp_v1_0/vss" "vss"
 merge "opamp_v1_0/vdd" "m1_23020_11280#" -1280.61 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -427169 -3816 0 0 0 0 0 0 0 0 0 0
 merge "opamp_v1_0/iref" "a_n950_10270#" -288.189 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -51779 -946 0 0 0 0 0 0 0 0

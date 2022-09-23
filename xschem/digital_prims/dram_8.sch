@@ -52,22 +52,6 @@ N -130 250 -110 250 {
 lab=IN[0]}
 N -160 360 -110 360 {
 lab=IN[1]}
-N 10 360 10 390 {
-lab=#net1}
-N 10 250 10 280 {
-lab=#net2}
-N 10 130 10 160 {
-lab=#net3}
-N 10 20 10 50 {
-lab=#net4}
-N 10 -90 10 -60 {
-lab=#net5}
-N 10 -210 10 -180 {
-lab=#net6}
-N 10 -320 10 -290 {
-lab=#net7}
-N 10 -430 10 -400 {
-lab=#net8}
 N -130 340 -110 340 {
 lab=WRITE}
 N -130 -450 -110 -450 {
@@ -144,3 +128,12 @@ C {devices/lab_pin.sym} -290 -90 0 0 {name=x29 lab = IN[4]}
 C {devices/lab_pin.sym} -320 -210 0 0 {name=x35 lab = IN[5]}
 C {devices/lab_pin.sym} -290 -320 0 0 {name=x38 lab = IN[6]}
 C {devices/lab_pin.sym} -290 -430 0 0 {name=x40 lab = IN[7]}
+C {devices/lab_pin.sym} 10 -410 2 0 {name=l1 sig_type=std_logic lab=GND}
+C {devices/lab_pin.sym} 10 -300 2 0 {name=l2 sig_type=std_logic lab=GND}
+C {devices/lab_pin.sym} 10 -190 2 0 {name=l3 sig_type=std_logic lab=GND}
+C {devices/lab_pin.sym} 10 -70 2 0 {name=l4 sig_type=std_logic lab=GND}
+C {devices/lab_pin.sym} 10 40 2 0 {name=l5 sig_type=std_logic lab=GND}
+C {devices/lab_pin.sym} 10 150 2 0 {name=l6 sig_type=std_logic lab=GND}
+C {devices/lab_pin.sym} 10 270 2 0 {name=l7 sig_type=std_logic lab=GND}
+C {devices/lab_pin.sym} 10 380 2 0 {name=l8 sig_type=std_logic lab=GND}
+C {devices/ipin.sym} -320 550 0 0 {name=p5 lab=GND}

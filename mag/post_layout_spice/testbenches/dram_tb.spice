@@ -1,0 +1,44 @@
+** sch_path: /home/hni/topmetal_dps/xschem/testbench/dram_tb.sch
+**.subckt dram_tb
+x34 ENABLE_D OUT Store HIGH READ dram
+V1 HIGH GND PULSE(0 1.8 1u 0.1u 0.1u)
+V2 ENABLE_D GND PULSE(1.8 0 2u 0.1u 0.1u 10u)
+V4 READ GND PULSE(0 1.8 4u 0.1u 0.1u 1u)
+**** begin user architecture code
+
+** opencircuitdesign pdks install
+.lib /opt/OpenICEDA/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  digital_prims/dram.sym # of pins=5
+** sym_path: /home/hni/topmetal_dps/xschem/digital_prims/dram.sym
+** sch_path: /home/hni/topmetal_dps/xschem/digital_prims/dram.sch
+.subckt dram  WWL RBL storage WBL RWL
+*.opin RBL
+*.ipin RWL
+*.ipin WBL
+*.ipin WWL
+*.opin storage
+X0 RWL storage RBL VSUBS sky130_fd_pr__nfet_01v8 ad=3e+11p pd=2.6e+06u as=3.5e+11p ps=2.7e+06u w=1e+06u l=150000u
+X1 storage WWL WBL VSUBS sky130_fd_pr__nfet_01v8 ad=3.5e+11p pd=2.7e+06u as=3e+11p ps=2.6e+06u w=1e+06u l=150000u
+
+
+.ends
+
+.GLOBAL GND
+**** begin user architecture code
+
+
+.control
+*dc v2 0 1.8 0.05
+*plot v(test)
+tran 0.1u 20u
+plot v(Store) v(read) v(OUT)
+.endc
+
+
+**** end user architecture code
+.end

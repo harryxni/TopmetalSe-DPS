@@ -1,0 +1,94 @@
+v {xschem version=3.0.0 file_version=1.2 }
+G {}
+K {}
+V {}
+S {}
+E {}
+N -80 10 -80 30 {
+lab=#net8}
+N -80 100 -80 140 {
+lab=vssd2}
+N -170 60 -120 60 {
+lab=io_analog[6]}
+N 240 10 240 30 {
+lab=PIX_OUT}
+N 240 100 240 140 {
+lab=vssd2}
+N 150 60 200 60 {
+lab=io_analog[7]}
+N -80 60 -20 60 {
+lab=vssd2}
+N -20 60 -20 100 {
+lab=vssd2}
+N 240 60 300 60 {
+lab=vssd2}
+N 300 60 300 100 {
+lab=vssd2}
+N -80 100 -20 100 {
+lab=vssd2}
+N 240 100 300 100 {
+lab=vssd2}
+N -180 -60 -160 -60 {
+lab=PIX_OUT}
+N -180 -40 -160 -40 {
+lab=gpio_analog[4]}
+N -180 -40 -180 -10 {
+lab=gpio_analog[4]}
+N -180 -10 160 -10 {
+lab=gpio_analog[4]}
+N 160 -60 160 -10 {
+lab=gpio_analog[4]}
+N 140 -60 160 -60 {
+lab=gpio_analog[4]}
+N 140 -40 190 -40 {
+lab=vssd2}
+N 140 -80 190 -80 {
+lab=vccd1}
+N -80 90 -80 100 {
+lab=vssd2}
+N 240 90 240 100 {
+lab=vssd2}
+N -300 -80 -160 -80 {
+lab=#net8}
+N -300 -80 -300 10 {
+lab=#net8}
+N -300 10 -80 10 {
+lab=#net8}
+C {opamp.sym} -10 -60 0 0 {name=x21}
+C {sky130_fd_pr/nfet_01v8_lvt.sym} -100 60 0 0 {name=M6
+L=2
+W=8
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8_lvt
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 220 60 0 0 {name=M7
+L=2
+W=8
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8_lvt
+spiceprefix=X
+}
+C {devices/lab_pin.sym} -80 140 2 0 {name=l31 sig_type=std_logic lab=vssd2}
+C {devices/lab_pin.sym} 240 140 2 0 {name=l32 sig_type=std_logic lab=vssd2}
+C {devices/lab_pin.sym} 190 -80 2 0 {name=l48 sig_type=std_logic lab=vccd1}
+C {devices/lab_pin.sym} -170 60 0 0 {name=l57 sig_type=std_logic lab=io_analog[6]}
+C {devices/lab_pin.sym} 150 60 0 0 {name=l69 sig_type=std_logic lab=io_analog[7]}
+C {devices/lab_pin.sym} 240 10 2 0 {name=l43 sig_type=std_logic lab=PIX_OUT}
+C {devices/lab_pin.sym} -180 -60 0 0 {name=l46 sig_type=std_logic lab=PIX_OUT}
+C {devices/lab_pin.sym} 160 -10 2 0 {name=l158 sig_type=std_logic lab=gpio_analog[4]}
+C {devices/lab_pin.sym} 190 -40 2 0 {name=l9 sig_type=std_logic lab=vssd2}

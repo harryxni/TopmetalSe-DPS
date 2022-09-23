@@ -4,16 +4,12 @@ K {}
 V {}
 S {}
 E {}
-N -20 30 40 30 {
-lab=READ}
 N -20 -50 40 -50 {
 lab=AMP_OUT}
 N -80 -30 40 -30 {
 lab=V_RAMP}
 N 340 -70 380 -70 {
 lab=OUT[7:0]}
-N -30 -430 -30 -410 {
-lab=VCC}
 N -50 -430 -50 -410 {
 lab=GND}
 N -10 -430 -10 -410 {
@@ -24,7 +20,7 @@ N -170 -310 -150 -310 {
 lab=VREF}
 N -170 -290 -150 -290 {
 lab=PIX_IN}
-N 150 -300 190 -300 {
+N 150 -300 320 -300 {
 lab=AMP_OUT}
 N -30 -210 -30 -180 {
 lab=NB1}
@@ -32,22 +28,16 @@ N -50 -210 -50 -170 {
 lab=NB2}
 N -10 -200 -10 -170 {
 lab=VBIAS}
-N -30 -470 -30 -420 {
-lab=VCC}
 N -20 50 40 50 {
 lab=GRAY[7:0]}
 N -10 -70 40 -70 {
-lab=VCC}
+lab=DVDD}
 N -80 -10 40 -10 {
 lab=BIAS1}
 N -80 10 40 10 {
 lab=BIAS2}
-N -80 30 -20 30 {
+N -80 30 40 30 {
 lab=READ}
-N 280 -300 300 -300 {
-lab=AMP_OUT}
-N 300 -300 320 -300 {
-lab=AMP_OUT}
 N 490 -220 490 -200 {
 lab=ROW_SEL}
 N 490 -200 500 -200 {
@@ -56,19 +46,13 @@ N 490 -290 490 -260 {
 lab=GND}
 N 360 -300 390 -300 {
 lab=VDD}
-N 680 -260 870 -260 {
-lab=PIX_OUT}
-N 360 -390 360 -320 {
-lab=#net1}
-N 580 -260 680 -260 {
-lab=PIX_OUT}
 N 360 -470 390 -470 {
 lab=VDD}
 N 390 -500 390 -470 {
 lab=VDD}
 N 360 -500 390 -500 {
 lab=VDD}
-N 360 -440 360 -390 {
+N 360 -410 360 -320 {
 lab=#net1}
 N 360 -410 420 -410 {
 lab=#net1}
@@ -78,30 +62,27 @@ N 460 -380 460 -260 {
 lab=#net2}
 N 460 -410 480 -410 {
 lab=GND}
-N 190 -300 280 -300 {
-lab=AMP_OUT}
 N 310 -470 320 -470 {
 lab=SF_IB}
-N 520 -260 580 -260 {
+N 520 -260 870 -260 {
 lab=PIX_OUT}
-N 200 -300 200 -260 {
-lab=AMP_OUT}
-N 360 -210 360 -140 {
+N 360 -270 360 -140 {
 lab=GND}
+N -30 -470 -30 -410 {
+lab=VDD}
+N 360 -440 360 -410 {
+lab=#net1}
 C {devices/ipin.sym} -80 -30 0 0 {name=p2 lab=V_RAMP}
-C {devices/ipin.sym} 0 -70 0 0 {name=p4 lab=VCC}
+C {devices/ipin.sym} 0 -70 0 0 {name=p4 lab=DVDD}
 C {devices/opin.sym} 380 -70 0 0 {name=p6 lab=OUT[7:0]}
 C {devices/ipin.sym} -80 30 0 0 {name=p9 lab=READ}
 C {/home/hni/TopMetalSe-OpenMPW6/xschem/csa.sym} 10 -300 0 0 {name=x3}
-C {devices/gnd.sym} -50 -430 1 0 {name=l39 lab=GND}
 C {devices/ipin.sym} -170 -310 0 0 {name=p7 lab=VREF}
-C {devices/ipin.sym} -170 -290 0 0 {name=p8 lab=PIX_IN}
 C {devices/ipin.sym} 20 -430 2 0 {name=p10 lab=CSA_VREF}
 C {devices/ipin.sym} -10 -170 2 0 {name=p12 lab=VBIAS}
 C {devices/ipin.sym} -30 -180 3 0 {name=p13 lab=NB1}
 C {devices/ipin.sym} -50 -170 3 0 {name=p14 lab=NB2}
 C {devices/lab_pin.sym} -20 -50 0 0 {name=l1 sig_type=std_logic lab=AMP_OUT}
-C {devices/lab_pin.sym} -30 -470 0 0 {name=l2 sig_type=std_logic lab=VCC}
 C {adc/8bit_adc.sym} 190 -10 0 0 {name=x1}
 C {devices/ipin.sym} -20 50 0 0 {name=p11 lab=GRAY[7:0]}
 C {devices/ipin.sym} -80 -10 0 0 {name=p3 lab=BIAS1}
@@ -172,5 +153,10 @@ C {devices/vdd.sym} 460 -500 0 0 {name=l38 lab=VDD}
 C {devices/lab_pin.sym} 480 -410 0 1 {name=l3 sig_type=std_logic lab=GND}
 C {devices/ipin.sym} 310 -470 0 0 {name=p1 lab=SF_IB}
 C {devices/ipin.sym} 500 -200 2 0 {name=p15 lab=ROW_SEL}
-C {devices/opin.sym} 200 -260 1 0 {name=p16 lab=AMP_OUT}
-C {devices/ammeter.sym} 360 -240 0 0 {name=Vmeas}
+C {devices/lab_pin.sym} -170 -290 0 0 {name=l4 sig_type=std_logic lab=PIX_IN}
+C {devices/ipin.sym} -180 -220 0 0 {name=p8 lab=gring}
+C {devices/ipin.sym} -30 -470 0 0 {name=p16 lab=VDD}
+C {devices/lab_pin.sym} 200 -300 3 0 {name=l2 sig_type=std_logic lab=AMP_OUT}
+C {devices/ipin.sym} -180 -560 0 0 {name=p17 lab=GND}
+C {devices/lab_pin.sym} -50 -430 0 0 {name=l5 sig_type=std_logic lab=GND}
+C {devices/lab_pin.sym} 130 -100 0 0 {name=l6 sig_type=std_logic lab=GND}
