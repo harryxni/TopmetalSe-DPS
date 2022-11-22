@@ -1,4 +1,5 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -860,9 +861,9 @@ C {devices/lab_pin.sym} 5210 70 2 0 {name=l171 sig_type=std_logic lab=ARRAY_OUT}
 C {devices/lab_pin.sym} 4050 60 0 0 {name=l15 sig_type=std_logic lab=VSSD2}
 C {devices/lab_pin.sym} 4530 60 0 0 {name=l13 sig_type=std_logic lab=VSSD2}
 C {devices/lab_pin.sym} 5030 60 0 0 {name=l14 sig_type=std_logic lab=VSSD2}
-C {devices/lab_pin.sym} 4340 330 2 0 {name=l16 sig_type=std_logic lab=la_data_in[16:9]}
-C {devices/lab_pin.sym} 4840 330 2 0 {name=l17 sig_type=std_logic lab=la_data_in[24:17]}
-C {devices/lab_pin.sym} 5360 330 2 0 {name=l18 sig_type=std_logic lab=la_data_in[32:25]}
+C {devices/lab_pin.sym} 4340 330 2 0 {name=l16 sig_type=std_logic lab=la_data_out[16:9]}
+C {devices/lab_pin.sym} 4840 330 2 0 {name=l17 sig_type=std_logic lab=la_data_out[24:17]}
+C {devices/lab_pin.sym} 5360 330 2 0 {name=l18 sig_type=std_logic lab=la_data_out[32:25]}
 C {devices/lab_pin.sym} 3960 -910 0 0 {name=l22 sig_type=std_logic lab=gpio_analog[8]}
 C {devices/lab_pin.sym} 3960 -570 0 0 {name=l19 sig_type=std_logic lab=gpio_analog[8]}
 C {devices/lab_pin.sym} 3960 -240 0 0 {name=l20 sig_type=std_logic lab=gpio_analog[8]}
