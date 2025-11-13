@@ -80,6 +80,28 @@ Analog Output (no ESD)
 | Small array AOUT    | `gpio_noesd[2] / mprj_io[9]`  | 9             |
 | Sing. Pixel AOUT    | `gpio_noesd[4] / mprj_io[11]` | 11            |
 
+Caravel
+
+Pins associated with programming and controlling the padframe SOC. These are necessary, in this case. NA refers to the fact that the pins are not labelled, but given their own label.
+I/O frame diagram should make things clearer.
+
+| Pin Name / Function | mprj_io Index |
+| ------------------- | ------------- |
+| JTAG                |  0             |
+| Serial Data Output (SDO)   | 1            |
+| Serial Data Input (SDI)    |  2             |
+| Chip Select Bar (CSB)  | 3            |
+| Serial Clock (SCK)| 4|
+|Serial Receive (Rx) | 5|
+|Serial Tranfer (Tx) | 6|
+|reset| NA|
+|clock| NA|
+|flash csb| NA|
+|flash clk| NA|
+|flash io0|NA|
+|flash io1|NA|
+
+
 Power
 
 | Pin Name / Function | Notes              |
@@ -90,7 +112,9 @@ Power
 
 # Logic Analyzer I/O
 
-These are connections made between digitial I/O (gray counter inputs, or ADC outputs) and the caravel harness. These must be controlled and read out by the RISC-V
+These are connections made between digitial I/O (gray counter inputs, or ADC outputs) and the caravel harness. These must be controlled and read out by the RISC-V.
+
+I never got fully around to programming the caravel, but this can be practiced on the PCBs from efabless. 
 
 | Function | Logic Analyzer Pins              |
 | ------------------- | ------------------ |
