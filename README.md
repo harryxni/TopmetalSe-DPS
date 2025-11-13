@@ -46,7 +46,7 @@ Analog Bias
 | -------------------- | ------------------------------- | ------------- |
 | VREF                 | `io_analog[0] / mprj_io[14]`    | 14            |
 | VBIAS                | `io_analog[1] / mprj_io[15]`    | 15            |
-| AMP_IB (nMOS 100 µA) | `io_analog[2] / mprj_io[16]`    | 16            |
+| vramp | `io_analog[2] / mprj_io[16]`    | 16            |
 | SA_IREF (µA)         | `io_analog[3] / mprj_io[17]`    | 17            |
 | BIAS1 (10s nA)       | `io_analog[4] / mprj_io[18]`    | 18            |
 | BIAS2 (100s nA)      | `io_analog[5] / mprj_io[19]`    | 19            |
