@@ -14,11 +14,12 @@ The TopmetalSe will be implemented in the final detector design of the Selena ne
 
 # Chip Structure
 The device contains multiple test structures:
+
 A 3x3 DPS Array
 
-A Single Pixel
+A Single Pixel (CSA + ADC)
 
-2 Test ADCs - (Input comes from GPIO, not CSA )
+2 Test ADCs - (Input comes from GPIO, not CSA)
 
 # I/O 
 For the purposes of making a PCB, here's a list of the I/O pads 
@@ -46,7 +47,6 @@ Analog Bias
 | -------------------- | ------------------------------- | ------------- |
 | VREF                 | `io_analog[0] / mprj_io[14]`    | 14            |
 | VBIAS                | `io_analog[1] / mprj_io[15]`    | 15            |
-| vramp | `io_analog[2] / mprj_io[16]`    | 16            |
 | SA_IREF (µA)         | `io_analog[3] / mprj_io[17]`    | 17            |
 | BIAS1 (10s nA)       | `io_analog[4] / mprj_io[18]`    | 18            |
 | BIAS2 (100s nA)      | `io_analog[5] / mprj_io[19]`    | 19            |
@@ -55,7 +55,7 @@ Analog Bias
 | NB2 (100 nA)         | `io_analog[8] / mprj_io[22]`    | 22            |
 | NB1 (40 nA)          | `io_analog[9] / mprj_io[23]`    | 23            |
 | SF_IB (10s nA)       | `io_analog[10] / mprj_io[24]`   | 24            |
-| SA_VREF (100 nA)     | `gpio_noesd[9] / mprj_io[27]`   | 27            |
+| SA_VREF (~600 mV)    | `gpio_noesd[9] / mprj_io[27]`   | 27            |
 | SA_VREF (~600 mV)    | `gpio_noesd[13] / mprj_io[31]`  | 31            |
 | CSA_VREF             | `gpio_analog[15] / mprj_io[33]` | 33            |
 | SA_VREF (~600 mV)    | `gpio_noesd[17] / mprj_io[35]`  | 35            |
@@ -66,9 +66,9 @@ Analog GPIO
 
 | Pin Name / Function  | Caravel Name / Mapping         | mprj_io Index |
 | -------------------- | ------------------------------ | ------------- |
-| V_RAMP               | `gpio_noesd[0] / mprj_io[7]`   | 7             |
+| V_RAMP_0               | `gpio_noesd[0] / mprj_io[7]`   | 7             |
 | ADC_1_VIN            | `gpio_noesd[6] / mprjo_io[13]` | 13            |
-| V_RAMP (Analog Ramp) | `io_analog[2] / mprj_io[16]`   | 16            |
+| V_RAMP_1 (Analog Ramp) | `io_analog[2] / mprj_io[16]`   | 16            |
 | gring                | `gpio_noesd[8] / mprj_io[26]`  | 26            |
 | ADC_0_V_IN           | `gpio_noesd[11] / mprj_io[28]` | 28            |
 
@@ -84,6 +84,9 @@ Caravel
 
 Pins associated with programming and controlling the padframe SOC. These are necessary, in this case. NA refers to the fact that the pins are not labelled, but given their own label.
 I/O frame diagram should make things clearer.
+
+To interface with this, please copy over parts of the efabless [caravel board](https://github.com/efabless/caravel_board/tree/main) and also the [TMSe Test Board]()
+
 
 | Pin Name / Function | mprj_io Index |
 | ------------------- | ------------- |
