@@ -62,7 +62,7 @@ Analog Bias
 
 Analog GPIO
 
--should be connected with No ESD on the PCB, and likely some sort of coax connector
+-should be connected with minimal ESD on the PCB, and some sort of coax connector
 
 | Pin Name / Function  | Caravel Name / Mapping         | mprj_io Index |
 | -------------------- | ------------------------------ | ------------- |
@@ -114,7 +114,7 @@ Power
 | Vssa1, vssa2 – GND  | Ground             |
 
 # Logic Analyzer I/O
-
+Unrelated to PCB
 These are connections made between digitial I/O (gray counter inputs, or ADC outputs) and the caravel harness. These must be controlled and read out by the RISC-V.
 
 I never got fully around to programming the caravel, but this can be practiced on the PCBs from efabless. 
